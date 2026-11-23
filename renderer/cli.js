@@ -1,0 +1,213 @@
+#!/usr/bin/env node
+// Renderer CLI: validate | preview | final.
+// Dùng: node renderer/cli.js <validate|preview|final> --edl projects/<id>/edl.json [--approve-proposed] [--out file]
+import fs from 'node:fs';
+import path from 'node:path';
+import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { loadPresets, readEdl, renderFps, resolveEdl, validateEdl } from './lib/edl.mjs';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const VIDEO_ANALYSIS = path.join(ROOT, '..', 'Video-analysis');
+const PREVIEW_HEIGHT = 540;
+
+function parseArgs(argv) {
+  const [cmd, ...rest] = argv;
+  const o = { cmd, flags: new Set() };
+  for (let i = 0; i < rest.length; i++) {
+    const a = rest[i];
+    if (a === '--edl') o.edl = rest[++i];
+    else if (a === '--out') o.out = rest[++i];
+    else if (a.startsWith('--')) o.flags.add(a.slice(2));
+  }
+  return o;
+}
+
+function die(msg) {
+  console.error(`LỖI: ${msg}`);
+  process.exit(1);
+}
+
+function run(cmd, args) {
+  const r = spawnSync(cmd, args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  if (r.error) throw r.error;
+  return r;
+}
+
+function findSource(videoId) {
+  const summary = path.join(VIDEO_ANALYSIS, 'metadata', videoId, 'summary.md');
+  if (fs.existsSync(summary)) {
+    const m = fs.readFileSync(summary, 'utf8').match(/^relative_path:\s*(.+)$/m);
+    if (m) {
+      const p = path.join(VIDEO_ANALYSIS, m[1].trim().replace(/^["']|["']$/g, ''));
+      if (fs.existsSync(p)) return p;
+    }
+  }
+  const dir = path.join(VIDEO_ANALYSIS, 'videos');
+  if (fs.existsSync(dir)) {
+    const f = fs.readdirSync(dir).find((x) => x.toLowerCase().startsWith(videoId.toLowerCase()));
+    if (f) return path.join(dir, f);
+  }
+  return null;
+}
+
+function probe(file) {
+  const r = run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration:stream=codec_type', '-of', 'json', file]);
+  if (r.status !== 0) throw new Error(`ffprobe lỗi với ${file}: ${r.stderr}`);
+  const j = JSON.parse(r.stdout);
+  return { duration: parseFloat(j.format.duration), hasAudio: (j.streams || []).some((s) => s.codec_type === 'audio') };
+}
+
+function gatherSources(edl) {
+  const sources = {};
+  const info = {};
+  for (const id of new Set(edl.timeline.clips.map((c) => c.video_id))) {
+    const p = findSource(id);
+    if (!p) continue;
+    sources[id] = p;
+    info[id] = probe(p);
+  }
+  return { sources, info };
+}
+
+function printReport({ errors, warnings }) {
+  for (const w of warnings) console.log(`  ⚠ ${w}`);
+  for (const e of errors) console.log(`  ✘ ${e}`);
+}
+
+function makeProxy(src, dst, fps) {
+  if (fs.existsSync(dst) && fs.statSync(dst).mtimeMs >= fs.statSync(src).mtimeMs) return false;
+  fs.mkdirSync(path.dirname(dst), { recursive: true });
+  const r = run('ffmpeg', [
+    '-y', '-v', 'error', '-i', src,
+    '-map', '0:v:0', '-map', '0:a:0?',
+    '-vf', `scale=-2:${PREVIEW_HEIGHT},fps=${fps}`,
+    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '26', '-pix_fmt', 'yuv420p',
+    '-c:a', 'aac', '-b:a', '128k', '-ac', '2', '-ar', '48000',
+    '-movflags', '+faststart', dst,
+  ]);
+  if (r.status !== 0) throw new Error(`ffmpeg tạo proxy lỗi (${path.basename(src)}): ${r.stderr}`);
+  return true;
+}
+
+function linkOrCopy(src, dst) {
+  fs.mkdirSync(path.dirname(dst), { recursive: true });
+  if (fs.existsSync(dst)) fs.rmSync(dst);
+  try {
+    fs.linkSync(src, dst); // hard link: tức thì, không tốn dung lượng (cùng ổ đĩa)
+  } catch {
+    fs.copyFileSync(src, dst);
+  }
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  if (!['validate', 'preview', 'final'].includes(args.cmd) || !args.edl) {
+    die('Cú pháp: node renderer/cli.js <validate|preview|final> --edl <đường dẫn edl.json> [--approve-proposed] [--out <file>]');
+  }
+  const edlPath = path.resolve(args.edl);
+  if (!fs.existsSync(edlPath)) die(`Không thấy EDL: ${edlPath}`);
+  const projectDir = path.dirname(edlPath);
+  const edl = readEdl(edlPath);
+  const presets = loadPresets(ROOT);
+
+  console.log(`EDL: ${edl.project.title || edl.project.id} · style ${edl.strategy.style} · ${edl.decisions.length} quyết định`);
+  const { sources, info } = gatherSources(edl);
+  const report = validateEdl(edl, presets, info);
+  printReport(report);
+  if (report.errors.length) die(`EDL không hợp lệ (${report.errors.length} lỗi)`);
+  if (args.cmd === 'validate') {
+    console.log(`OK: EDL hợp lệ (${report.warnings.length} cảnh báo).`);
+    return;
+  }
+
+  // Cổng xác nhận: bản cuối chỉ dùng quyết định đã approved.
+  const isFinal = args.cmd === 'final';
+  const proposed = edl.decisions.filter((d) => d.status === 'proposed');
+  let include = ['proposed', 'approved'];
+  if (isFinal) {
+    if (proposed.length && !args.flags.has('approve-proposed')) {
+      die(
+        `Còn ${proposed.length} quyết định chưa được duyệt (${proposed.map((d) => d.id).join(', ')}). ` +
+          'Chỉ render bản cuối sau khi người dùng xác nhận: đặt status "approved" trong EDL, ' +
+          'hoặc thêm --approve-proposed nếu người dùng đã duyệt toàn bộ.'
+      );
+    }
+    include = ['approved', 'proposed'].filter((s) => s === 'approved' || args.flags.has('approve-proposed'));
+  }
+
+  const fps = renderFps(edl);
+  const missing = [...new Set(edl.timeline.clips.map((c) => c.video_id))].filter((id) => !sources[id]);
+  if (missing.length) die(`Thiếu file nguồn: ${missing.join(', ')}`);
+
+  const resolved = resolveEdl(edl, presets, { include, sourceInfo: info });
+  for (const w of resolved.warnings) console.log(`  ⚠ ${w}`);
+
+  // Thư mục public cho Remotion (staticFile)
+  const publicDir = path.join(projectDir, isFinal ? '.public-final' : 'proxy');
+  fs.mkdirSync(publicDir, { recursive: true });
+  const media = {};
+  for (const [id, src] of Object.entries(sources)) {
+    if (isFinal) {
+      media[id] = `${id}${path.extname(src)}`;
+      linkOrCopy(src, path.join(publicDir, media[id]));
+    } else {
+      media[id] = `${id}.mp4`;
+      process.stdout.write(`Proxy ${id} ... `);
+      console.log(makeProxy(src, path.join(publicDir, media[id]), fps) ? 'đã tạo' : 'dùng lại');
+    }
+  }
+  if (resolved.music) {
+    const mp = path.resolve(projectDir, resolved.music.file);
+    if (!fs.existsSync(mp)) die(`Không thấy file nhạc: ${mp}`);
+    const rel = `music/${path.basename(mp)}`;
+    linkOrCopy(mp, path.join(publicDir, rel));
+    resolved.music.file = rel;
+  }
+
+  for (const x of resolved.sfx || []) {
+    const sp = path.resolve(projectDir, x.file);
+    if (!fs.existsSync(sp)) die(`Không thấy file SFX của ${x.id}: ${sp}`);
+    const rel = `sfx/${path.basename(sp)}`;
+    linkOrCopy(sp, path.join(publicDir, rel));
+    x.file = rel;
+  }
+
+  const [W, H] = edl.project.resolution.split('x').map(Number);
+  const height = isFinal ? H : PREVIEW_HEIGHT;
+  const width = isFinal ? W : Math.round((PREVIEW_HEIGHT * W) / H / 2) * 2;
+  const inputProps = { resolved, media, width, height };
+
+  const { bundle } = await import('@remotion/bundler');
+  const { renderMedia, selectComposition } = await import('@remotion/renderer');
+  console.log('Đóng gói composition ...');
+  const serveUrl = await bundle({ entryPoint: path.join(ROOT, 'renderer', 'src', 'index.jsx'), publicDir });
+  const composition = await selectComposition({ serveUrl, id: 'Edl', inputProps, logLevel: 'warn' });
+
+  const outDir = path.join(projectDir, 'out');
+  fs.mkdirSync(outDir, { recursive: true });
+  const outFile = path.resolve(args.out || path.join(outDir, isFinal ? 'final.mp4' : 'preview.mp4'));
+  console.log(`Render ${isFinal ? 'BẢN CUỐI' : 'preview'} ${width}x${height} · ${composition.durationInFrames} frame @ ${fps}fps ...`);
+  let last = -1;
+  await renderMedia({
+    composition,
+    serveUrl,
+    codec: 'h264',
+    crf: isFinal ? 18 : 28,
+    outputLocation: outFile,
+    inputProps,
+    logLevel: 'warn',
+    onProgress: ({ progress }) => {
+      const pct = Math.floor(progress * 10) * 10;
+      if (pct !== last) { last = pct; process.stdout.write(`  ${pct}%\n`); }
+    },
+  });
+  const probeOut = probe(outFile);
+  console.log(`Xong: ${outFile}`);
+  console.log(`Độ dài ${probeOut.duration.toFixed(2)}s (dự kiến ${(composition.durationInFrames / fps).toFixed(2)}s), có tiếng: ${probeOut.hasAudio}`);
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

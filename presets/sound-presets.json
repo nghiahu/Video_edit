@@ -1,0 +1,73 @@
+{
+  "_doc": "Preset âm thanh. Đơn vị dB, giây.",
+  "duck_voice_music": {
+    "technique": "audio_ducking",
+    "description": "Hạ nhạc 12 dB khi có tiếng nói. Mặc định.",
+    "parameters": {
+      "base_db": -16,
+      "duck_amount_db": 12,
+      "lead": 0.25,
+      "attack": 0.3,
+      "release": 0.7,
+      "merge_gap": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "duck_voice_music_deep": {
+    "technique": "audio_ducking",
+    "description": "Hạ sâu 16 dB cho nhạc dày hoặc có lời, hoặc tiếng nói nhỏ.",
+    "parameters": {
+      "base_db": -16,
+      "duck_amount_db": 16,
+      "lead": 0.3,
+      "attack": 0.3,
+      "release": 0.8,
+      "merge_gap": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "duck_voice_music_light": {
+    "technique": "audio_ducking",
+    "description": "Hạ nhẹ 8 dB cho nhạc thưa, ambient.",
+    "parameters": {
+      "base_db": -18,
+      "duck_amount_db": 8,
+      "lead": 0.2,
+      "attack": 0.25,
+      "release": 0.6,
+      "merge_gap": 0.8
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "whoosh_cut_standard": {
+    "technique": "whoosh_synced_cut",
+    "description": "Âm whoosh/impact gắn vào điểm cắt; file âm thanh do người dùng cung cấp (parameters.file).",
+    "parameters": {
+      "gain_db": -12,
+      "offset": -0.1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  }
+}

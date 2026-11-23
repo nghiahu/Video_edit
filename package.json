@@ -1,0 +1,20 @@
+{
+  "name": "video-edit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Skill dựng video + renderer preview đọc EDL (Remotion)",
+  "scripts": {
+    "validate": "node renderer/cli.js validate",
+    "preview": "node renderer/cli.js preview",
+    "final": "node renderer/cli.js final"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.525",
+    "@remotion/google-fonts": "4.0.525",
+    "@remotion/renderer": "4.0.525",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.525"
+  }
+}

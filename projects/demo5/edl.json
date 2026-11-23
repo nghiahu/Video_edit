@@ -1,0 +1,154 @@
+{
+  "_note": "EDL mẫu nhỏ (~11 giây) dùng clip thật trong Video-analysis. Mốc cấp từ (source_time của kinetic_text) là ƯỚC LƯỢNG vì metadata không có timestamp theo từ, nên confidence=low. d04 là ví dụ về quyết định bị người dùng bỏ ('bỏ d04').",
+  "edl_version": "1.0",
+  "project": {
+    "id": "demo5",
+    "title": "Demo 5: subtitles + grade + vignette + punch_out",
+    "fps": 29.97,
+    "resolution": "1920x1080",
+    "aspect": "16:9",
+    "language": "vi",
+    "target_duration_sec": 11
+  },
+  "strategy": {
+    "style": "interview",
+    "pacing": "moderate",
+    "visual_intensity": "low",
+    "typography_style": "editorial",
+    "transition_style": "mostly_hard_cut",
+    "motion_style": "subtle",
+    "budget": {
+      "punch_in": 1,
+      "emphasis_text": 1,
+      "special_transition": 0,
+      "lower_third": 1
+    }
+  },
+  "timeline": {
+    "clips": [
+      {
+        "id": "c01",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 0.5,
+        "source_out": 4.5,
+        "audio": "mute"
+      },
+      {
+        "id": "c02",
+        "video_id": "DJI_20261117190102_0035_D_AZ1",
+        "source_in": 1.2,
+        "source_out": 6,
+        "audio": "keep"
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d01",
+      "technique": "color_grade_basic",
+      "preset": "grade_warm_documentary",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 0.5
+      },
+      "duration": 0,
+      "parameters": {},
+      "priority": "style",
+      "reason": "đồng bộ tông ấm cả video"
+    },
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d02",
+      "technique": "color_grade_basic",
+      "preset": "grade_warm_documentary",
+      "anchor": {
+        "clip": "c02",
+        "source_time": 1.2
+      },
+      "duration": 0,
+      "parameters": {},
+      "priority": "style",
+      "reason": "đồng bộ tông ấm cả video"
+    },
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d03",
+      "technique": "vignette",
+      "preset": "vignette_standard",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 0.5
+      },
+      "duration": 0,
+      "parameters": {
+        "strength": 0.3
+      },
+      "priority": "style",
+      "reason": "dồn mắt vào giữa lớp học"
+    },
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d04",
+      "technique": "punch_out",
+      "preset": "punch_out_subtle",
+      "anchor": {
+        "clip": "c02",
+        "source_time": 1.2
+      },
+      "duration": 0.8,
+      "parameters": {},
+      "priority": "storytelling",
+      "reason": "mở khung sau cảnh b-roll, đưa người xem vào diễn giả"
+    },
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d05",
+      "technique": "subtitles",
+      "preset": "subtitles_standard",
+      "anchor": {
+        "clip": "c02",
+        "source_time": 1.4
+      },
+      "duration": 3.8,
+      "parameters": {
+        "cues": [
+          {
+            "source_time": 1.6,
+            "duration": 2,
+            "text": "Giá trị nhận được từ chứng nhận\ncủa Đại học Bách khoa"
+          },
+          {
+            "source_time": 3.8,
+            "duration": 2,
+            "text": "suy cho cùng vẫn là một sự bảo chứng"
+          }
+        ]
+      },
+      "priority": "clarity",
+      "reason": "người xem có thể tắt tiếng (nguyên văn minh họa)"
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "base_db": -16,
+      "duck_amount_db": 12
+    }
+  }
+}

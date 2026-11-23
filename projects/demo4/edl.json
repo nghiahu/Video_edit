@@ -1,0 +1,110 @@
+{
+  "_note": "EDL mẫu nhỏ (~11 giây) dùng clip thật trong Video-analysis. Mốc cấp từ (source_time của kinetic_text) là ƯỚC LƯỢNG vì metadata không có timestamp theo từ, nên confidence=low. d04 là ví dụ về quyết định bị người dùng bỏ ('bỏ d04').",
+  "edl_version": "1.0",
+  "project": {
+    "id": "demo4",
+    "title": "Demo 4: slow_push + dissolve + lower_third",
+    "fps": 29.97,
+    "resolution": "1920x1080",
+    "aspect": "16:9",
+    "language": "vi",
+    "target_duration_sec": 11
+  },
+  "strategy": {
+    "style": "documentary",
+    "pacing": "moderate",
+    "visual_intensity": "low",
+    "typography_style": "editorial",
+    "transition_style": "mostly_hard_cut",
+    "motion_style": "subtle",
+    "budget": {
+      "punch_in": 1,
+      "emphasis_text": 1,
+      "special_transition": 2,
+      "lower_third": 1
+    }
+  },
+  "timeline": {
+    "clips": [
+      {
+        "id": "c01",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 0.5,
+        "source_out": 6.5,
+        "audio": "mute"
+      },
+      {
+        "id": "c02",
+        "video_id": "DJI_20261117190102_0035_D_AZ1",
+        "source_in": 1.2,
+        "source_out": 6,
+        "audio": "keep"
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d01",
+      "technique": "slow_push",
+      "preset": "slow_push_subtle",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 0.5
+      },
+      "duration": 6,
+      "parameters": {},
+      "priority": "storytelling",
+      "reason": "cảnh tĩnh mở đầu, đẩy chậm"
+    },
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d02",
+      "technique": "cross_dissolve",
+      "preset": "dissolve_standard",
+      "anchor": {
+        "between": [
+          "c01",
+          "c02"
+        ]
+      },
+      "duration": 0.6,
+      "parameters": {},
+      "priority": "storytelling",
+      "reason": "chuyển từ b-roll sang diễn giả, báo hiệu vào phần phát biểu"
+    },
+    {
+      "start_offset": 0,
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed",
+      "id": "d03",
+      "technique": "lower_third",
+      "preset": "lower_third_editorial",
+      "anchor": {
+        "clip": "c02",
+        "source_time": 1.8
+      },
+      "duration": 4,
+      "parameters": {
+        "name": "Nguyễn Văn A",
+        "title": "Đại diện nhà trường (tên minh họa)"
+      },
+      "priority": "clarity",
+      "reason": "lần đầu diễn giả xuất hiện và nói"
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "base_db": -16,
+      "duck_amount_db": 12
+    }
+  }
+}

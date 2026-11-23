@@ -1,0 +1,851 @@
+{
+  "edl_version": "1.0",
+  "project": {
+    "id": "demo-transitions",
+    "title": "Thử mọi kiểu chuyển cảnh",
+    "fps": 29.97,
+    "resolution": "1920x1080",
+    "aspect": "16:9",
+    "language": "vi",
+    "target_duration_sec": 76.8
+  },
+  "strategy": {
+    "style": "event_recap",
+    "pacing": "fast",
+    "visual_intensity": "high",
+    "typography_style": "bold_emphasis",
+    "transition_style": "mixed",
+    "motion_style": "standard",
+    "budget": {
+      "special_transition": 60
+    }
+  },
+  "timeline": {
+    "clips": [
+      {
+        "id": "c01",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 5,
+        "source_out": 7.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c02",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 6.3,
+        "source_out": 8.7,
+        "audio": "mute"
+      },
+      {
+        "id": "c03",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c04",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 8.9,
+        "source_out": 11.3,
+        "audio": "mute"
+      },
+      {
+        "id": "c05",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 10.2,
+        "source_out": 12.6,
+        "audio": "mute"
+      },
+      {
+        "id": "c06",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c07",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 12.8,
+        "source_out": 15.2,
+        "audio": "mute"
+      },
+      {
+        "id": "c08",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 14.1,
+        "source_out": 16.5,
+        "audio": "mute"
+      },
+      {
+        "id": "c09",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c10",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 16.7,
+        "source_out": 19.1,
+        "audio": "mute"
+      },
+      {
+        "id": "c11",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 18,
+        "source_out": 20.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c12",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c13",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 20.6,
+        "source_out": 23,
+        "audio": "mute"
+      },
+      {
+        "id": "c14",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 21.9,
+        "source_out": 24.3,
+        "audio": "mute"
+      },
+      {
+        "id": "c15",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c16",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 24.5,
+        "source_out": 26.9,
+        "audio": "mute"
+      },
+      {
+        "id": "c17",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 25.8,
+        "source_out": 28.2,
+        "audio": "mute"
+      },
+      {
+        "id": "c18",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c19",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 28.4,
+        "source_out": 30.8,
+        "audio": "mute"
+      },
+      {
+        "id": "c20",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 29.7,
+        "source_out": 32.1,
+        "audio": "mute"
+      },
+      {
+        "id": "c21",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c22",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 32.3,
+        "source_out": 34.7,
+        "audio": "mute"
+      },
+      {
+        "id": "c23",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 33.6,
+        "source_out": 36,
+        "audio": "mute"
+      },
+      {
+        "id": "c24",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c25",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 36.2,
+        "source_out": 38.6,
+        "audio": "mute"
+      },
+      {
+        "id": "c26",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 37.5,
+        "source_out": 39.9,
+        "audio": "mute"
+      },
+      {
+        "id": "c27",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c28",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 40.1,
+        "source_out": 42.5,
+        "audio": "mute"
+      },
+      {
+        "id": "c29",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 41.4,
+        "source_out": 43.8,
+        "audio": "mute"
+      },
+      {
+        "id": "c30",
+        "video_id": "DJI_20261117183730_0004_D_AZ1",
+        "source_in": 3,
+        "source_out": 5.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c31",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 44,
+        "source_out": 46.4,
+        "audio": "mute"
+      },
+      {
+        "id": "c32",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 45.3,
+        "source_out": 47.7,
+        "audio": "mute"
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "d01",
+      "technique": "cross_dissolve",
+      "preset": "dissolve_standard",
+      "anchor": {
+        "between": [
+          "c01",
+          "c02"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu cross_dissolve",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d02",
+      "technique": "additive_dissolve",
+      "preset": "additive_dissolve_soft",
+      "anchor": {
+        "between": [
+          "c02",
+          "c03"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu additive_dissolve",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d03",
+      "technique": "blur_dissolve",
+      "preset": "blur_dissolve_soft",
+      "anchor": {
+        "between": [
+          "c03",
+          "c04"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu blur_dissolve",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d04",
+      "technique": "morph_cut",
+      "preset": "morph_cut_quick",
+      "anchor": {
+        "between": [
+          "c04",
+          "c05"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu morph_cut",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d05",
+      "technique": "dip_to_black",
+      "preset": "dip_to_black_quick",
+      "anchor": {
+        "between": [
+          "c05",
+          "c06"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu dip_to_black",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d06",
+      "technique": "dip_to_white",
+      "preset": "dip_to_white_quick",
+      "anchor": {
+        "between": [
+          "c06",
+          "c07"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu dip_to_white",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d07",
+      "technique": "whip_pan",
+      "preset": "whip_pan_fast",
+      "anchor": {
+        "between": [
+          "c07",
+          "c08"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu whip_pan",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d08",
+      "technique": "whip_tilt",
+      "preset": "whip_tilt_up",
+      "anchor": {
+        "between": [
+          "c08",
+          "c09"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu whip_tilt",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d09",
+      "technique": "slide",
+      "preset": "slide_in",
+      "anchor": {
+        "between": [
+          "c09",
+          "c10"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu slide",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d10",
+      "technique": "push",
+      "preset": "push_left",
+      "anchor": {
+        "between": [
+          "c10",
+          "c11"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu push",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d11",
+      "technique": "swipe",
+      "preset": "swipe_left",
+      "anchor": {
+        "between": [
+          "c11",
+          "c12"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu swipe",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d12",
+      "technique": "wipe",
+      "preset": "wipe_right_soft",
+      "anchor": {
+        "between": [
+          "c12",
+          "c13"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu wipe",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d13",
+      "technique": "zoom_transition",
+      "preset": "zoom_in_punch",
+      "anchor": {
+        "between": [
+          "c13",
+          "c14"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu zoom_transition",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d14",
+      "technique": "spin_rotate",
+      "preset": "spin_90",
+      "anchor": {
+        "between": [
+          "c14",
+          "c15"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu spin_rotate",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d15",
+      "technique": "camera_roll",
+      "preset": "camera_roll_soft",
+      "anchor": {
+        "between": [
+          "c15",
+          "c16"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu camera_roll",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d16",
+      "technique": "parallax_transition",
+      "preset": "parallax_slide",
+      "anchor": {
+        "between": [
+          "c16",
+          "c17"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu parallax_transition",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d17",
+      "technique": "mask_reveal",
+      "preset": "mask_reveal_center",
+      "anchor": {
+        "between": [
+          "c17",
+          "c18"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu mask_reveal",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d18",
+      "technique": "iris_wipe",
+      "preset": "iris_open",
+      "anchor": {
+        "between": [
+          "c18",
+          "c19"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu iris_wipe",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d19",
+      "technique": "clock_wipe",
+      "preset": "clock_wipe_standard",
+      "anchor": {
+        "between": [
+          "c19",
+          "c20"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu clock_wipe",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d20",
+      "technique": "split_barn_door",
+      "preset": "barn_door_open",
+      "anchor": {
+        "between": [
+          "c20",
+          "c21"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu split_barn_door",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d21",
+      "technique": "luma_wipe",
+      "preset": "luma_wipe_diagonal",
+      "anchor": {
+        "between": [
+          "c21",
+          "c22"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu luma_wipe",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d22",
+      "technique": "shape_reveal",
+      "preset": "shape_reveal_diamond",
+      "anchor": {
+        "between": [
+          "c22",
+          "c23"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu shape_reveal",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d23",
+      "technique": "glitch",
+      "preset": "glitch_hit",
+      "anchor": {
+        "between": [
+          "c23",
+          "c24"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu glitch",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d24",
+      "technique": "rgb_split",
+      "preset": "rgb_split_hit",
+      "anchor": {
+        "between": [
+          "c24",
+          "c25"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu rgb_split",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d25",
+      "technique": "flash_strobe",
+      "preset": "flash_white",
+      "anchor": {
+        "between": [
+          "c25",
+          "c26"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu flash_strobe",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d26",
+      "technique": "light_leak",
+      "preset": "light_leak_warm",
+      "anchor": {
+        "between": [
+          "c26",
+          "c27"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu light_leak",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d27",
+      "technique": "film_burn",
+      "preset": "film_burn_classic",
+      "anchor": {
+        "between": [
+          "c27",
+          "c28"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu film_burn",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d28",
+      "technique": "vhs_distortion",
+      "preset": "vhs_glitch",
+      "anchor": {
+        "between": [
+          "c28",
+          "c29"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu vhs_distortion",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d29",
+      "technique": "pixelate_mosaic",
+      "preset": "pixelate_burst",
+      "anchor": {
+        "between": [
+          "c29",
+          "c30"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu pixelate_mosaic",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d30",
+      "technique": "shake_transition",
+      "preset": "shake_hit",
+      "anchor": {
+        "between": [
+          "c30",
+          "c31"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {},
+      "reason": "Thử kiểu shake_transition",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d31",
+      "technique": "text_graphic_wipe",
+      "preset": "text_graphic_wipe_brand",
+      "anchor": {
+        "between": [
+          "c31",
+          "c32"
+        ]
+      },
+      "duration": 0.5,
+      "parameters": {
+        "text": "RIKKEI EDU"
+      },
+      "reason": "Thử kiểu text_graphic_wipe",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "base_db": -16,
+      "duck_amount_db": 12
+    }
+  }
+}

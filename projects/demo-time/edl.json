@@ -1,0 +1,194 @@
+{
+  "edl_version": "1.0",
+  "project": {
+    "id": "demo-time",
+    "title": "Thử đổi tốc độ, fade, SFX",
+    "fps": 29.97,
+    "resolution": "1920x1080",
+    "aspect": "16:9",
+    "language": "vi",
+    "target_duration_sec": 20
+  },
+  "strategy": {
+    "style": "event_recap",
+    "pacing": "fast",
+    "visual_intensity": "medium",
+    "typography_style": "bold_emphasis",
+    "transition_style": "mixed",
+    "motion_style": "standard",
+    "budget": {
+      "punch_in": 2,
+      "special_transition": 5
+    }
+  },
+  "timeline": {
+    "clips": [
+      {
+        "id": "c01",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 10,
+        "source_out": 16,
+        "audio": "keep"
+      },
+      {
+        "id": "c02",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 20,
+        "source_out": 25,
+        "audio": "keep"
+      },
+      {
+        "id": "c03",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 30,
+        "source_out": 35,
+        "audio": "keep"
+      },
+      {
+        "id": "c04",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 40,
+        "source_out": 45,
+        "audio": "keep"
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "d01",
+      "technique": "fade_in_out",
+      "preset": "fade_in_black",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 10
+      },
+      "duration": 1,
+      "parameters": {},
+      "reason": "Mở video từ màn đen",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d02",
+      "technique": "time_lapse",
+      "preset": "time_lapse_4x",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 12
+      },
+      "duration": 0,
+      "parameters": {
+        "span": 2
+      },
+      "reason": "Tua nhanh 2 giây nguồn",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d03",
+      "technique": "freeze_frame",
+      "preset": "freeze_hold_1s",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 14.5
+      },
+      "duration": 0,
+      "parameters": {},
+      "reason": "Giữ khung 1 giây",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d04",
+      "technique": "speed_ramp_transition",
+      "preset": "speed_ramp_standard",
+      "anchor": {
+        "between": [
+          "c02",
+          "c03"
+        ]
+      },
+      "duration": 0.6,
+      "parameters": {},
+      "reason": "Tăng tốc qua điểm nối",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d05",
+      "technique": "whoosh_synced_cut",
+      "preset": "whoosh_cut_standard",
+      "anchor": {
+        "between": [
+          "c03",
+          "c04"
+        ]
+      },
+      "duration": 0,
+      "parameters": {
+        "file": "sweep.wav"
+      },
+      "reason": "Gắn SFX thử vào điểm cắt",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d06",
+      "technique": "fade_in_out",
+      "preset": "fade_out_black",
+      "anchor": {
+        "clip": "c04",
+        "source_time": 45
+      },
+      "duration": 1.2,
+      "parameters": {},
+      "reason": "Kết video xuống màn đen",
+      "start_offset": 0,
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    },
+    {
+      "id": "d07",
+      "technique": "punch_in",
+      "preset": "punch_in_standard",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 15.2
+      },
+      "start_offset": 0,
+      "duration": 0.3,
+      "parameters": {
+        "return": "keep"
+      },
+      "reason": "Kiểm tra mốc neo sau đoạn đổi tốc độ",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed",
+      "priority": "style"
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "base_db": -16,
+      "duck_amount_db": 12
+    }
+  }
+}

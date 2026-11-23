@@ -1,0 +1,91 @@
+{
+  "_doc": "Preset đổi tốc độ và đóng băng. Mốc nguồn tính bằng giây trong file nguồn.",
+  "time_lapse_8x": {
+    "technique": "time_lapse",
+    "description": "Tua nhanh 8 lần từ điểm neo đến hết clip (hoặc hết span). Tiếng bị tắt trong đoạn tua.",
+    "parameters": {
+      "rate": 8,
+      "span": 0
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "time_lapse_4x": {
+    "technique": "time_lapse",
+    "description": "Tua nhanh 4 lần, nhẹ hơn.",
+    "parameters": {
+      "rate": 4,
+      "span": 0
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "freeze_hold_1s": {
+    "technique": "freeze_frame",
+    "description": "Đóng băng khung hình 1 giây (chèn thêm, không mất hình). Tiếng bị tắt trong lúc đóng băng.",
+    "parameters": {
+      "hold": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "freeze_hold_2s": {
+    "technique": "freeze_frame",
+    "description": "Đóng băng khung hình 2 giây.",
+    "parameters": {
+      "hold": 2
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "speed_ramp_standard": {
+    "technique": "speed_ramp_transition",
+    "description": "Cuối clip A tăng tốc 1 → 5x, đầu clip B giảm tốc 5 → 1x (6 bậc). Chỉ đổi tốc độ, chưa có nhòe chuyển động.",
+    "parameters": {
+      "factor": 5,
+      "duration": 0.6,
+      "steps": 6
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "speed_ramp_gentle": {
+    "technique": "speed_ramp_transition",
+    "description": "Tăng/giảm tốc nhẹ 1 → 3x.",
+    "parameters": {
+      "factor": 3,
+      "duration": 0.8,
+      "steps": 6
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  }
+}

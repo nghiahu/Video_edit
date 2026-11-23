@@ -1,0 +1,48 @@
+{
+  "_doc": "Preset màu và xử lý hình. brightness: cộng thêm (−0.15..0.15). contrast, saturation: hệ số (1 = giữ nguyên). warmth: −1 (lạnh) .. +1 (ấm).",
+  "grade_neutral_clean": {
+    "technique": "color_grade_basic",
+    "description": "Gần như giữ nguyên, tăng nhẹ tương phản để hình sạch. Mặc định an toàn.",
+    "parameters": { "brightness": 0.0, "contrast": 1.05, "saturation": 1.03, "warmth": 0.0 },
+    "allowed_styles": ["all"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "grade_warm_documentary": {
+    "technique": "color_grade_basic",
+    "description": "Ấm nhẹ, hơi giảm bão hòa, tương phản vừa. Cảm giác chân thực, trang trọng.",
+    "parameters": { "brightness": 0.0, "contrast": 1.06, "saturation": 0.95, "warmth": 0.35 },
+    "allowed_styles": ["documentary", "interview", "event_recap"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "grade_cool_tech": {
+    "technique": "color_grade_basic",
+    "description": "Hơi lạnh, bão hòa nhẹ cao hơn. Nội dung công nghệ, dữ liệu.",
+    "parameters": { "brightness": 0.0, "contrast": 1.05, "saturation": 1.06, "warmth": -0.3 },
+    "allowed_styles": ["corporate", "event_recap", "social"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "vignette_subtle": {
+    "technique": "vignette",
+    "description": "Tối rất nhẹ ở mép khung để dồn mắt vào giữa.",
+    "parameters": { "strength": 0.22, "softness": 0.55, "ramp": 0.3 },
+    "allowed_styles": ["all"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "vignette_standard": {
+    "technique": "vignette",
+    "description": "Tối rõ hơn ở mép khung.",
+    "parameters": { "strength": 0.35, "softness": 0.5, "ramp": 0.3 },
+    "allowed_styles": ["corporate", "event_recap", "social", "interview"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  }
+}

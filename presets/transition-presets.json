@@ -1,0 +1,880 @@
+{
+  "_doc": "Preset điểm nối. Gắn vào anchor.between của EDL.",
+  "cut_hard": {
+    "technique": "hard_cut",
+    "description": "Cắt thẳng, điểm nối mặc định.",
+    "parameters": {
+      "cut_on": "speech_end",
+      "out_tail": 0.15,
+      "in_lead": 0.1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "high"
+  },
+  "l_cut_standard": {
+    "technique": "j_l_cut",
+    "description": "Tiếng clip trước kéo sang hình clip sau (chèn b-roll lên lời).",
+    "parameters": {
+      "variant": "l",
+      "tail": 0.8,
+      "audio_crossfade": 0.12,
+      "incoming_audio_gain_db": 0
+    },
+    "allowed_styles": [
+      "documentary",
+      "interview",
+      "event_recap",
+      "corporate"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "j_cut_standard": {
+    "technique": "j_l_cut",
+    "description": "Tiếng clip sau vào trước hình (dẫn vào người nói hoặc cảnh mới).",
+    "parameters": {
+      "variant": "j",
+      "lead": 0.5,
+      "audio_crossfade": 0.12,
+      "incoming_audio_gain_db": 0
+    },
+    "allowed_styles": [
+      "documentary",
+      "interview",
+      "event_recap",
+      "corporate"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "dissolve_standard": {
+    "technique": "cross_dissolve",
+    "description": "Mờ chồng 0.6 s: trôi thời gian, đổi địa điểm, mở/kết đoạn.",
+    "parameters": {
+      "duration": 0.6,
+      "easing": "ease_in_out"
+    },
+    "allowed_styles": [
+      "documentary",
+      "interview",
+      "event_recap",
+      "corporate"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "dissolve_short": {
+    "technique": "cross_dissolve",
+    "description": "Mờ chồng ngắn 0.4 s, nhẹ hơn.",
+    "parameters": {
+      "duration": 0.4,
+      "easing": "ease_in_out"
+    },
+    "allowed_styles": [
+      "documentary",
+      "interview",
+      "event_recap",
+      "corporate",
+      "social"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "additive_dissolve_soft": {
+    "technique": "additive_dissolve",
+    "description": "Mờ chồng cộng sáng (film dissolve): sáng lên ở giữa rồi hạ. Trôi thời gian, ký ức.",
+    "parameters": {
+      "duration": 0.8,
+      "easing": "ease_in_out"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "blur_dissolve_soft": {
+    "technique": "blur_dissolve",
+    "description": "Mờ chồng kèm nhòe: chuyển mềm, mơ màng.",
+    "parameters": {
+      "duration": 0.7,
+      "easing": "ease_in_out",
+      "blur": 24
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "morph_cut_quick": {
+    "technique": "morph_cut",
+    "description": "Xấp xỉ morph cut: mờ chồng cực ngắn kèm nhòe và phóng nhẹ để che nhảy hình cùng người nói (KHÔNG phải morph quang học thật).",
+    "parameters": {
+      "duration": 0.25,
+      "easing": "ease_in_out",
+      "blur": 3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "dip_to_black_standard": {
+    "technique": "dip_to_black",
+    "description": "Xuống đen rồi lên cảnh mới. Kết đoạn, chuyển chương.",
+    "parameters": {
+      "duration": 1,
+      "easing": "ease_in_out"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "dip_to_black_quick": {
+    "technique": "dip_to_black",
+    "description": "Xuống đen nhanh.",
+    "parameters": {
+      "duration": 0.6,
+      "easing": "ease_in_out"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "dip_to_white_standard": {
+    "technique": "dip_to_white",
+    "description": "Chói trắng rồi lên cảnh mới. Hồi tưởng, mơ, nhẹ nhõm.",
+    "parameters": {
+      "duration": 1,
+      "easing": "ease_in_out"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "dip_to_white_quick": {
+    "technique": "dip_to_white",
+    "description": "Chói trắng nhanh.",
+    "parameters": {
+      "duration": 0.5,
+      "easing": "ease_in_out"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "fade_in_black": {
+    "technique": "fade_in_out",
+    "description": "Mở video từ màn đen, tiếng nhỏ dần lên.",
+    "parameters": {
+      "where": "in",
+      "duration": 1,
+      "color": "#000000",
+      "audio": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "fade_out_black": {
+    "technique": "fade_in_out",
+    "description": "Kết video xuống màn đen, tiếng nhỏ dần.",
+    "parameters": {
+      "where": "out",
+      "duration": 1.2,
+      "color": "#000000",
+      "audio": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "fade_out_white": {
+    "technique": "fade_in_out",
+    "description": "Kết video xuống màn trắng.",
+    "parameters": {
+      "where": "out",
+      "duration": 1,
+      "color": "#ffffff",
+      "audio": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "whip_pan_fast": {
+    "technique": "whip_pan",
+    "description": "Quay ngang nhanh, nhòe chuyển động. Cắt giữa chuyển động.",
+    "parameters": {
+      "duration": 0.35,
+      "easing": "ease_in_out",
+      "direction": "left",
+      "blur": 40,
+      "travel": 1.15
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "whip_pan_right": {
+    "technique": "whip_pan",
+    "description": "Quay ngang nhanh sang phải.",
+    "parameters": {
+      "duration": 0.35,
+      "easing": "ease_in_out",
+      "direction": "right",
+      "blur": 40,
+      "travel": 1.15
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "whip_tilt_up": {
+    "technique": "whip_tilt",
+    "description": "Hất camera lên (quay dọc nhanh).",
+    "parameters": {
+      "duration": 0.4,
+      "easing": "ease_in_out",
+      "direction": "up",
+      "blur": 40,
+      "travel": 1.15
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "slide_in": {
+    "technique": "slide",
+    "description": "Cảnh mới trượt vào đè lên cảnh cũ.",
+    "parameters": {
+      "duration": 0.6,
+      "easing": "ease_in_out",
+      "direction": "left"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "push_left": {
+    "technique": "push",
+    "description": "Cảnh mới đẩy cảnh cũ ra khỏi khung.",
+    "parameters": {
+      "duration": 0.7,
+      "easing": "ease_in_out",
+      "direction": "left"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "swipe_left": {
+    "technique": "swipe",
+    "description": "Cảnh cũ vuốt đi để lộ cảnh mới bên dưới.",
+    "parameters": {
+      "duration": 0.5,
+      "easing": "ease_in_out",
+      "direction": "left"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "wipe_right_soft": {
+    "technique": "wipe",
+    "description": "Quét từ trái sang phải, mép mềm.",
+    "parameters": {
+      "duration": 0.8,
+      "easing": "ease_in_out",
+      "direction": "right",
+      "softness": 12
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "wipe_down_hard": {
+    "technique": "wipe",
+    "description": "Quét từ trên xuống, mép cứng.",
+    "parameters": {
+      "duration": 0.6,
+      "easing": "ease_in_out",
+      "direction": "down",
+      "softness": 0
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "zoom_in_punch": {
+    "technique": "zoom_transition",
+    "description": "Phóng nhanh vào cảnh cũ rồi cảnh mới bung ra từ khung phóng to.",
+    "parameters": {
+      "duration": 0.5,
+      "easing": "ease_in_out",
+      "zoom": 2.4,
+      "blur": 30
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "spin_90": {
+    "technique": "spin_rotate",
+    "description": "Xoay và phóng, cảnh mới xoay về chính diện.",
+    "parameters": {
+      "duration": 0.6,
+      "easing": "ease_in_out",
+      "direction": "right",
+      "angle": 90,
+      "scale": 1.4,
+      "blur": 16,
+      "fill": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "camera_roll_soft": {
+    "technique": "camera_roll",
+    "description": "Camera nghiêng nhẹ (roll) rồi cảnh mới thẳng lại.",
+    "parameters": {
+      "duration": 0.6,
+      "easing": "ease_in_out",
+      "direction": "right",
+      "angle": 20,
+      "scale": 1.2,
+      "blur": 8,
+      "fill": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "parallax_slide": {
+    "technique": "parallax_transition",
+    "description": "Hai lớp trượt với tốc độ khác nhau tạo chiều sâu.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "direction": "left"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "mask_reveal_center": {
+    "technique": "mask_reveal",
+    "description": "Cảnh mới lộ ra từ một điểm, mép mềm lan dần.",
+    "parameters": {
+      "duration": 1,
+      "easing": "ease_in_out",
+      "origin_x": 0.5,
+      "origin_y": 0.5,
+      "softness": 0.25
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "mask_reveal_corner": {
+    "technique": "mask_reveal",
+    "description": "Cảnh mới lộ ra từ góc dưới trái.",
+    "parameters": {
+      "duration": 1,
+      "easing": "ease_in_out",
+      "origin_x": 0.1,
+      "origin_y": 0.9,
+      "softness": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "iris_open": {
+    "technique": "iris_wipe",
+    "description": "Mống mắt mở: cảnh mới lộ ra trong vòng tròn nở dần.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "mode": "open",
+      "origin_x": 0.5,
+      "origin_y": 0.5
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "iris_close": {
+    "technique": "iris_wipe",
+    "description": "Mống mắt đóng: cảnh cũ thu dần thành điểm, lộ cảnh mới.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "mode": "close",
+      "origin_x": 0.5,
+      "origin_y": 0.5
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "clock_wipe_standard": {
+    "technique": "clock_wipe",
+    "description": "Quét như kim đồng hồ từ 12 giờ.",
+    "parameters": {
+      "duration": 1,
+      "easing": "ease_in_out",
+      "start_angle": 0
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "barn_door_open": {
+    "technique": "split_barn_door",
+    "description": "Cánh cửa mở: cảnh mới lộ ra từ vạch giữa.",
+    "parameters": {
+      "duration": 0.8,
+      "easing": "ease_in_out",
+      "mode": "open",
+      "orientation": "vertical"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "barn_door_close": {
+    "technique": "split_barn_door",
+    "description": "Cánh cửa đóng: cảnh mới lộ ra từ hai mép dồn vào.",
+    "parameters": {
+      "duration": 0.8,
+      "easing": "ease_in_out",
+      "mode": "close",
+      "orientation": "horizontal"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "luma_wipe_diagonal": {
+    "technique": "luma_wipe",
+    "description": "Quét chéo theo dải sáng mềm.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "pattern": "diagonal",
+      "softness": 18
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "luma_wipe_blinds": {
+    "technique": "luma_wipe",
+    "description": "Quét kiểu mành cuốn: các thanh dọc nở ra.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "pattern": "blinds",
+      "bars": 10,
+      "softness": 0
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "luma_wipe_radial": {
+    "technique": "luma_wipe",
+    "description": "Quét tỏa tròn từ tâm.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "pattern": "radial",
+      "softness": 18
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "shape_reveal_diamond": {
+    "technique": "shape_reveal",
+    "description": "Cảnh mới lộ ra trong hình thoi nở dần.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "shape": "diamond"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "shape_reveal_hexagon": {
+    "technique": "shape_reveal",
+    "description": "Hình lục giác nở dần (hợp chủ đề công nghệ).",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "shape": "hexagon"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "shape_reveal_star": {
+    "technique": "shape_reveal",
+    "description": "Hình ngôi sao nở dần (vui, ăn mừng).",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "ease_in_out",
+      "shape": "star"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "glitch_hit": {
+    "technique": "glitch",
+    "description": "Nhiễu tín hiệu: xé hình ngang, lệch kênh màu, cắt giữa nhiễu.",
+    "parameters": {
+      "duration": 0.4,
+      "easing": "linear",
+      "intensity": 90,
+      "shift": 60,
+      "split": 14
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "rgb_split_hit": {
+    "technique": "rgb_split",
+    "description": "Tách kênh màu đỏ-xanh tăng dần rồi cắt, giảm dần ở cảnh mới.",
+    "parameters": {
+      "duration": 0.4,
+      "easing": "linear",
+      "split": 28
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "flash_white": {
+    "technique": "flash_strobe",
+    "description": "Chớp trắng ngắn tại điểm cắt.",
+    "parameters": {
+      "duration": 0.3,
+      "easing": "linear",
+      "color": "#ffffff",
+      "sharpness": 2.2,
+      "strobes": 1,
+      "peak": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "flash_strobe_3": {
+    "technique": "flash_strobe",
+    "description": "Chớp 3 lần (strobe) tại điểm cắt, kéo dài 1.0 s để giữ ≤ 3 lần/giây (giới hạn an toàn cho người nhạy sáng).",
+    "parameters": {
+      "duration": 1,
+      "easing": "linear",
+      "color": "#ffffff",
+      "sharpness": 1.6,
+      "strobes": 3,
+      "peak": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "light_leak_warm": {
+    "technique": "light_leak",
+    "description": "Ánh sáng ấm rò vào khung ở điểm cắt, cảm giác phim.",
+    "parameters": {
+      "duration": 0.9,
+      "easing": "linear",
+      "peak": 0.9
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "film_burn_classic": {
+    "technique": "film_burn",
+    "description": "Cháy phim cam-vàng bùng lên rồi tan ở điểm cắt.",
+    "parameters": {
+      "duration": 0.8,
+      "easing": "linear",
+      "peak": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "vhs_glitch": {
+    "technique": "vhs_distortion",
+    "description": "Méo băng VHS: scanline, nhiễu ngang, lệch màu.",
+    "parameters": {
+      "duration": 0.7,
+      "easing": "linear",
+      "jitter": 26,
+      "split": 10
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "pixelate_burst": {
+    "technique": "pixelate_mosaic",
+    "description": "Vỡ hạt vuông (mosaic) tăng dần rồi cắt, rõ lại ở cảnh mới.",
+    "parameters": {
+      "duration": 0.6,
+      "easing": "linear",
+      "size": 48
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "shake_hit": {
+    "technique": "shake_transition",
+    "description": "Rung mạnh kèm nhòe rồi cắt.",
+    "parameters": {
+      "duration": 0.35,
+      "easing": "linear",
+      "amplitude": 36,
+      "rotate": 2.5,
+      "blur": 6
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "text_graphic_wipe_brand": {
+    "technique": "text_graphic_wipe",
+    "description": "Tấm màu thương hiệu quét qua khung, có thể kèm chữ; cảnh đổi khi tấm phủ kín.",
+    "parameters": {
+      "duration": 1.1,
+      "easing": "ease_in_out",
+      "direction": "right",
+      "color": "#B91C2C",
+      "text": "",
+      "text_color": "#ffffff",
+      "font_size": 96
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  }
+}

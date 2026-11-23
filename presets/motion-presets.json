@@ -1,0 +1,139 @@
+{
+  "_doc": "Preset chuyển động camera. Khóa parameters phải khớp tài liệu kỹ thuật tương ứng. Thời gian tính bằng giây.",
+  "punch_in_subtle": {
+    "technique": "punch_in",
+    "description": "Nhấn nhẹ, gần như không nhận ra. Mặc định cho documentary.",
+    "parameters": {
+      "start_scale": 1.0,
+      "end_scale": 1.07,
+      "duration": 0.35,
+      "easing": "ease_out_cubic",
+      "hold": 1.2,
+      "return": "cut",
+      "anchor_point": "upper_third",
+      "start_offset": -0.1
+    },
+    "allowed_styles": ["documentary", "corporate", "interview", "social"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "punch_in_standard": {
+    "technique": "punch_in",
+    "description": "Nhấn rõ vừa phải cho tổng kết sự kiện, social.",
+    "parameters": {
+      "start_scale": 1.0,
+      "end_scale": 1.12,
+      "duration": 0.3,
+      "easing": "ease_out_cubic",
+      "hold": 1.0,
+      "return": "cut",
+      "anchor_point": "upper_third",
+      "start_offset": -0.1
+    },
+    "allowed_styles": ["corporate", "event_recap", "social"],
+    "forbidden_styles": ["documentary"],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "punch_in_aggressive": {
+    "technique": "punch_in",
+    "description": "Mạnh, nhanh cho short-form năng lượng cao.",
+    "parameters": {
+      "start_scale": 1.0,
+      "end_scale": 1.25,
+      "duration": 0.25,
+      "easing": "ease_out_quad",
+      "hold": 0.8,
+      "return": "cut",
+      "anchor_point": "face",
+      "start_offset": -0.05
+    },
+    "allowed_styles": ["social", "short_form_high_energy"],
+    "forbidden_styles": ["documentary", "corporate", "cinematic"],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "punch_in_double": {
+    "technique": "punch_in",
+    "description": "Hai lần zoom liên tiếp tạo nhịp hài hước. Chỉ dùng có chủ đích.",
+    "parameters": {
+      "start_scale": 1.0,
+      "end_scale": 1.16,
+      "duration": 0.22,
+      "easing": "ease_out_quad",
+      "hold": 0.4,
+      "return": "keep",
+      "anchor_point": "face",
+      "start_offset": 0.0,
+      "repeat": 2,
+      "repeat_gap": 0.25
+    },
+    "allowed_styles": ["comedy", "short_form_high_energy"],
+    "forbidden_styles": ["documentary", "corporate"],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "punch_out_subtle": {
+    "technique": "punch_out",
+    "description": "Clip bắt đầu ở khung đã zoom nhẹ rồi lùi ra mở không gian. Documentary.",
+    "parameters": {
+      "start_scale": 1.08,
+      "duration": 0.8,
+      "easing": "ease_out_cubic",
+      "anchor_point": "upper_third",
+      "start_offset": 0
+    },
+    "allowed_styles": ["all"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "punch_out_standard": {
+    "technique": "punch_out",
+    "description": "Lùi ra rõ hơn, dùng kết đoạn hoặc mở khung rộng.",
+    "parameters": {
+      "start_scale": 1.15,
+      "duration": 0.7,
+      "easing": "ease_out_cubic",
+      "anchor_point": "upper_third",
+      "start_offset": 0
+    },
+    "allowed_styles": ["corporate", "event_recap", "social", "interview"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "slow_push_subtle": {
+    "technique": "slow_push",
+    "description": "Đẩy rất chậm, gần như không nhận ra; cho b-roll tĩnh và khoảnh khắc trầm. Mặc định cho documentary.",
+    "parameters": {
+      "start_scale": 1.0,
+      "end_scale": 1.04,
+      "duration": 0,
+      "easing": "ease_in_out",
+      "anchor_point": "center",
+      "start_offset": 0
+    },
+    "allowed_styles": ["all"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "slow_push_standard": {
+    "technique": "slow_push",
+    "description": "Đẩy chậm thấy rõ, tạo cảm giác tiến vào chủ thể.",
+    "parameters": {
+      "start_scale": 1.0,
+      "end_scale": 1.08,
+      "duration": 0,
+      "easing": "ease_in_out",
+      "anchor_point": "center",
+      "start_offset": 0
+    },
+    "allowed_styles": ["corporate", "event_recap", "social", "interview"],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  }
+}

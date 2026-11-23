@@ -1,0 +1,4 @@
+node_modules/
+projects/*/proxy/
+projects/*/out/
+projects/*/.bundle/

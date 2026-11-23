@@ -1,0 +1,713 @@
+{
+  "_doc": "Đăng ký phông dùng được trong renderer. Mọi phông đều có subset tiếng Việt (kiểm tra bằng getInfo() của @remotion/google-fonts). Vai trò: heading (tiêu đề), emphasis (chữ nhấn), subtitle (phụ đề), body (thân bài), accent (điểm nhấn trang trí, chỉ dùng cụm ngắn). Phông viết tay, bay bổng và đậm chỉ dùng cho chữ ngắn, không dùng cho phụ đề (khả năng đọc quan trọng hơn phong cách).",
+  "default_family": "Inter",
+  "categories": {
+    "thương hiệu": "Phông mặc định theo giao diện Rikkei Edu",
+    "gọn gàng": "Sans sạch, dễ đọc: phụ đề, thân bài",
+    "dễ thương": "Tròn, thân thiện, vui: vlog nhẹ, giáo dục, trẻ em",
+    "viết tay": "Nét bút tay: ghi chú, nhật ký, chú thích ngắn",
+    "tròn mềm": "Hình học tròn mềm: công nghệ nhẹ, ứng dụng",
+    "bay bổng": "Chữ thảo, bút lông: tiêu đề ngắn, lời chúc",
+    "sang": "Serif editorial: documentary khi cần serif, sang trọng",
+    "mạnh": "Display đậm: tiêu đề ngắn, thể thao, gaming",
+    "công nghệ": "Vuông góc, kỹ thuật: công nghệ, dữ liệu, game"
+  },
+  "fonts": {
+    "Inter": {
+      "module": "Inter",
+      "category": "thương hiệu",
+      "vietnamese": true,
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "traits": "Sans trung tính, rất dễ đọc; phông thương hiệu mặc định",
+      "good_for": [
+        "mọi vai trò",
+        "phụ đề",
+        "lower third",
+        "tiêu đề"
+      ],
+      "avoid_for": [
+        "poster cinematic"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "subtitle",
+        "body"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 40
+    },
+    "Be Vietnam Pro": {
+      "module": "BeVietnamPro",
+      "category": "gọn gàng",
+      "vietnamese": true,
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "traits": "Sans hiện đại thiết kế riêng cho tiếng Việt, dấu rõ",
+      "good_for": [
+        "phụ đề",
+        "thân bài",
+        "tên người",
+        "mọi style"
+      ],
+      "avoid_for": [],
+      "roles": [
+        "heading",
+        "emphasis",
+        "subtitle",
+        "body"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 40
+    },
+    "Lexend": {
+      "module": "Lexend",
+      "category": "gọn gàng",
+      "vietnamese": true,
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "traits": "Sans rộng, thiết kế để tăng khả năng đọc",
+      "good_for": [
+        "phụ đề",
+        "giáo dục",
+        "nội dung cần dễ đọc",
+        "thân bài"
+      ],
+      "avoid_for": [
+        "phong cách cổ điển"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "subtitle",
+        "body"
+      ],
+      "default_heading_weight": 600,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 40
+    },
+    "Quicksand": {
+      "module": "Quicksand",
+      "category": "dễ thương",
+      "vietnamese": true,
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "traits": "Sans tròn nhẹ, thân thiện, hiện đại",
+      "good_for": [
+        "vlog nhẹ nhàng",
+        "giáo dục trẻ em",
+        "lifestyle",
+        "chữ nhấn vừa"
+      ],
+      "avoid_for": [
+        "nội dung nghiêm trang",
+        "chữ nhỏ trên nền rối (nét mảnh, dùng ≥ 500)"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "subtitle",
+        "body"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 44
+    },
+    "Nunito": {
+      "module": "Nunito",
+      "category": "dễ thương",
+      "vietnamese": true,
+      "weights": [
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "traits": "Sans đầu tròn, ấm, rất dễ đọc",
+      "good_for": [
+        "thân bài thân thiện",
+        "phụ đề thân thiện",
+        "giáo dục",
+        "ứng dụng"
+      ],
+      "avoid_for": [
+        "cinematic",
+        "documentary trang trọng"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "subtitle",
+        "body"
+      ],
+      "default_heading_weight": 800,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 40
+    },
+    "Mali": {
+      "module": "Mali",
+      "category": "dễ thương",
+      "vietnamese": true,
+      "weights": [
+        200,
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "traits": "Kiểu chữ bút lông tròn, nét đều, dễ thương",
+      "good_for": [
+        "vlog",
+        "tiêu đề dễ thương",
+        "chữ nhấn ngắn"
+      ],
+      "avoid_for": [
+        "đoạn dài",
+        "phụ đề",
+        "nội dung nghiêm túc"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 600,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 56
+    },
+    "Baloo 2": {
+      "module": "Baloo2",
+      "category": "dễ thương",
+      "vietnamese": true,
+      "weights": [
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "traits": "Sans tròn đậm, vui, nổi bật",
+      "good_for": [
+        "tiêu đề vui",
+        "trẻ em",
+        "bán lẻ",
+        "sticker text"
+      ],
+      "avoid_for": [
+        "documentary",
+        "nội dung trang trọng"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "subtitle"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 48
+    },
+    "Grandstander": {
+      "module": "Grandstander",
+      "category": "dễ thương",
+      "vietnamese": true,
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "traits": "Chữ chơi đùa, nét dày, hơi nghiêng ngả",
+      "good_for": [
+        "tiêu đề vui",
+        "chữ nhấn kiểu sticker",
+        "nội dung trẻ em"
+      ],
+      "avoid_for": [
+        "nội dung nghiêm túc",
+        "phụ đề",
+        "đoạn dài"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 800,
+      "default_body_weight": 600,
+      "min_size_px_1080p": 56
+    },
+    "Playpen Sans": {
+      "module": "PlaypenSans",
+      "category": "viết tay",
+      "vietnamese": true,
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "traits": "Nét bút viết tay kiểu học trò, thân mật",
+      "good_for": [
+        "ghi chú",
+        "nhật ký",
+        "caption thân mật"
+      ],
+      "avoid_for": [
+        "đoạn dài",
+        "phụ đề",
+        "nội dung nghiêm túc"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 600,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 56
+    },
+    "Itim": {
+      "module": "Itim",
+      "category": "viết tay",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Viết tay tròn, nét vừa, gần gũi",
+      "good_for": [
+        "caption thân mật",
+        "chú thích",
+        "tiêu đề nhẹ"
+      ],
+      "avoid_for": [
+        "phụ đề",
+        "nội dung trang trọng"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 56
+    },
+    "Pangolin": {
+      "module": "Pangolin",
+      "category": "viết tay",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Viết tay gọn gàng, dễ đọc",
+      "good_for": [
+        "ghi chú",
+        "bảng/lớp học",
+        "chú thích"
+      ],
+      "avoid_for": [
+        "phụ đề",
+        "nội dung trang trọng"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 56
+    },
+    "Sriracha": {
+      "module": "Sriracha",
+      "category": "viết tay",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Bút lông nghiêng, cá tính, hơi bụi",
+      "good_for": [
+        "tiêu đề cá tính",
+        "ẩm thực",
+        "lifestyle"
+      ],
+      "avoid_for": [
+        "đoạn dài",
+        "phụ đề",
+        "nội dung nghiêm túc"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 60
+    },
+    "Patrick Hand": {
+      "module": "PatrickHand",
+      "category": "viết tay",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Viết tay hẹp, sạch, kiểu truyện tranh/doodle",
+      "good_for": [
+        "chú thích",
+        "giáo dục",
+        "doodle",
+        "ghi chú"
+      ],
+      "avoid_for": [
+        "phụ đề",
+        "nội dung trang trọng"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 56
+    },
+    "Fuzzy Bubbles": {
+      "module": "FuzzyBubbles",
+      "category": "viết tay",
+      "vietnamese": true,
+      "weights": [
+        400,
+        700
+      ],
+      "traits": "Viết tay mềm, nét bút chì xù nhẹ",
+      "good_for": [
+        "ghi chú",
+        "nhật ký",
+        "chữ nhấn nhẹ nhàng"
+      ],
+      "avoid_for": [
+        "phụ đề",
+        "cỡ nhỏ"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 56
+    },
+    "Comfortaa": {
+      "module": "Comfortaa",
+      "category": "tròn mềm",
+      "vietnamese": true,
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "traits": "Hình học tròn, mềm, hiện đại, thoáng",
+      "good_for": [
+        "công nghệ nhẹ nhàng",
+        "ứng dụng",
+        "sức khỏe/wellness",
+        "tiêu đề"
+      ],
+      "avoid_for": [
+        "đoạn dài cỡ nhỏ",
+        "nội dung nặng nề"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 52
+    },
+    "Pacifico": {
+      "module": "Pacifico",
+      "category": "bay bổng",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Chữ bút lông liền nét, hoài cổ vui tươi",
+      "good_for": [
+        "tiêu đề ngắn",
+        "thương hiệu vui",
+        "du lịch",
+        "ẩm thực"
+      ],
+      "avoid_for": [
+        "câu dài",
+        "chữ nhỏ",
+        "phụ đề",
+        "nội dung nghiêm túc"
+      ],
+      "roles": [
+        "heading",
+        "accent"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 72
+    },
+    "Dancing Script": {
+      "module": "DancingScript",
+      "category": "bay bổng",
+      "vietnamese": true,
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "traits": "Chữ thảo bay nhẹ, nét thanh",
+      "good_for": [
+        "lời chúc",
+        "cưới hỏi",
+        "câu trích",
+        "tiêu đề lãng mạn"
+      ],
+      "avoid_for": [
+        "chữ nhỏ",
+        "phụ đề",
+        "câu dài"
+      ],
+      "roles": [
+        "heading",
+        "accent"
+      ],
+      "default_heading_weight": 600,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 72
+    },
+    "Lobster": {
+      "module": "Lobster",
+      "category": "bay bổng",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Script đậm hoài cổ, nhận diện mạnh",
+      "good_for": [
+        "tiêu đề món ăn",
+        "quán cà phê",
+        "biển hiệu vui"
+      ],
+      "avoid_for": [
+        "câu dài",
+        "chữ nhỏ",
+        "phụ đề",
+        "nội dung nghiêm túc"
+      ],
+      "roles": [
+        "heading",
+        "accent"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 72
+    },
+    "Charm": {
+      "module": "Charm",
+      "category": "bay bổng",
+      "vietnamese": true,
+      "weights": [
+        400,
+        700
+      ],
+      "traits": "Script thanh lịch kiểu nghệ thuật",
+      "good_for": [
+        "tiêu đề nhẹ nhàng",
+        "câu trích",
+        "lời chúc"
+      ],
+      "avoid_for": [
+        "chữ nhỏ",
+        "phụ đề",
+        "câu dài"
+      ],
+      "roles": [
+        "heading",
+        "accent"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 72
+    },
+    "Playfair Display": {
+      "module": "PlayfairDisplay",
+      "category": "sang",
+      "vietnamese": true,
+      "weights": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "traits": "Serif editorial tương phản cao, sang trọng",
+      "good_for": [
+        "documentary (khi cần serif)",
+        "luxury",
+        "tiêu đề chương",
+        "câu trích"
+      ],
+      "avoid_for": [
+        "gaming",
+        "công nghệ",
+        "chữ nhỏ"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 56
+    },
+    "Anton": {
+      "module": "Anton",
+      "category": "mạnh",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Condensed rất đậm, đập mạnh",
+      "good_for": [
+        "tiêu đề short-form",
+        "thể thao",
+        "chữ nhấn ngắn"
+      ],
+      "avoid_for": [
+        "câu dài",
+        "phụ đề",
+        "documentary"
+      ],
+      "roles": [
+        "heading",
+        "emphasis"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 64
+    },
+    "Bungee": {
+      "module": "Bungee",
+      "category": "mạnh",
+      "vietnamese": true,
+      "weights": [
+        400
+      ],
+      "traits": "Display khối vuông kiểu biển hiệu đô thị; chỉ có chữ HOA (chữ thường hiển thị thành chữ hoa)",
+      "good_for": [
+        "biển tên",
+        "gaming",
+        "đô thị",
+        "chữ nhấn ngắn"
+      ],
+      "avoid_for": [
+        "câu dài",
+        "phụ đề",
+        "nội dung trang trọng"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 400,
+      "default_body_weight": 400,
+      "min_size_px_1080p": 64
+    },
+    "Chakra Petch": {
+      "module": "ChakraPetch",
+      "category": "công nghệ",
+      "vietnamese": true,
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "traits": "Vuông góc kiểu sci-fi, kỹ thuật",
+      "good_for": [
+        "công nghệ",
+        "game",
+        "dữ liệu",
+        "tiêu đề kỹ thuật"
+      ],
+      "avoid_for": [
+        "nội dung truyền thống",
+        "cảm xúc dịu"
+      ],
+      "roles": [
+        "heading",
+        "emphasis",
+        "accent"
+      ],
+      "default_heading_weight": 700,
+      "default_body_weight": 500,
+      "min_size_px_1080p": 52
+    }
+  }
+}
