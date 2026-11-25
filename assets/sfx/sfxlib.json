@@ -1,0 +1,638 @@
+{
+"01_hook/alert_beep_choi_tai.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 0.45,
+"loop": false
+},
+"01_hook/tinnitus_ring_u_tai.wav": {
+"a": 0.0,
+"v": 0.12,
+"sec": 2.0,
+"loop": false
+},
+"01_hook/glitch_dien_tu.wav": {
+"a": 0.0,
+"v": 0.35,
+"sec": 0.621688,
+"loop": false
+},
+"01_hook/record_scratch_khoan_da.wav": {
+"a": 0.0,
+"v": 0.4,
+"sec": 0.55,
+"loop": false
+},
+"01_hook/boom_bass_sau.wav": {
+"a": 0.0,
+"v": 0.55,
+"sec": 2.6,
+"loop": false
+},
+"01_hook/reverse_hit_hut_vao.wav": {
+"a": 1.2,
+"v": 0.45,
+"sec": 1.7,
+"loop": false
+},
+"01_hook/camera_flash_chup.wav": {
+"a": 0.0,
+"v": 0.4,
+"sec": 0.52,
+"loop": false
+},
+"02_chuyen_canh/whoosh_ngan.wav": {
+"a": 0.19,
+"v": 0.35,
+"sec": 0.35,
+"loop": false
+},
+"02_chuyen_canh/whoosh_dai_dien_anh.wav": {
+"a": 0.7,
+"v": 0.35,
+"sec": 2.2,
+"loop": false
+},
+"02_chuyen_canh/whoosh_xuong_tram.wav": {
+"a": 0.21,
+"v": 0.35,
+"sec": 0.6,
+"loop": false
+},
+"02_chuyen_canh/swish_doi_vut_vut.wav": {
+"a": 0.09,
+"v": 0.35,
+"sec": 0.35,
+"loop": false
+},
+"02_chuyen_canh/swipe_ui_luot.wav": {
+"a": 0.06,
+"v": 0.3,
+"sec": 0.16,
+"loop": false
+},
+"02_chuyen_canh/zoom_in_punch.wav": {
+"a": 0.26,
+"v": 0.45,
+"sec": 0.46,
+"loop": false
+},
+"02_chuyen_canh/glitch_cut_ngan.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 0.22,
+"loop": false
+},
+"03_nhan_manh/pop_chu_hien.wav": {
+"a": 0.0,
+"v": 0.35,
+"sec": 0.07,
+"loop": false
+},
+"03_nhan_manh/bubble_pop_nhe.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 0.05,
+"loop": false
+},
+"03_nhan_manh/ding_sang.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 1.4,
+"loop": false
+},
+"03_nhan_manh/sparkle_lap_lanh.wav": {
+"a": 0.0,
+"v": 0.25,
+"sec": 1.8,
+"loop": false
+},
+"03_nhan_manh/thump_chu_to.wav": {
+"a": 0.0,
+"v": 0.5,
+"sec": 0.25,
+"loop": false
+},
+"03_nhan_manh/impact_nho_chot_y.wav": {
+"a": 0.0,
+"v": 0.5,
+"sec": 1.6,
+"loop": false
+},
+"03_nhan_manh/ka_ching_tien_ve.wav": {
+"a": 0.08,
+"v": 0.35,
+"sec": 1.04,
+"loop": false
+},
+"03_nhan_manh/notification_thong_bao.wav": {
+"a": 0.0,
+"v": 0.35,
+"sec": 0.46,
+"loop": false
+},
+"03_nhan_manh/mouse_click.wav": {
+"a": 0.0,
+"v": 0.5,
+"sec": 0.12,
+"loop": false
+},
+"03_nhan_manh/go_phim_typing_2s.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 2.0,
+"loop": false
+},
+"03_nhan_manh/dung_tick_correct.wav": {
+"a": 0.0,
+"v": 0.35,
+"sec": 0.39,
+"loop": false
+},
+"04_don_dap/riser_4s.wav": {
+"a": 4.0,
+"v": 0.35,
+"sec": 4.0,
+"loop": false
+},
+"04_don_dap/riser_8s_dai.wav": {
+"a": 8.0,
+"v": 0.3,
+"sec": 8.0,
+"loop": false
+},
+"04_don_dap/nhip_tim_heartbeat_loop.wav": {
+"a": 0.0,
+"v": 0.4,
+"sec": 0.857,
+"loop": true
+},
+"04_don_dap/dong_ho_tick_loop.wav": {
+"a": 0.0,
+"v": 0.4,
+"sec": 1.0,
+"loop": true
+},
+"04_don_dap/pulse_tang_toc_3s.wav": {
+"a": 3.0,
+"v": 0.4,
+"sec": 3.25,
+"loop": false
+},
+"04_don_dap/drum_roll_2s.wav": {
+"a": 2.0,
+"v": 0.35,
+"sec": 3.5,
+"loop": false
+},
+"04_don_dap/braam_cang_thang.wav": {
+"a": 0.0,
+"v": 0.35,
+"sec": 4.0,
+"loop": false
+},
+"05_cham_hoi_hop/drone_tram_6s_loop.wav": {
+"a": 0.0,
+"v": 0.15,
+"sec": 6.0,
+"loop": true
+},
+"05_cham_hoi_hop/sub_drop_tut.wav": {
+"a": 0.0,
+"v": 0.4,
+"sec": 1.5,
+"loop": false
+},
+"05_cham_hoi_hop/whoosh_cham_vang.wav": {
+"a": 0.8,
+"v": 0.3,
+"sec": 3.6,
+"loop": false
+},
+"05_cham_hoi_hop/piano_note_tram_lang.wav": {
+"a": 0.0,
+"v": 0.25,
+"sec": 5.5,
+"loop": false
+},
+"05_cham_hoi_hop/gio_nen_ambience_loop.wav": {
+"a": 0.0,
+"v": 0.1,
+"sec": 6.0,
+"loop": true
+},
+"06_nghi_nha/tape_stop_dung_hinh.wav": {
+"a": 0.0,
+"v": 0.4,
+"sec": 0.9,
+"loop": false
+},
+"06_nghi_nha/chime_ket_thuc.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 3.9,
+"loop": false
+},
+"06_nghi_nha/hit_nhe_tha_long.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 2.8,
+"loop": false
+},
+"06_nghi_nha/room_tone_im_lang_1s.wav": {
+"a": 0.0,
+"v": 1.0,
+"sec": 1.0,
+"loop": true
+},
+"06_nghi_nha/breath_tho_ra.wav": {
+"a": 0.3,
+"v": 0.25,
+"sec": 0.8,
+"loop": false
+},
+"07_hai_phan_ung/boing_lo_xo.wav": {
+"a": 0.0,
+"v": 0.35,
+"sec": 0.6,
+"loop": false
+},
+"07_hai_phan_ung/sai_buzzer.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 0.5,
+"loop": false
+},
+"07_hai_phan_ung/slide_whistle_truot.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 1.0,
+"loop": false
+},
+"07_hai_phan_ung/de_men_im_lang_ngai.wav": {
+"a": 0.0,
+"v": 0.3,
+"sec": 3.0,
+"loop": false
+},
+"07_hai_phan_ung/dun_dun_dun_kich_tinh.wav": {
+"a": 0.7,
+"v": 0.4,
+"sec": 3.1,
+"loop": false
+},
+"01_hook/mixkit_788_big-cinematic-impact.mp3": {
+"a": 2.18,
+"v": 0.5,
+"sec": 7.94,
+"loop": false
+},
+"01_hook/mixkit_1143_cinematic-whoosh-deep-impact.mp3": {
+"a": 0.64,
+"v": 0.5,
+"sec": 4.08,
+"loop": false
+},
+"01_hook/mixkit_2908_movie-trailer-epic-impact.mp3": {
+"a": 0.98,
+"v": 0.45,
+"sec": 4.87,
+"loop": false
+},
+"01_hook/mixkit_679_glitchy-cinematic-suspense-hit.mp3": {
+"a": 0.26,
+"v": 0.45,
+"sec": 13.33,
+"loop": false
+},
+"01_hook/mixkit_2950_intro-text-glitch.mp3": {
+"a": 1.32,
+"v": 0.4,
+"sec": 4.59,
+"loop": false
+},
+"01_hook/mixkit_702_record-player-vinyl-scratch.mp3": {
+"a": 0.08,
+"v": 0.4,
+"sec": 1.11,
+"loop": false
+},
+"01_hook/mixkit_704_vinyl-stop-fast-scratch.mp3": {
+"a": 0.02,
+"v": 0.4,
+"sec": 3.73,
+"loop": false
+},
+"01_hook/mixkit_1133_camera-shutter-click.mp3": {
+"a": 0.19,
+"v": 0.45,
+"sec": 0.35,
+"loop": false
+},
+"01_hook/mixkit_498_deep-heartbeat-impact.mp3": {
+"a": 0.09,
+"v": 0.45,
+"sec": 3.47,
+"loop": false
+},
+"02_chuyen_canh/mixkit_1492_cinematic-whoosh-fast-transition.mp3": {
+"a": 1.07,
+"v": 0.35,
+"sec": 1.33,
+"loop": false
+},
+"02_chuyen_canh/mixkit_1490_fast-whoosh-transition.mp3": {
+"a": 0.72,
+"v": 0.35,
+"sec": 1.76,
+"loop": false
+},
+"02_chuyen_canh/mixkit_1489_air-woosh.mp3": {
+"a": 0.71,
+"v": 0.3,
+"sec": 2.32,
+"loop": false
+},
+"02_chuyen_canh/mixkit_3005_explainer-video-pops-whoosh-light-pop.mp3": {
+"a": 0.02,
+"v": 0.35,
+"sec": 0.18,
+"loop": false
+},
+"02_chuyen_canh/mixkit_166_fast-small-sweep-transition.mp3": {
+"a": 0.33,
+"v": 0.3,
+"sec": 0.78,
+"loop": false
+},
+"02_chuyen_canh/mixkit_3120_technology-transition-slide.mp3": {
+"a": 0.12,
+"v": 0.35,
+"sec": 1.65,
+"loop": false
+},
+"02_chuyen_canh/mixkit_3115_fast-transitions-swoosh.mp3": {
+"a": 0.11,
+"v": 0.35,
+"sec": 0.57,
+"loop": false
+},
+"02_chuyen_canh/mixkit_1088_tape-rewind-cinematic-transition.mp3": {
+"a": 1.35,
+"v": 0.4,
+"sec": 4.39,
+"loop": false
+},
+"02_chuyen_canh/mixkit_1093_glitch-sci-fi-rewind-transition.mp3": {
+"a": 0.36,
+"v": 0.4,
+"sec": 3.7,
+"loop": false
+},
+"02_chuyen_canh/mixkit_2638_magic-transition-sweep-presentation.mp3": {
+"a": 1.3,
+"v": 0.35,
+"sec": 3.94,
+"loop": false
+},
+"02_chuyen_canh/mixkit_2919_movie-trailer-whoosh-hit.mp3": {
+"a": 3.16,
+"v": 0.4,
+"sec": 4.53,
+"loop": false
+},
+"03_nhan_manh/mixkit_2358_long-pop.mp3": {
+"a": 0.03,
+"v": 0.35,
+"sec": 0.48,
+"loop": false
+},
+"03_nhan_manh/mixkit_2354_message-pop-alert.mp3": {
+"a": 0.06,
+"v": 0.35,
+"sec": 1.07,
+"loop": false
+},
+"03_nhan_manh/mixkit_2364_hard-pop-click.mp3": {
+"a": 0.04,
+"v": 0.35,
+"sec": 1.17,
+"loop": false
+},
+"03_nhan_manh/mixkit_2357_bubble-pop-up-alert-notification.mp3": {
+"a": 0.04,
+"v": 0.35,
+"sec": 0.38,
+"loop": false
+},
+"03_nhan_manh/mixkit_933_bell-notification.mp3": {
+"a": 0.47,
+"v": 0.3,
+"sec": 3.36,
+"loop": false
+},
+"03_nhan_manh/mixkit_600_achievement-bell.mp3": {
+"a": 0.17,
+"v": 0.3,
+"sec": 2.4,
+"loop": false
+},
+"03_nhan_manh/mixkit_2870_correct-answer-tone.mp3": {
+"a": 0.02,
+"v": 0.35,
+"sec": 1.96,
+"loop": false
+},
+"03_nhan_manh/mixkit_2350_magic-sparkle-whoosh.mp3": {
+"a": 0.82,
+"v": 0.3,
+"sec": 3.5,
+"loop": false
+},
+"03_nhan_manh/mixkit_275_fast-double-click-on-mouse.mp3": {
+"a": 0.2,
+"v": 0.45,
+"sec": 0.47,
+"loop": false
+},
+"03_nhan_manh/mixkit_1109_select-click.mp3": {
+"a": 0.06,
+"v": 0.45,
+"sec": 1.1,
+"loop": false
+},
+"03_nhan_manh/mixkit_2568_cool-interface-click-tone.mp3": {
+"a": 0.0,
+"v": 0.35,
+"sec": 0.2,
+"loop": false
+},
+"03_nhan_manh/mixkit_2531_typing-on-a-laptop-keyboard.mp3": {
+"a": 0.0,
+"v": 0.3,
+"sec": 19.63,
+"loop": true
+},
+"03_nhan_manh/mixkit_1993_clinking-coins.mp3": {
+"a": 0.5,
+"v": 0.35,
+"sec": 1.02,
+"loop": false
+},
+"03_nhan_manh/mixkit_1999_gold-coin-prize.mp3": {
+"a": 0.17,
+"v": 0.35,
+"sec": 1.96,
+"loop": false
+},
+"03_nhan_manh/mixkit_2299_short-bass-hit.mp3": {
+"a": 0.08,
+"v": 0.45,
+"sec": 1.1,
+"loop": false
+},
+"04_don_dap/mixkit_790_cinematic-trailer-riser.mp3": {
+"a": 2.53,
+"v": 0.3,
+"sec": 2.58,
+"loop": false
+},
+"04_don_dap/mixkit_632_cinematic-drama-riser.mp3": {
+"a": 26.15,
+"v": 0.3,
+"sec": 31.0,
+"loop": false
+},
+"04_don_dap/mixkit_1144_short-space-stutter-intro-riser.mp3": {
+"a": 6.19,
+"v": 0.3,
+"sec": 6.56,
+"loop": false
+},
+"04_don_dap/mixkit_678_trailer-cinematic-suspense-swell.mp3": {
+"a": 0.42,
+"v": 0.3,
+"sec": 12.44,
+"loop": false
+},
+"04_don_dap/mixkit_488_cinematic-transition-swoosh-heartbeat-trailer.mp3": {
+"a": 1.78,
+"v": 0.35,
+"sec": 8.11,
+"loop": false
+},
+"04_don_dap/mixkit_497_cinematic-heartbeat-ambience.mp3": {
+"a": 0.0,
+"v": 0.3,
+"sec": 5.86,
+"loop": true
+},
+"04_don_dap/mixkit_1045_tick-tock-clock-timer.mp3": {
+"a": 0.0,
+"v": 0.35,
+"sec": 16.85,
+"loop": true
+},
+"04_don_dap/mixkit_577_tension-and-suspense-drum-roll.mp3": {
+"a": 5.3,
+"v": 0.35,
+"sec": 14.03,
+"loop": false
+},
+"04_don_dap/mixkit_2298_mystwrious-bass-pulse.mp3": {
+"a": 0.0,
+"v": 0.35,
+"sec": 16.56,
+"loop": true
+},
+"04_don_dap/mixkit_667_game-show-suspense-waiting.mp3": {
+"a": 0.0,
+"v": 0.3,
+"sec": 41.81,
+"loop": true
+},
+"05_cham_hoi_hop/mixkit_685_suspense-mystery-bass.mp3": {
+"a": 0.0,
+"v": 0.25,
+"sec": 65.58,
+"loop": true
+},
+"05_cham_hoi_hop/mixkit_2297_bass-rumble-hum.mp3": {
+"a": 0.0,
+"v": 0.2,
+"sec": 7.0,
+"loop": true
+},
+"05_cham_hoi_hop/mixkit_677_cinematic-glass-hit-suspense.mp3": {
+"a": 0.06,
+"v": 0.35,
+"sec": 4.72,
+"loop": false
+},
+"06_nghi_nha/mixkit_711_vinyl-record-slow-down.mp3": {
+"a": 5.16,
+"v": 0.4,
+"sec": 9.48,
+"loop": false
+},
+"06_nghi_nha/mixkit_937_happy-bells-notification.mp3": {
+"a": 1.12,
+"v": 0.3,
+"sec": 3.02,
+"loop": false
+},
+"06_nghi_nha/mixkit_2393_light-rain-loop.mp3": {
+"a": 0.0,
+"v": 0.15,
+"sec": 15.0,
+"loop": true
+},
+"07_hai_phan_ung/mixkit_2894_boing-hit-sound.mp3": {
+"a": 0.11,
+"v": 0.35,
+"sec": 1.24,
+"loop": false
+},
+"07_hai_phan_ung/mixkit_948_wrong-answer-bass-buzzer.mp3": {
+"a": 0.02,
+"v": 0.35,
+"sec": 2.55,
+"loop": false
+},
+"07_hai_phan_ung/mixkit_946_wrong-answer-fail-notification.mp3": {
+"a": 0.14,
+"v": 0.35,
+"sec": 1.95,
+"loop": false
+},
+"07_hai_phan_ung/mixkit_472_slow-sad-trombone-fail.mp3": {
+"a": 2.75,
+"v": 0.35,
+"sec": 6.02,
+"loop": false
+},
+"07_hai_phan_ung/mixkit_1780_single-cricket-screech.mp3": {
+"a": 0.2,
+"v": 0.35,
+"sec": 1.78,
+"loop": false
+},
+"07_hai_phan_ung/mixkit_424_crowd-laugh.mp3": {
+"a": 1.08,
+"v": 0.3,
+"sec": 4.12,
+"loop": false
+},
+"07_hai_phan_ung/mixkit_476_conference-audience-clapping-strongly.mp3": {
+"a": 1.84,
+"v": 0.3,
+"sec": 8.6,
+"loop": false
+},
+"07_hai_phan_ung/mixkit_2882_cartoon-laugh-voice.mp3": {
+"a": 0.43,
+"v": 0.3,
+"sec": 2.08,
+"loop": false
+}
+}

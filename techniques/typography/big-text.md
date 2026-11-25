@@ -34,7 +34,7 @@ Khối nền `_text_style_base`; giá trị của `big_text_solid` trừ khi ghi
 | `hold` (nội dung) | `0.8 + 0.3 × số_từ`, ≥ 1.0 | ≥ công thức; nên ≤ 3.0 | giây | low |
 | `fit_width` | 0.9 (gradient 0.88) | 0.3–1, hoặc 0 để tắt (validate) | tỉ lệ bề ngang khung | medium |
 | `max_font_size` | 520 (gradient 420) | cỡ trần tính cho 1080p | px @1080p | low |
-| `font_size` | 72 (chỉ dùng khi `fit_width` = 0) | 12–400 (validate) | px @1080p | low |
+| `font_size` | 72 (chỉ dùng khi `fit_width` = 0) | 12–600 (validate) | px @1080p | low |
 | `font_family` | Anton (gradient: Inter, weight 900) | phông có vai trò `emphasis`/`heading`/`accent` | – | medium |
 | `text_transform` | `uppercase` (gradient `none`) | `none`, `uppercase`, `lowercase` | – | low |
 | `line_height` | 0.95 (gradient 1.1 từ nền) | – | hệ số | low |

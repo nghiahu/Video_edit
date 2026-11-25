@@ -75,6 +75,8 @@ EDL là **cầu nối duy nhất** giữa phần ra quyết định (skill này)
 | `video_id` | Khớp `metadata/<video_id>` của `Video-analysis` |
 | `source_in` / `source_out` | Giây trong file nguồn |
 | `audio` | `keep` (giữ tiếng gốc), `mute`, hoặc `duck` (hạ nhỏ dưới nhạc/voice khác) |
+| `frame_x`, `frame_y` | (tuỳ chọn, mặc định 0.5) vị trí khung cắt cố định khi tỉ lệ nguồn khác khung xuất (ví dụ footage 16:9 xuất 9:16): 0 = sát trái/trên, 1 = sát phải/dưới. Là khung tĩnh, **không phải zoom** (không vi phạm `R-ZOOM-0`). `subject_box` tính theo khung đã cắt |
+| `subject_box` | (tuỳ chọn) `[x0, y0, x1, y1]` tỉ lệ khung hình (0–1) của chủ thể chính trong clip; `validate` cảnh báo khi khối chữ ước lượng chồng lên > 20% (xem R-SUBJ-1 trong `core/composition.md`). Ước lượng thô: chưa theo dõi chủ thể chuyển động, phải tự khai báo theo từng clip |
 
 ### `decisions[]`
 | Trường | Ý nghĩa |

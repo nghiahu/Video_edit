@@ -61,7 +61,8 @@ function probe(file) {
 function gatherSources(edl) {
   const sources = {};
   const info = {};
-  for (const id of new Set(edl.timeline.clips.map((c) => c.video_id))) {
+  const extra = (edl.decisions || []).filter((d) => d.technique === 'layout_cards' && d.status !== 'removed' && d.parameters?.screen_video).map((d) => d.parameters.screen_video);
+  for (const id of new Set([...edl.timeline.clips.map((c) => c.video_id), ...extra])) {
     const p = findSource(id);
     if (!p) continue;
     sources[id] = p;
@@ -114,6 +115,12 @@ async function main() {
   console.log(`EDL: ${edl.project.title || edl.project.id} · style ${edl.strategy.style} · ${edl.decisions.length} quyết định`);
   const { sources, info } = gatherSources(edl);
   const report = validateEdl(edl, presets, info);
+  // Ảnh dùng trong EDL (image_float.images, layout_cards.screen_image): đường dẫn tương đối thư mục dự án
+  for (const d of edl.decisions.filter((x) => x.status !== 'removed')) {
+    const imgs = [...(Array.isArray(d.parameters?.images) ? d.parameters.images : []), ...(d.parameters?.screen_image ? [d.parameters.screen_image] : [])];
+    for (const im of imgs) if (!fs.existsSync(path.resolve(projectDir, String(im)))) report.errors.push(`${d.id}: không thấy file ảnh ${im} (tính từ thư mục dự án)`);
+    if (d.parameters?.screen_video && !sources[d.parameters.screen_video]) report.errors.push(`${d.id}: không thấy video nguồn ${d.parameters.screen_video}`);
+  }
   printReport(report);
   if (report.errors.length) die(`EDL không hợp lệ (${report.errors.length} lỗi)`);
   if (args.cmd === 'validate') {
@@ -126,6 +133,8 @@ async function main() {
   const proposed = edl.decisions.filter((d) => d.status === 'proposed');
   let include = ['proposed', 'approved'];
   if (isFinal) {
+    const est = edl.decisions.filter((d) => d.status !== 'removed' && d.parameters?.words_source === 'estimated');
+    if (est.length) die(`Bản cuối bị chặn: ${est.map((d) => d.id).join(', ')} dùng mốc theo từ ước lượng (words_source: estimated), chỉ dành cho bản thử. Thay bằng mốc thật (nhận dạng giọng nói, thủ công hoặc file phụ đề) hoặc bỏ các quyết định đó.`);
     if (proposed.length && !args.flags.has('approve-proposed')) {
       die(
         `Còn ${proposed.length} quyết định chưa được duyệt (${proposed.map((d) => d.id).join(', ')}). ` +
@@ -165,10 +174,18 @@ async function main() {
     resolved.music.file = rel;
   }
 
+  const copyImg = (id, src, i) => {
+    const sp = path.resolve(projectDir, String(src));
+    const rel = `img/${id}_${i}${path.extname(sp).toLowerCase()}`;
+    linkOrCopy(sp, path.join(publicDir, rel));
+    return rel;
+  };
+  for (const b of resolved.textBlocks || []) if (Array.isArray(b.params.images)) b.params = { ...b.params, images: b.params.images.map((im, i) => copyImg(b.id, im, i)) };
+  for (const L of resolved.layouts || []) if (L.params.screen_image) L.screenImage = copyImg(L.id, L.params.screen_image, 's');
   for (const x of resolved.sfx || []) {
     const sp = path.resolve(projectDir, x.file);
     if (!fs.existsSync(sp)) die(`Không thấy file SFX của ${x.id}: ${sp}`);
-    const rel = `sfx/${path.basename(sp)}`;
+    const rel = `sfx/${x.rel || path.basename(sp)}`;
     linkOrCopy(sp, path.join(publicDir, rel));
     x.file = rel;
   }

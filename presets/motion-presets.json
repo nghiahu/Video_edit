@@ -4,16 +4,22 @@
     "technique": "punch_in",
     "description": "Nhấn nhẹ, gần như không nhận ra. Mặc định cho documentary.",
     "parameters": {
-      "start_scale": 1.0,
-      "end_scale": 1.07,
-      "duration": 0.35,
-      "easing": "ease_out_cubic",
-      "hold": 1.2,
-      "return": "cut",
+      "start_scale": 1,
+      "end_scale": 1.1,
+      "duration": 1,
+      "easing": "ease_in_out",
+      "hold": 1,
+      "return": "keep",
       "anchor_point": "upper_third",
-      "start_offset": -0.1
+      "start_offset": -0.1,
+      "return_duration": 0.9
     },
-    "allowed_styles": ["documentary", "corporate", "interview", "social"],
+    "allowed_styles": [
+      "documentary",
+      "corporate",
+      "interview",
+      "social"
+    ],
     "forbidden_styles": [],
     "source_of_values": "convention",
     "confidence": "medium"
@@ -22,17 +28,24 @@
     "technique": "punch_in",
     "description": "Nhấn rõ vừa phải cho tổng kết sự kiện, social.",
     "parameters": {
-      "start_scale": 1.0,
-      "end_scale": 1.12,
-      "duration": 0.3,
-      "easing": "ease_out_cubic",
-      "hold": 1.0,
-      "return": "cut",
+      "start_scale": 1,
+      "end_scale": 1.18,
+      "duration": 0.7,
+      "easing": "ease_in_out",
+      "hold": 1,
+      "return": "keep",
       "anchor_point": "upper_third",
-      "start_offset": -0.1
+      "start_offset": -0.1,
+      "return_duration": 0.7
     },
-    "allowed_styles": ["corporate", "event_recap", "social"],
-    "forbidden_styles": ["documentary"],
+    "allowed_styles": [
+      "corporate",
+      "event_recap",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
     "source_of_values": "convention",
     "confidence": "medium"
   },
@@ -40,7 +53,7 @@
     "technique": "punch_in",
     "description": "Mạnh, nhanh cho short-form năng lượng cao.",
     "parameters": {
-      "start_scale": 1.0,
+      "start_scale": 1,
       "end_scale": 1.25,
       "duration": 0.25,
       "easing": "ease_out_quad",
@@ -49,8 +62,15 @@
       "anchor_point": "face",
       "start_offset": -0.05
     },
-    "allowed_styles": ["social", "short_form_high_energy"],
-    "forbidden_styles": ["documentary", "corporate", "cinematic"],
+    "allowed_styles": [
+      "social",
+      "short_form_high_energy"
+    ],
+    "forbidden_styles": [
+      "documentary",
+      "corporate",
+      "cinematic"
+    ],
     "source_of_values": "convention",
     "confidence": "low"
   },
@@ -58,19 +78,25 @@
     "technique": "punch_in",
     "description": "Hai lần zoom liên tiếp tạo nhịp hài hước. Chỉ dùng có chủ đích.",
     "parameters": {
-      "start_scale": 1.0,
+      "start_scale": 1,
       "end_scale": 1.16,
       "duration": 0.22,
       "easing": "ease_out_quad",
       "hold": 0.4,
       "return": "keep",
       "anchor_point": "face",
-      "start_offset": 0.0,
+      "start_offset": 0,
       "repeat": 2,
       "repeat_gap": 0.25
     },
-    "allowed_styles": ["comedy", "short_form_high_energy"],
-    "forbidden_styles": ["documentary", "corporate"],
+    "allowed_styles": [
+      "comedy",
+      "short_form_high_energy"
+    ],
+    "forbidden_styles": [
+      "documentary",
+      "corporate"
+    ],
     "source_of_values": "convention",
     "confidence": "low"
   },
@@ -79,12 +105,14 @@
     "description": "Clip bắt đầu ở khung đã zoom nhẹ rồi lùi ra mở không gian. Documentary.",
     "parameters": {
       "start_scale": 1.08,
-      "duration": 0.8,
-      "easing": "ease_out_cubic",
+      "duration": 1,
+      "easing": "ease_in_out",
       "anchor_point": "upper_third",
       "start_offset": 0
     },
-    "allowed_styles": ["all"],
+    "allowed_styles": [
+      "all"
+    ],
     "forbidden_styles": [],
     "source_of_values": "convention",
     "confidence": "medium"
@@ -94,12 +122,17 @@
     "description": "Lùi ra rõ hơn, dùng kết đoạn hoặc mở khung rộng.",
     "parameters": {
       "start_scale": 1.15,
-      "duration": 0.7,
-      "easing": "ease_out_cubic",
+      "duration": 0.9,
+      "easing": "ease_in_out",
       "anchor_point": "upper_third",
       "start_offset": 0
     },
-    "allowed_styles": ["corporate", "event_recap", "social", "interview"],
+    "allowed_styles": [
+      "corporate",
+      "event_recap",
+      "social",
+      "interview"
+    ],
     "forbidden_styles": [],
     "source_of_values": "convention",
     "confidence": "low"
@@ -108,14 +141,16 @@
     "technique": "slow_push",
     "description": "Đẩy rất chậm, gần như không nhận ra; cho b-roll tĩnh và khoảnh khắc trầm. Mặc định cho documentary.",
     "parameters": {
-      "start_scale": 1.0,
+      "start_scale": 1,
       "end_scale": 1.04,
       "duration": 0,
       "easing": "ease_in_out",
       "anchor_point": "center",
       "start_offset": 0
     },
-    "allowed_styles": ["all"],
+    "allowed_styles": [
+      "all"
+    ],
     "forbidden_styles": [],
     "source_of_values": "convention",
     "confidence": "medium"
@@ -124,16 +159,64 @@
     "technique": "slow_push",
     "description": "Đẩy chậm thấy rõ, tạo cảm giác tiến vào chủ thể.",
     "parameters": {
-      "start_scale": 1.0,
+      "start_scale": 1,
       "end_scale": 1.08,
       "duration": 0,
       "easing": "ease_in_out",
       "anchor_point": "center",
       "start_offset": 0
     },
-    "allowed_styles": ["corporate", "event_recap", "social", "interview"],
+    "allowed_styles": [
+      "corporate",
+      "event_recap",
+      "social",
+      "interview"
+    ],
     "forbidden_styles": [],
     "source_of_values": "convention",
     "confidence": "low"
+  },
+  "layout_cards_screen_top": {
+    "technique": "layout_cards",
+    "description": "Thẻ màn hình phía trên + thẻ mặt phía dưới, nền là chính clip làm mờ; khung mặt thu từ toàn khung về thẻ (REF_012). Khung tĩnh, không phải zoom.",
+    "parameters": {
+      "hold": null,
+      "screen_image": null,
+      "screen_video": null,
+      "screen_source_in": 0,
+      "screen_fit": "cover",
+      "screen_bg": "#FFFFFF",
+      "face_rect": [
+        0.06,
+        0.5,
+        0.94,
+        0.94
+      ],
+      "screen_rect": [
+        0.06,
+        0.07,
+        0.94,
+        0.46
+      ],
+      "card_radius": 28,
+      "card_border": 3,
+      "card_border_color": "rgba(255,255,255,0.85)",
+      "bg_blur": 28,
+      "bg_brightness": 0.75,
+      "bg_tint": null,
+      "bg_tint_opacity": 0.35,
+      "in_duration": 0.35,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
   }
 }

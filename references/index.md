@@ -1,6 +1,6 @@
 # Reference Library (khung)
 
-Thư viện video mẫu để AI rút kỹ thuật và thông số từ video đã dựng tốt. **Hiện chưa có video mẫu nào được phân tích** — chỉ có khung và một dự án mẫu giả định.
+Thư viện video mẫu để AI rút kỹ thuật và thông số từ video đã dựng tốt. **Đã có 12 video mẫu được phân tích** (`REF_001`…`REF_012`, `reviewed: false`, bản độ phân giải thấp, chưa nghe âm thanh) và một dự án mẫu giả định.
 
 ## Quy tắc dùng
 - Truy xuất theo kỹ thuật/phong cách, rồi **rút kỹ thuật và thông số**; không sao chép video.
@@ -13,7 +13,7 @@ references/
 ├── index.md               (file này: danh sách và truy vấn)
 ├── projects/              dự án mẫu: quyết định, lý do, bài học
 │   └── example-event-recap-documentary.md
-├── videos/                (trống) metadata + segment của từng video mẫu
+├── videos/                REF_001–002 (social-edu), REF_003–012 (social); khuôn REF_001/ cho video sau này
 │   └── REF_001/ { metadata.json, segments/seg_001.json, keyframes/ }
 └── indexes/               (trống) chỉ mục theo kỹ thuật, phong cách
 ```
@@ -51,3 +51,19 @@ Import → metadata (ffprobe) → scene detect → keyframe quan trọng → tra
 | ID | Loại | Ghi chú |
 |---|---|---|
 | `projects/example-event-recap-documentary.md` | Dự án mẫu (giả định) | Kế hoạch mẫu, chưa phải video thật đã dựng |
+
+## Danh sách video mẫu
+| ID | Video | Style | Dùng để học |
+|---|---|---|---|
+| REF_001 | Webinar Kỷ nguyên AI (1:1) | social-edu | chữ nhấn đỏ, lưới 3 s, glitch zoom-through |
+| REF_002 | Phỏng vấn học viên (9:16) | social-edu | phụ đề cụm, thẻ câu hỏi, thanh tên |
+| REF_003 | Hormozi: Why do my employees leave (9:16) | social / talking_head | hook hộp đỏ, chia đôi, phụ đề trên đường chia, cắt đa góc |
+| REF_004 | Stevie Sells: Fiverr commercial (9:16) | social / fast_ad | so sánh, nhãn màu đổi theo cú cắt, nền mờ cho footage ngang |
+| REF_005 | Gawx cinematic tools (9:16) | social / talking_head | b-roll theo lời, tiêu đề xếp chồng, nhãn chương bay vào |
+| REF_006 | Rick and Morty storyboard vs final (9:16) | social / so sánh | hai khung chồng, chữ trên dải đen |
+| REF_007 | BUCK 7UP (16:9) | social / fast_ad | thẻ chữ khổng lồ, circle wipe màu, easing |
+| REF_008 | BUCK FedEx Tall Tales (16:9) | social / animated_story | thẻ tiêu đề né mặt, chữ từng ký tự, logo vẽ trên footage |
+| REF_009 | BUCK Airbnb Experiences (16:9) | social / animated_story | nhịp cắt đều, zoom-out giao diện |
+| REF_010 | Meta TRIBE v2 explainer (16:9) | social / explainer | dựng dần tại chỗ, chữ từng từ, CTA wipe |
+| REF_011 | Linear for Agents (16:9) | social / explainer | UI animation, word roll |
+| REF_012 | "Claude có thể edit video…" (9:16) | social / talking_head | sans + serif nghiêng, chữ né mặt, biến hình bố cục |

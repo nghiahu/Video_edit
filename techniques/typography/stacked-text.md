@@ -35,8 +35,9 @@ Nội dung: `lines` (mảng chuỗi hoặc `{text, scale, weight, color}`) hoặ
 | `line_scales` | `[0.42,1]` hoặc `[1,0.42]` (`stacked_small_*`); `[]` ở hai preset còn lại | hệ số theo thứ tự dòng, > 0; không có kiểm tra khoảng | × `font_size` | low |
 | `line_offsets_em` | `[]`; `[0,1.3]` ở `stacked_staggered` | số theo thứ tự dòng, thụt trái bằng `padding-left` | em | low |
 | `justify` | `false`; `true` ở `stacked_justified` | true/false | – | low |
-| `font_size` | 104 / 96 / 120 | 12–400 (do `validate` kiểm) | px @1080p | medium |
+| `font_size` | 104 / 96 / 120 | 12–600 (do `validate` kiểm) | px @1080p | medium |
 | `line_height` | 1.15 (nhỏ-trên, nhỏ-dưới, so le) / 1.25 (`stacked_justified`) | ≥ 1.15; `validate` cảnh báo nếu thấp hơn với chữ hoa có dấu | – | medium |
+| `line_gap` | 16 (`stacked_small_*`) / 14 (`stacked_staggered`) / 22 (`stacked_justified`) | ≥ 0 | px @1080p | medium |
 | `in_animation` | `fade_up` (`stacked_small_top`, `stacked_small_bottom`, được phép ở documentary); `line_stagger` (`stacked_staggered`, `stacked_justified`) | xem `text-style-layer.md` | – | medium |
 | `in_duration` | 0.5 / 0.55 / 0.6 | không kiểm tra | giây | low |
 | `stagger` | 1 (thừa kế) | hệ số nhân độ trễ giữa các dòng; không kiểm tra | – | low |
@@ -115,3 +116,5 @@ Giả định minh họa: MC nhắc khóa đầu tiên của chương trình ở
 - Một khối chữ duy nhất trong khung tại mọi thời điểm; chưa kiểm ở 1080p/4K.
 
 **Lưu ý về giãn dòng (đã gặp trên render thử):** chữ tiếng Việt có dấu nhiều dòng với `line_height` thấp (≈ 0.95) làm dấu và chân chữ của dòng này đè lên dòng kia, rõ nhất ở chữ hoa cỡ lớn (ví dụ "HỌC" và "DỮ LIỆU" với Anton). Thử bốn mức 0.95, 1.1, 1.2, 1.3 trên preview 960×540: 0.95 đè rõ, 1.1 vẫn sát, từ 1.2 trở lên tách hẳn. Vì vậy `stacked_justified` dùng 1.25.
+
+**Khoảng cách dòng:** ngoài `line_height`, các preset nhiều dòng có `line_gap` (khoảng cách cố định giữa các dòng) để dấu của dòng to không chạm dòng liền trên, nhất là chữ hoa có dấu. Đã xem lại trên preview 960×540 sau khi thêm.

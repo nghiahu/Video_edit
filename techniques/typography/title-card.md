@@ -34,7 +34,7 @@ Mọi khóa kiểu chữ chung xem `typography/text-style-layer.md`. Giá trị 
 | `text` / `lines` | – (bắt buộc) | 1–3 dòng, ≤ 10 từ | – | medium |
 | `sub_text` | – (tùy chọn) | không giới hạn riêng; tính vào `hold` | – | medium |
 | `hold` | công thức | ≥ `max(1.0, 0.8 + 0.3 × số_từ)`, số từ gồm **cả** `sub_text` | giây | medium |
-| `font_size` | 124 (`blur` 118, `editorial` 112) | 12–400 | px @1080p | medium |
+| `font_size` | 124 (`blur` 118, `editorial` 112) | 12–600 | px @1080p | medium |
 | `bg_mode` | `dim` | `none`, `dim`, `blur`, `solid` | – | medium |
 | `bg_opacity` | 0.5 (`blur` 0.3, `editorial` 0.55) | không kiểm tra; dùng cho `dim` và `blur` | 0–1 | low |
 | `bg_rgb` | `"0,0,0"` (thừa kế) | chuỗi `r,g,b` | – | low |

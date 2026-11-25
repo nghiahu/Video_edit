@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Audio, Freeze, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { clamp01, dbToLin, easeOutCubic, lerpCurve, ORIGIN, punchScale, pushScale, segVolume } from './util.js';
 import { ensureFonts, fontFamily } from './fonts.js';
 import { clipFx, overlayFx, svgFilter } from './transitions.js';
@@ -35,6 +35,40 @@ function mergeFx(list) {
   }
   return { style, svg };
 }
+
+// Luân phiên bố cục (layout_cards): thẻ màn hình + thẻ mặt trên nền là chính clip làm mờ.
+// Hoạt ảnh: khung mặt thu từ toàn khung về thẻ (ease-out), thẻ màn hình trượt xuống; ra thì ngược lại.
+const LayoutCards = ({ L, media }) => {
+  const frame = useCurrentFrame();
+  const { width: W, height: H } = useVideoConfig();
+  const p = L.params;
+  const k = Math.min(W, H) / 1080;
+  const c01 = (x) => Math.max(0, Math.min(1, x));
+  const eo = (x) => 1 - Math.pow(1 - c01(x), 3);
+  const eio = (x) => { const t = c01(x); return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  const e = Math.min(eo(frame / Math.max(1, L.inF)), 1 - eio((frame - (L.total - L.outF)) / Math.max(1, L.outF)));
+  const lerp = (a, b) => a + (b - a) * e;
+  const face = p.face_rect || [0.06, 0.5, 0.94, 0.94];
+  const scr = p.screen_rect || [0.06, 0.07, 0.94, 0.46];
+  const fr = [lerp(0, face[0]), lerp(0, face[1]), lerp(1, face[2]), lerp(1, face[3])];
+  const pos = `${((L.frameX ?? 0.5) * 100).toFixed(2)}% ${((L.frameY ?? 0.5) * 100).toFixed(2)}%`;
+  const rad = (p.card_radius ?? 28) * k;
+  const rect = (r) => ({ position: 'absolute', left: r[0] * W, top: r[1] * H, width: (r[2] - r[0]) * W, height: (r[3] - r[1]) * H });
+  const vstyle = (fit, op) => ({ width: '100%', height: '100%', objectFit: fit, objectPosition: op });
+  const faceVideo = <OffthreadVideo src={staticFile(media[L.videoId])} startFrom={L.srcFrame} muted style={vstyle('cover', pos)} />;
+  const slide = (1 - e) * -(scr[3] + 0.05) * H;
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden' }}>
+      <AbsoluteFill style={{ filter: `blur(${((p.bg_blur ?? 28) * k).toFixed(1)}px) brightness(${p.bg_brightness ?? 0.75})`, transform: 'scale(1.15)' }}>{faceVideo}</AbsoluteFill>
+      {p.bg_tint ? <AbsoluteFill style={{ background: p.bg_tint, opacity: (p.bg_tint_opacity ?? 0.35) * e }} /> : null}
+      <div style={{ ...rect(scr), transform: `translateY(${slide.toFixed(1)}px)`, opacity: e, borderRadius: rad, overflow: 'hidden', boxShadow: '0 14px 40px rgba(0,0,0,0.4)', border: `${Math.max(1, (p.card_border ?? 3) * k)}px solid ${p.card_border_color || 'rgba(255,255,255,0.85)'}`, background: p.screen_bg || '#FFFFFF' }}>
+        {L.screenImage ? <Img src={staticFile(L.screenImage)} style={vstyle(p.screen_fit || 'cover', 'center')} /> : null}
+        {L.screenVideo && media[L.screenVideo] ? <OffthreadVideo src={staticFile(media[L.screenVideo])} startFrom={L.screenFrame} muted style={vstyle(p.screen_fit || 'cover', 'center')} /> : null}
+      </div>
+      <div style={{ ...rect(fr), borderRadius: rad * e, overflow: 'hidden', boxShadow: e > 0.02 ? '0 14px 40px rgba(0,0,0,0.45)' : 'none', border: e > 0.02 ? `${Math.max(1, (p.card_border ?? 3) * k * e)}px solid ${p.card_border_color || 'rgba(255,255,255,0.85)'}` : 'none' }}>{faceVideo}</div>
+    </AbsoluteFill>
+  );
+};
 
 const ClipPicture = ({ clip, seqFrom, punches, pushes, grades, vignettes, transitions, media, fps }) => {
   const frame = useCurrentFrame(); // frame tương đối trong Sequence
@@ -108,7 +142,7 @@ const ClipPicture = ({ clip, seqFrom, punches, pushes, grades, vignettes, transi
               startFrom={Math.round(s.srcStart * fps) - pre}
               playbackRate={s.rate}
               muted
-              style={{ width: '100%', height: '100%', objectFit: 'cover', filter }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${((clip.frameX ?? 0.5) * 100).toFixed(2)}% ${((clip.frameY ?? 0.5) * 100).toFixed(2)}%`, filter }}
             />
           );
           return (
@@ -139,8 +173,9 @@ const POS = {
 
 const KineticText = ({ t, height }) => {
   const frame = useCurrentFrame();
+  const { width: vw } = useVideoConfig();
   const { params: p } = t;
-  const k = height / 1080; // preset viết cho 1080p
+  const k = Math.min(vw, height) / 1080; // preset viết cho 1080p; khung dọc lấy cạnh ngắn
   const inP = easeOutCubic(frame / Math.max(1, t.inF));
   const outP = clamp01((t.total - frame) / Math.max(1, t.outF));
   const opacity = Math.min(inP, outP);
@@ -188,8 +223,9 @@ const KineticText = ({ t, height }) => {
 // Thanh tên + chức danh (cấp 2 trong typography/hierarchy.md)
 const LowerThird = ({ t, height }) => {
   const frame = useCurrentFrame();
+  const { width: vw } = useVideoConfig();
   const { params: p } = t;
-  const k = height / 1080;
+  const k = Math.min(vw, height) / 1080;
   const inP = easeOutCubic(frame / Math.max(1, t.inF));
   const outP = clamp01((t.total - frame) / Math.max(1, t.outF));
   const opacity = Math.min(inP, outP);
@@ -223,8 +259,9 @@ const FadeLayer = ({ f }) => {
 // Phụ đề: tối đa 2 dòng, vùng đáy, nền mờ nhẹ để dễ đọc
 const Subtitle = ({ s, height }) => {
   const frame = useCurrentFrame();
+  const { width: vw } = useVideoConfig();
   const p = s.params;
-  const k = height / 1080;
+  const k = Math.min(vw, height) / 1080;
   const fade = Math.min(1, frame / 3, (s.total - frame) / 3);
   const boxed = p.background && p.background !== 'none';
   const shadow = p.shadow ? `0 0 ${p.shadow.blur * k}px rgba(0,0,0,${p.shadow.opacity}), 0 2px ${5 * k}px rgba(0,0,0,${p.shadow.opacity})` : 'none';
@@ -256,7 +293,7 @@ const Subtitle = ({ s, height }) => {
 export const EdlVideo = ({ resolved, media, height }) => {
   const { fps } = useVideoConfig();
   ensureFonts(resolved.fonts || []); // chỉ nạp phông mà EDL dùng
-  const { clips, punches, pushes = [], grades = [], vignettes = [], subs = [], texts, lowerThirds = [], audioSegs, music, transitions = [], fades = [], sfx = [], textBlocks = [] } = resolved;
+  const { clips, punches, pushes = [], grades = [], vignettes = [], subs = [], texts, lowerThirds = [], audioSegs, music, transitions = [], fades = [], sfx = [], textBlocks = [], layouts = [] } = resolved;
   // Fade in/out toàn video: hệ số âm lượng chung theo frame tuyệt đối
   const master = (abs) => {
     let g = 1;
@@ -278,6 +315,12 @@ export const EdlVideo = ({ resolved, media, height }) => {
           </Sequence>
         );
       })}
+
+      {layouts.map((L) => (
+        <Sequence key={`lay-${L.id}`} from={L.from} durationInFrames={Math.max(1, L.total)} name={`layout ${L.id}`}>
+          <LayoutCards L={L} media={media} />
+        </Sequence>
+      ))}
 
       {transitions.filter((tr) => tr.hasOverlay).map((tr) => (
         <Sequence key={`ov-${tr.id}`} from={tr.start} durationInFrames={tr.dur} name={`transition ${tr.id}`}>
@@ -327,7 +370,7 @@ export const EdlVideo = ({ resolved, media, height }) => {
 
       {sfx.map((x) => (
         <Sequence key={`sfx-${x.id}`} from={x.from} name={`sfx ${x.id}`}>
-          <Audio src={staticFile(x.file)} volume={(f) => x.g * master(x.from + f)} />
+          <Audio src={staticFile(x.file)} loop={!!x.loop} {...(x.trim ? { startFrom: x.trim } : {})} volume={(f) => x.g * master(x.from + f)} />
         </Sequence>
       ))}
 

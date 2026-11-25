@@ -18,6 +18,7 @@ Quyết định kỹ thuật dựa trên bố cục: `punch_in` có cắt chủ 
 ## Vùng an toàn cho chữ
 - Chừa lề ≥ 5% chiều rộng/cao mỗi bên (video dọc: ≥ 8% phía dưới vì giao diện nền tảng).
 - Chữ nhấn mạnh: vùng giữa-thấp, dưới mặt người nói, **không che mặt, miệng, tay đang chỉ**.
+- **R-SUBJ-1:** không đặt chữ, đường chỉ hay hiệu ứng lên **mặt và thân chủ thể chính** (ví dụ diễn giả đứng giữa sân khấu). Khai báo `subject_box` của clip (xem `schema/edl.md`) rồi để `validate` cảnh báo khi vùng chữ ước lượng chồng lên hộp này > 20%. Chữ giữa khung (`center`), chữ phủ khung (`text_cutout`, `big_text`) và `callout_label` chỉ vào người là các chỗ dễ vi phạm; ưu tiên vùng dưới, trên hoặc hai bên chủ thể. Chỉ đè khi cần có chủ ý và ghi vào `reason`.
 - Phụ đề: cách đáy ~8–12% chiều cao.
 - Nếu clip đã có chữ trên hình (`on_screen_text` trong `clips.md`, ví dụ slide hoặc bảng hiệu), không đè chữ khác lên đó.
 

@@ -1,6 +1,6 @@
 # Danh sách bố cục và kiểu chữ (kế hoạch)
 
-> **Trạng thái:** đợt 0 (lớp kiểu chữ + hoạt ảnh dùng chung) và đợt 1 (`text_pill`, `text_box`, `stacked_text`, `title_card`, `big_text`, `marker_highlight`) **đã làm**; các đợt 2–5 còn `planned`. Mỗi đợt làm xong sẽ có tài liệu theo khuôn 10 mục, preset JSON, render thử và được đưa vào `techniques/index.md` như các kỹ thuật khác.
+> **Trạng thái:** đợt 0 (lớp kiểu chữ + hoạt ảnh dùng chung), đợt 1 (`text_pill`, `text_box`, `stacked_text`, `title_card`, `big_text`, `marker_highlight`) đợt 2 (`chapter_title`, `pull_quote`, `big_number`, `bullet_list_reveal`, `location_tag`, `text_sticker`, `speech_bubble`, `callout_label`, `social_tag`) đợt 4 (`typewriter_text`, `scramble_text`, `glitch_text`, `text_cutout`, `text_on_path`) đợt 3 (`word_highlight`, `word_by_word_text`, `karaoke_subtitles`, `shortform_captions`; hiển thị đã xong, mốc theo từ lấy ngoài) và đợt 5 (`progress_bar`, `countdown_timer`, `credits_roll`, `comparison_table`) **đã làm**; `tracked_text` còn `planned`. Mỗi đợt làm xong sẽ có tài liệu theo khuôn 10 mục, preset JSON, render thử và được đưa vào `techniques/index.md` như các kỹ thuật khác.
 
 ## Cách chia để không phải làm 50 lần cùng một việc
 Chữ trong video gồm ba lớp độc lập. Làm chung từng lớp một lần, các kỹ thuật dùng lại.
@@ -56,7 +56,7 @@ Lớp kiểu chữ ở trên + một bộ hoạt ảnh vào/ra dùng chung + s�
 | `big_text` | Chữ cực lớn, tràn khung, 1–2 từ | cần cỡ chữ theo khung |
 | `marker_highlight` | Từ hoặc dòng có vệt bút dạ | vệt tô lệch |
 
-### Đợt 2 — Thông tin và trang trí
+### Đợt 2 — Thông tin và trang trí (**đã làm**)
 | ID | Mô tả |
 |---|---|
 | `chapter_title` | Số chương cộng tên chương |
@@ -69,7 +69,7 @@ Lớp kiểu chữ ở trên + một bộ hoạt ảnh vào/ra dùng chung + s�
 | `callout_label` | Chú thích có đường/mũi tên chỉ (cố định, không bám vật thể) |
 | `social_tag` | Tag kiểu `@tên`, `#chủ_đề` |
 
-### Đợt 3 — Chữ đi theo lời nói (**cần mốc thời gian theo từng từ**)
+### Đợt 3 — Chữ đi theo lời nói (**đã làm phần hiển thị; cần mốc thời gian theo từng từ**)
 | ID | Mô tả |
 |---|---|
 | `word_highlight` | Tô sáng từ khóa đúng lúc được nói |
@@ -79,7 +79,7 @@ Lớp kiểu chữ ở trên + một bộ hoạt ảnh vào/ra dùng chung + s�
 
 Metadata `Video-analysis` hiện **không có mốc theo từ**, và trong máy chưa có công cụ nhận dạng giọng nói. Đợt này cần một bước lấy mốc từ trước (cài công cụ nhận dạng, hoặc người dùng cung cấp file phụ đề có mốc từ). Làm sau khi chốt cách lấy mốc.
 
-### Đợt 4 — Hiệu ứng chữ
+### Đợt 4 — Hiệu ứng chữ (đã làm, trừ `vertical_text`/`rotated_text`)
 | ID | Mô tả |
 |---|---|
 | `typewriter_text` | Chữ đánh máy |
@@ -89,7 +89,7 @@ Metadata `Video-analysis` hiện **không có mốc theo từ**, và trong máy 
 | `text_on_path` | Chữ chạy theo đường cong |
 | `vertical_text`, `rotated_text` | Chữ dọc, chữ xoay (có thể gộp vào bố cục) |
 
-### Đợt 5 — Khó hoặc để sau
+### Đợt 5 — Số liệu, danh sách (đã làm, trừ `tracked_text`)
 | ID | Mô tả | Vì sao để sau |
 |---|---|---|
 | `tracked_text` | Chữ ghim theo vật thể chuyển động | cần theo dõi chuyển động (tracking), chưa có công cụ |

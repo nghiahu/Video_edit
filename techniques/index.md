@@ -27,15 +27,42 @@ Cột **Cách thực hiện**: `renderer` = có quyết định riêng trong EDL
 | `title_card` | Tiêu đề lớn giữa màn hình trên nền tối/mờ/đặc | renderer | usable |
 | `big_text` | Chữ cực lớn khớp bề ngang khung | renderer | usable |
 | `marker_highlight` | Vệt bút dạ sau chữ hoặc từ khóa | renderer | usable |
-| `word_highlight` | Tô sáng từ khóa theo lời nói (cần mốc theo từ) | – | planned |
+| `chapter_title` | Số chương nhỏ + tên chương lớn | renderer | usable |
+| `pull_quote` | Trích dẫn có dấu ngoặc kép lớn, tên người nói | renderer | usable |
+| `big_number` | Số liệu nổi bật, đếm chạy, nhãn nhỏ | renderer | usable |
+| `bullet_list_reveal` | Danh sách hiện từng mục | renderer | usable |
+| `location_tag` | Nhãn địa điểm/ngày giờ có biểu tượng | renderer | usable |
+| `text_sticker` | Nhãn dán: viền dày, bóng cứng, nghiêng | renderer | usable |
+| `speech_bubble` | Bong bóng thoại có đuôi | renderer | usable |
+| `callout_label` | Nhãn có đường chỉ tới một điểm cố định | renderer | usable |
+| `social_tag` | Tag @tên hoặc #chủ_đề | renderer | usable |
+| `typewriter_text` | Chữ đánh máy từng ký tự, con trỏ tuỳ chọn | renderer | usable |
+| `scramble_text` | Chữ giải mã: ký tự nhảy rồi chốt đúng từ trái sang phải | renderer | usable |
+| `glitch_text` | Chữ nhiễu glitch (lệch kênh màu, rung, dải cắt lệch) | renderer | usable |
+| `text_cutout` | Chữ cắt xén: nền màu phủ khung, nhìn xuyên nét chữ thấy video; preset `cutout_dive` lao vào chữ cho cảnh mở đầu tiến tới | renderer | usable |
+| `text_on_path` | Chữ chạy theo cung, sóng hoặc vòng tròn | renderer | usable |
+| `progress_bar` | Thanh tiến độ có nhãn và phần trăm | renderer | usable |
+| `countdown_timer` | Đếm ngược số lớn hoặc đồng hồ mm:ss | renderer | usable |
+| `credits_roll` | Cuộn tên, danh sách cuối phim | renderer | usable |
+| `comparison_table` | Bảng so sánh 2–4 cột, hàng hiện nối tiếp | renderer | usable |
+| `strike_list` | Danh sách gạch ngang có hoạt ảnh (bác bỏ niềm tin sai) | renderer | usable |
+| `compare_cards` | Thẻ so sánh A vs B, thẻ thắng bật sáng | renderer | usable |
+| `draw_annotation` | Mũi tên, vòng khoanh, gạch chân vẽ tay tự vẽ | renderer | usable |
+| `social_cta` | Nút Follow được bấm, ô bình luận gõ chữ | renderer | usable |
+| `image_float` | Ảnh kết quả bay quanh người nói (quạt, quỹ đạo, dải, lưới) | renderer | usable |
+| `tracked_text` | Chữ ghim theo vật chuyển động (cần tracking) | – | planned |
+| `word_highlight` | Từ khóa sáng lên đúng lúc được nói (cần mốc theo từ) | renderer | usable |
+| `word_by_word_text` | Hiện từng từ theo lời (cần mốc theo từ) | renderer | usable |
+| `karaoke_subtitles` | Phụ đề, từ đang nói sáng lên (cần mốc theo từ) | renderer | usable |
+| `shortform_captions` | Phụ đề 1–3 từ cực lớn, từ khóa đổi màu (cần mốc theo từ) | renderer | usable |
 
 Danh sách kế hoạch các kiểu bố cục và kiểu chữ (chưa làm, chia theo đợt): `techniques/typography/layout-catalog.md`. ID dự kiến:
 - Đợt 0 và 1: **đã làm** (lớp kiểu chữ dùng chung, `text_pill`, `text_box`, `stacked_text`, `title_card`, `big_text`, `marker_highlight`).
-- Đợt 2: `chapter_title`, `pull_quote`, `big_number`, `bullet_list_reveal`, `location_tag`, `text_sticker`, `speech_bubble`, `callout_label`, `social_tag`.
-- Đợt 3 (cần mốc theo từ): `word_by_word_text`, `karaoke_subtitles`, `shortform_captions` (cùng `word_highlight` ở trên).
-- Đợt 4: `typewriter_text`, `scramble_text`, `glitch_text`, `text_cutout`, `text_on_path`.
-- Đợt 5: `tracked_text`, `comparison_table`, `credits_roll`, `countdown_timer`, `progress_bar`.
-Các đợt 2–5 ở trạng thái `planned`.
+- Đợt 2: **đã làm** (`chapter_title`, `pull_quote`, `big_number`, `bullet_list_reveal`, `location_tag`, `text_sticker`, `speech_bubble`, `callout_label`, `social_tag`).
+- Đợt 3: **đã làm phần hiển thị** (`word_highlight`, `word_by_word_text`, `karaoke_subtitles`, `shortform_captions`); **cần mốc theo từ thật** (nhận dạng giọng nói, thủ công hoặc file phụ đề) — chưa có công cụ lấy mốc trong máy.
+- Đợt 4: **đã làm** (`typewriter_text`, `scramble_text`, `glitch_text`, `text_cutout`, `text_on_path`); `vertical_text` chưa làm (chữ dọc dùng tạm `rotate`).
+- Đợt 5: **đã làm** (`comparison_table`, `credits_roll`, `countdown_timer`, `progress_bar`); `tracked_text` còn `planned` (cần công cụ theo dõi chuyển động).
+`tracked_text` ở trạng thái `planned`.
 
 ## 03. Transitions — `techniques/transitions/`
 Chi tiết chọn kiểu: `techniques/transitions/index.md`.
@@ -118,6 +145,7 @@ Chi tiết chọn kiểu: `techniques/transitions/index.md`.
 |---|---|---|---|
 | `audio_ducking` | Hạ nhạc nền khi có tiếng nói | renderer | usable |
 | `whoosh_synced_cut` | SFX (whoosh, impact) gắn vào điểm cắt, file do người dùng cung cấp | renderer | usable |
+| `sfx_cue` | SFX từ thư viện `assets/sfx` (mã file), tiếng "đập" rơi đúng mốc anchor | renderer | usable |
 | `impact`, `riser`, `ambience` | SFX khác | – | planned |
 
 ## 07. Compositing — `techniques/compositing/`
@@ -130,6 +158,7 @@ Chi tiết chọn kiểu: `techniques/transitions/index.md`.
 | `montage` | Chuỗi cảnh ngắn dồn ý hoặc thời gian | mẫu | usable |
 | `beat_sync_cut` | Cắt theo nhịp nhạc (cần mốc nhịp do người dùng cung cấp) | mẫu | usable |
 | `time_lapse` | Tua nhanh một đoạn | renderer | usable |
+| `layout_cards` | Luân phiên bố cục: thẻ màn hình + thẻ mặt trên nền mờ (khung dọc) | renderer | usable |
 | `freeze_frame` | Đóng băng khung hình | renderer | usable |
 | `speed_ramp_transition` | Tăng tốc cuối clip A, giảm tốc đầu clip B | renderer | usable |
 

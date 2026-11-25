@@ -35,7 +35,7 @@ Khối nền `_text_style_base`; giá trị của `text_box_dark` trừ khi ghi 
 |---|---|---|---|---|
 | `text` hoặc `lines` | – | tối đa 14 từ, 2 dòng | – | medium |
 | `hold` (nội dung) | `0.8 + 0.3 × số_từ`, ≥ 1.0 | ≥ công thức | giây | medium |
-| `font_size` | 50 (bar 48, underline 54, banner 56) | 12–400 (validate) | px @1080p | medium |
+| `font_size` | 50 (bar 48, underline 54, banner 56) | 12–600 (validate) | px @1080p | medium |
 | `font_weight` | 600 (banner 800) | theo phông | – | medium |
 | `box_style` | `rounded` | `rounded`, `bar_left`, `underline`, `rect` | – | medium |
 | `box_color` | `rgba(0,0,0,0.6)` (bar 0.55, banner `#B91C2C`) | CSS color | – | low |

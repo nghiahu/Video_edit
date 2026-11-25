@@ -18,6 +18,8 @@ Nếu yêu cầu mơ hồ: **đề xuất kèm lý do**, hỏi một câu, đừ
 
 ## Pha 3: Truy xuất kiến thức
 
+> Trước khi chọn kỹ thuật: lên kịch bản (`workflows/script-writing.md`) và đọc `core/effect-selection.md` để đi từ nhu cầu nội dung tới kỹ thuật và preset.
+
 1. Từ `key_moments` và `b_roll_opportunities` của pha 1, liệt kê **nhu cầu edit** (ví dụ: 8 câu cần nhấn mạnh, 3 đoạn cần chữ, 4 điểm nối clip).
 2. Với mỗi nhu cầu, mở `techniques/index.md`, chọn nhóm, đọc `index.md` của nhóm, rồi **chỉ đọc tài liệu của kỹ thuật được chọn** (mục 2, 3, 4, 7).
 3. Chọn preset phù hợp `motion_style` từ `presets/`.

@@ -69,5 +69,20 @@
     ],
     "source_of_values": "convention",
     "confidence": "low"
+  },
+  "sfx_cue_standard": {
+    "technique": "sfx_cue",
+    "description": "SFX từ thư viện assets/sfx (parameters.sfx = mã file). Tiếng 'đập' rơi đúng mốc anchor; âm lượng mặc định theo danh mục.",
+    "parameters": {
+      "align": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
   }
 }

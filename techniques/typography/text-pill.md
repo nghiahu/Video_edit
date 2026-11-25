@@ -40,7 +40,7 @@ Khối nền `_text_style_base`; giá trị dưới đây là của `text_pill_c
 |---|---|---|---|---|
 | `text` | – | 1–5 từ, 1 dòng | – | medium |
 | `hold` (nội dung) | `0.8 + 0.3 × số_từ`, ≥ 1.0 | ≥ công thức | giây | medium |
-| `font_size` | 40 (brand 42, cute 46) | 12–400 (validate) | px @1080p | medium |
+| `font_size` | 40 (brand 42, cute 46) | 12–600 (validate) | px @1080p | medium |
 | `font_weight` | 600 (brand 700, cute 700) | theo phông | – | medium |
 | `font_family` | Inter (cute: Baloo 2) | phông có trong `font-registry.json` | – | medium |
 | `box_style` | `pill` | `pill` (đặc trưng kỹ thuật) | – | medium |

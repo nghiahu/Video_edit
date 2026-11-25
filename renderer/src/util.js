@@ -2,7 +2,8 @@
 export const clamp01 = (t) => Math.min(Math.max(t, 0), 1);
 export const easeOutCubic = (t) => 1 - Math.pow(1 - clamp01(t), 3);
 export const easeOutQuad = (t) => 1 - (1 - clamp01(t)) * (1 - clamp01(t));
-export const easeFn = (name) => (name === 'ease_out_quad' ? easeOutQuad : easeOutCubic);
+export const easeInOutQuint = (t) => { const x = clamp01(t); return x * x * x * (x * (x * 6 - 15) + 10); };
+export const easeFn = (name) => (name === 'ease_out_quad' ? easeOutQuad : name === 'ease_in_out' ? easeInOutQuint : easeOutCubic);
 export const dbToLin = (db) => Math.pow(10, db / 20);
 
 // Nội suy tuyến tính theo mảng [[frame, value], ...] tăng dần.

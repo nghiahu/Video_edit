@@ -1,0 +1,1144 @@
+{
+  "edl_version": "1.0",
+  "project": {
+    "id": "khai-giang-gioi-thieu",
+    "title": "Giới thiệu khóa Phân tích Dữ liệu từ Lễ khai giảng khóa 38",
+    "fps": 29.97,
+    "resolution": "1920x1080",
+    "aspect": "16:9",
+    "language": "vi",
+    "target_duration_sec": 120
+  },
+  "strategy": {
+    "style": "event_recap",
+    "pacing": "moderate",
+    "visual_intensity": "medium",
+    "typography_style": "mixed_event",
+    "transition_style": "mostly_hard_cut",
+    "motion_style": "subtle",
+    "budget": {
+      "special_transition": 2,
+      "j_l_cut": 1
+    }
+  },
+  "timeline": {
+    "clips": [
+      {
+        "id": "c01",
+        "video_id": "DJI_20261117183849_0005_D_AZ1",
+        "source_in": 0.5,
+        "source_out": 6.5,
+        "audio": "mute"
+      },
+      {
+        "id": "c02",
+        "video_id": "DJI_20261117184745_0006_D_AZ1",
+        "source_in": 7.45,
+        "source_out": 17.5,
+        "audio": "keep",
+        "subject_box": [
+          0.42,
+          0.38,
+          0.52,
+          0.68
+        ]
+      },
+      {
+        "id": "c03",
+        "video_id": "DJI_20261117184817_0007_D_AZ1",
+        "source_in": 0,
+        "source_out": 6.9,
+        "audio": "keep",
+        "subject_box": [
+          0.4,
+          0.3,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "id": "c04",
+        "video_id": "DJI_20261117184933_0009_D_AZ1",
+        "source_in": 0,
+        "source_out": 8.5,
+        "audio": "keep"
+      },
+      {
+        "id": "c05",
+        "video_id": "DJI_20261117185115_0013_D_AZ1",
+        "source_in": 0,
+        "source_out": 5.5,
+        "audio": "keep"
+      },
+      {
+        "id": "c06",
+        "video_id": "DJI_20261117185141_0014_D_AZ1",
+        "source_in": 0.45,
+        "source_out": 5.7,
+        "audio": "keep",
+        "subject_box": [
+          0.1,
+          0.35,
+          0.95,
+          1.0
+        ]
+      },
+      {
+        "id": "c07",
+        "video_id": "DJI_20261117185159_0015_D_AZ1",
+        "source_in": 0,
+        "source_out": 5.9,
+        "audio": "keep",
+        "subject_box": [
+          0.0,
+          0.22,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "id": "c08",
+        "video_id": "DJI_20261117185238_0016_D_AZ1",
+        "source_in": 2.74,
+        "source_out": 7.1,
+        "audio": "keep"
+      },
+      {
+        "id": "c09",
+        "video_id": "DJI_20261117185250_0017_D_AZ1",
+        "source_in": 1.79,
+        "source_out": 6.51,
+        "audio": "keep",
+        "subject_box": [
+          0.8,
+          0.2,
+          0.97,
+          0.9
+        ]
+      },
+      {
+        "id": "c10",
+        "video_id": "DJI_20261117185317_0019_D_AZ1",
+        "source_in": 0,
+        "source_out": 3.63,
+        "audio": "keep"
+      },
+      {
+        "id": "c11",
+        "video_id": "DJI_20261117185917_0033_D_AZ1",
+        "source_in": 23.85,
+        "source_out": 42.0,
+        "audio": "keep",
+        "subject_box": [
+          0.45,
+          0.5,
+          0.54,
+          0.74
+        ]
+      },
+      {
+        "id": "c12",
+        "video_id": "DJI_20261117190126_0036_D_AZ1",
+        "source_in": 0.4,
+        "source_out": 4.0,
+        "audio": "keep",
+        "subject_box": [
+          0.4,
+          0.28,
+          0.58,
+          1.0
+        ]
+      },
+      {
+        "id": "c13",
+        "video_id": "DJI_20261117190535_0046_D_AZ1",
+        "source_in": 0,
+        "source_out": 4.2,
+        "audio": "keep"
+      },
+      {
+        "id": "c14",
+        "video_id": "DJI_20261117191510_0047_D_AZ1",
+        "source_in": 3.3,
+        "source_out": 14.5,
+        "audio": "keep",
+        "subject_box": [
+          0.46,
+          0.44,
+          0.52,
+          0.66
+        ]
+      },
+      {
+        "id": "c15",
+        "video_id": "DJI_20261117191736_0048_D_AZ1",
+        "source_in": 5.95,
+        "source_out": 25.0,
+        "audio": "keep",
+        "subject_box": [
+          0.5,
+          0.44,
+          0.57,
+          0.68
+        ]
+      },
+      {
+        "id": "c16",
+        "video_id": "DJI_20261117191922_0049_D_AZ1",
+        "source_in": 0.55,
+        "source_out": 5.5,
+        "audio": "keep",
+        "subject_box": [
+          0.05,
+          0.55,
+          0.98,
+          0.95
+        ]
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "d04",
+      "technique": "cross_dissolve",
+      "preset": "dissolve_standard",
+      "anchor": {
+        "between": [
+          "c10",
+          "c11"
+        ]
+      },
+      "duration": 0.6,
+      "parameters": {},
+      "reason": "Đổi chương: từ lời giới thiệu chương trình sang lời diễn giả về điểm khác biệt.",
+      "priority": "storytelling",
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d05",
+      "technique": "j_l_cut",
+      "preset": "l_cut_standard",
+      "anchor": {
+        "between": [
+          "c12",
+          "c13"
+        ]
+      },
+      "duration": 4.2,
+      "parameters": {
+        "variant": "l",
+        "tail": 4.2
+      },
+      "reason": "Giữ lời diễn giả 'khó hơn, theo đến cùng' trên hình học viên mở laptop; che chỗ vào giữa câu và cho thấy người nghe.",
+      "priority": "clarity",
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d06",
+      "technique": "text_graphic_wipe",
+      "preset": "text_graphic_wipe_brand",
+      "anchor": {
+        "between": [
+          "c15",
+          "c16"
+        ]
+      },
+      "duration": 1.6,
+      "parameters": {
+        "duration": 1.6,
+        "direction": "right",
+        "color": "#0B2A6F",
+        "text": "Khóa 38",
+        "text_color": "#FFFFFF",
+        "font_size": 120
+      },
+      "reason": "Sang cảnh kết bằng màn che quét ngang mang chữ 'Khóa 38' (lời MC chúc mừng khóa 38), thay cho mờ chồng và thẻ chữ nhỏ.",
+      "priority": "storytelling",
+      "confidence": "medium",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d07",
+      "technique": "text_cutout",
+      "preset": "cutout_bold",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 0.7
+      },
+      "start_offset": 0,
+      "duration": 3.9,
+      "parameters": {
+        "text": "Khai giảng",
+        "hold": 2.8
+      },
+      "reason": "Tiêu đề mở đầu: chữ khoét nhìn xuyên thấy lớp học, lấy từ tên sự kiện trên màn hình (metadata 0005).",
+      "priority": "style",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d08",
+      "technique": "location_tag",
+      "preset": "location_tag_date",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 4.8
+      },
+      "start_offset": 0,
+      "duration": 1.7,
+      "parameters": {
+        "text": "17/11/2026",
+        "position": "top_left",
+        "hold": 1.2
+      },
+      "reason": "Ngày sự kiện, lấy từ mốc quay trong tên file DJI_20261117 (cần người dùng xác nhận).",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d09",
+      "technique": "stacked_text",
+      "preset": "stacked_small_top",
+      "anchor": {
+        "clip": "c02",
+        "source_time": 8.0
+      },
+      "start_offset": 0,
+      "duration": 4.0,
+      "parameters": {
+        "lines": [
+          "Lễ khai giảng",
+          "Phân tích Dữ liệu"
+        ],
+        "position": "lower_left",
+        "hold": 3.2
+      },
+      "reason": "MC nói tên chương trình 'đào tạo Phân tích Dữ liệu Data Analysis'; hai dòng nêu tên khóa, đặt lệch trái, tránh MC ở giữa khung.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d10",
+      "technique": "stacked_text",
+      "preset": "stacked_small_bottom",
+      "anchor": {
+        "clip": "c02",
+        "source_time": 13.9
+      },
+      "start_offset": 0,
+      "duration": 3.7,
+      "parameters": {
+        "lines": [
+          "Hợp tác chiến lược",
+          "cùng Rikkei Education"
+        ],
+        "position": "top_left",
+        "font_size": 72,
+        "text_color": "#0F172A",
+        "shadow_type": "none",
+        "hold": 3.0,
+        "line_scales": [
+          1,
+          0.62
+        ]
+      },
+      "reason": "MC nói 'chương trình hợp tác chiến lược… và Rikkei Education'. Làm tiêu đề hai dòng thay cho thẻ hộp; tên viện đối tác nghe không rõ nên không đưa lên chữ.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d11",
+      "technique": "stacked_text",
+      "preset": "stacked_small_bottom",
+      "anchor": {
+        "clip": "c03",
+        "source_time": 1.5
+      },
+      "start_offset": 0,
+      "duration": 4.0,
+      "parameters": {
+        "lines": [
+          "Lộ trình, phương pháp",
+          "giá trị chuyên môn"
+        ],
+        "position": "middle_right",
+        "font_size": 60,
+        "text_color": "#0F172A",
+        "shadow_type": "none",
+        "hold": 3.3,
+        "line_scales": [
+          1,
+          0.66
+        ]
+      },
+      "reason": "MC nói 'lộ trình, phương pháp học, giá trị chuyên môn' (0007). Tiêu đề hai dòng đặt bên phải, MC đứng giữa khung.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d12",
+      "technique": "chapter_title",
+      "preset": "chapter_title_bar",
+      "anchor": {
+        "clip": "c04",
+        "source_time": 0.2
+      },
+      "start_offset": 0,
+      "duration": 3.4,
+      "parameters": {
+        "lines": [
+          "CHƯƠNG 02",
+          "Khóa học dạy gì"
+        ],
+        "position": "lower_left",
+        "hold": 2.7
+      },
+      "reason": "Báo mở phần giới thiệu chương trình. Tên chương là nhãn biên tập (minh họa), không phải lời nói.",
+      "priority": "storytelling",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d13",
+      "technique": "bullet_list_reveal",
+      "preset": "bullet_list_clean",
+      "anchor": {
+        "clip": "c04",
+        "source_time": 3.3
+      },
+      "start_offset": 0,
+      "duration": 5.1,
+      "parameters": {
+        "lines": [
+          "Học gì?",
+          "Học như thế nào?",
+          "Ứng dụng được kỹ năng"
+        ],
+        "position": "middle_left",
+        "item_delay": 0.8,
+        "hold": 4.3,
+        "line_slide": "left",
+        "line_slide_distance": 900,
+        "line_gap": 8
+      },
+      "reason": "Lời giới thiệu nêu 'học gì, học như thế nào để ứng dụng được kỹ năng': từng dòng chạy vào từ mép khung.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d14",
+      "technique": "stacked_text",
+      "preset": "stacked_small_bottom",
+      "anchor": {
+        "clip": "c05",
+        "source_time": 0.5
+      },
+      "start_offset": 0,
+      "duration": 4.4,
+      "parameters": {
+        "lines": [
+          "Bài bản, thực tiễn",
+          "đầu ra nghề nghiệp rõ ràng"
+        ],
+        "position": "top_center",
+        "font_size": 72,
+        "text_color": "#0F172A",
+        "shadow_type": "none",
+        "hold": 3.8,
+        "line_scales": [
+          1,
+          0.62
+        ]
+      },
+      "reason": "Lời giới thiệu: 'đào tạo bài bản, thực tiễn, gắn với đầu ra nghề nghiệp rõ ràng'. Tiêu đề hai dòng trên mảng tường sáng thay cho thẻ hộp.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d15",
+      "technique": "stacked_text",
+      "preset": "stacked_small_top",
+      "anchor": {
+        "clip": "c06",
+        "source_time": 3.2
+      },
+      "start_offset": 0,
+      "duration": 2.7,
+      "parameters": {
+        "lines": [
+          "Nền tảng",
+          "Excel, SQL"
+        ],
+        "position": "top_left",
+        "hold": 2.1
+      },
+      "reason": "Lời nói: 'nền tảng Excel, SQL'. Đặt góc trên để khỏi đè người ngồi laptop.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d16",
+      "technique": "stacked_text",
+      "preset": "stacked_small_bottom",
+      "anchor": {
+        "clip": "c07",
+        "source_time": 1.0
+      },
+      "start_offset": 0,
+      "duration": 3.6,
+      "parameters": {
+        "lines": [
+          "Python",
+          "Nâng cao, tự động hóa"
+        ],
+        "position": "top_right",
+        "hold": 3.0,
+        "font_size": 88,
+        "line_scales": [
+          1,
+          0.46
+        ]
+      },
+      "reason": "Lời nói: 'Python… phân tích nâng cao và tự động hóa quy trình'.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d17",
+      "technique": "stacked_text",
+      "preset": "stacked_small_top",
+      "anchor": {
+        "clip": "c08",
+        "source_time": 2.8
+      },
+      "start_offset": 0,
+      "duration": 4.0,
+      "parameters": {
+        "lines": [
+          "Sau khi hoàn thành",
+          "Chứng nhận độc quyền"
+        ],
+        "position": "top_left",
+        "font_size": 60,
+        "text_color": "#0F172A",
+        "shadow_type": "none",
+        "hold": 3.3,
+        "line_scales": [
+          0.62,
+          1
+        ]
+      },
+      "reason": "Lời giới thiệu: 'sau khi hoàn thành chương trình… giấy chứng nhận độc quyền'. Làm tiêu đề hai dòng (chữ xanh đậm trên tường sáng) thay cho thẻ hộp nhỏ vốn dùng làm dòng phụ.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d18",
+      "technique": "stacked_text",
+      "preset": "stacked_small_bottom",
+      "anchor": {
+        "clip": "c09",
+        "source_time": 2.3
+      },
+      "start_offset": 0,
+      "duration": 4.0,
+      "parameters": {
+        "lines": [
+          "Workshop, webinar",
+          "hàng tháng cùng các chuyên gia"
+        ],
+        "position": "top_left",
+        "font_size": 62,
+        "text_color": "#0F172A",
+        "shadow_type": "none",
+        "hold": 3.3,
+        "line_scales": [
+          1,
+          0.62
+        ]
+      },
+      "reason": "Lời giới thiệu: 'workshop, webinar hàng tháng cùng các chuyên gia'. Làm tiêu đề hai dòng thay cho thẻ hộp nhỏ.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d19",
+      "technique": "kinetic_text",
+      "preset": "kinetic_text_editorial",
+      "anchor": {
+        "clip": "c10",
+        "source_time": 0.3
+      },
+      "start_offset": 0,
+      "duration": 3.2,
+      "parameters": {
+        "text": "Lợi thế cạnh tranh bền vững",
+        "position": "lower_left",
+        "font_size": 80,
+        "hold": 2.7,
+        "shadow": {
+          "blur": 28,
+          "opacity": 0.9
+        }
+      },
+      "reason": "Câu chốt chương 2: 'lợi thế cạnh tranh bền vững cho mỗi cá nhân'. Chữ lớn có bóng đậm, không hộp, thay cho thẻ hộp.",
+      "priority": "storytelling",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d20",
+      "technique": "chapter_title",
+      "preset": "chapter_title_bar",
+      "anchor": {
+        "clip": "c11",
+        "source_time": 23.95
+      },
+      "start_offset": 0,
+      "duration": 3.2,
+      "parameters": {
+        "lines": [
+          "CHƯƠNG 03",
+          "Điểm khác biệt"
+        ],
+        "position": "lower_left",
+        "hold": 2.5
+      },
+      "reason": "Báo mở phần diễn giả nói về điểm khác biệt. Tên chương là nhãn biên tập (minh họa).",
+      "priority": "storytelling",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d21",
+      "technique": "bullet_list_reveal",
+      "preset": "bullet_list_numbered",
+      "anchor": {
+        "clip": "c11",
+        "source_time": 30.8
+      },
+      "start_offset": 0,
+      "duration": 5.6,
+      "parameters": {
+        "lines": [
+          "Chuyên gia công nghệ doanh nghiệp",
+          "Tiếp cận thị trường thực tế"
+        ],
+        "position": "lower_left",
+        "item_delay": 2.5,
+        "hold": 4.8,
+        "line_slide": "left",
+        "line_slide_distance": 900,
+        "font_size": 40
+      },
+      "reason": "Diễn giả nói lợi thế khi đi cùng doanh nghiệp: 'các chuyên gia về công nghệ của doanh nghiệp… khả năng tiếp cận thị trường thực tế'. Hai dòng chạy vào theo nhịp lời.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d22",
+      "technique": "kinetic_text",
+      "preset": "kinetic_text_editorial",
+      "anchor": {
+        "clip": "c13",
+        "source_time": 0.4
+      },
+      "start_offset": 0,
+      "duration": 2.2,
+      "parameters": {
+        "text": "Theo đến cùng",
+        "position": "lower_left",
+        "font_size": 96,
+        "hold": 1.7,
+        "shadow": {
+          "blur": 28,
+          "opacity": 0.9
+        }
+      },
+      "reason": "Lời diễn giả: 'cố gắng là theo đến cùng', chữ lớn trên hình học viên đang nghe (cảnh cắt xen).",
+      "priority": "storytelling",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d23",
+      "technique": "bullet_list_reveal",
+      "preset": "bullet_list_check",
+      "anchor": {
+        "clip": "c14",
+        "source_time": 6.1
+      },
+      "start_offset": 0,
+      "duration": 8.3,
+      "parameters": {
+        "lines": [
+          "Cơ hội có việc làm",
+          "Góc nhìn mới về nghề",
+          "Người anh, người chị dìu dắt"
+        ],
+        "position": "lower_left",
+        "item_delay": 2.8,
+        "hold": 7.5,
+        "line_slide": "right",
+        "line_slide_distance": 900,
+        "font_size": 40
+      },
+      "reason": "Diễn giả liệt kê ba 'cơ hội': công việc, góc nhìn mới về nghề, người anh người chị dìu dắt; mỗi dòng chạy vào đúng lúc được nói.",
+      "priority": "clarity",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d24",
+      "technique": "pull_quote",
+      "preset": "pull_quote_clean",
+      "anchor": {
+        "clip": "c15",
+        "source_time": 13.55
+      },
+      "start_offset": 0,
+      "duration": 5.0,
+      "parameters": {
+        "text": "Biến những kiến thức được học thành năng lực thực tế",
+        "position": "lower_left",
+        "hold": 4.2,
+        "box_style": "rounded",
+        "box_color": "rgba(0,0,0,0.55)",
+        "box_padding_x": 36,
+        "box_padding_y": 24,
+        "font_size": 44,
+        "max_width_percent": 46
+      },
+      "reason": "Câu chúc đúng nguyên văn của MC, nêu giá trị khóa học; đặt lệch trái, MC đứng giữa.",
+      "priority": "storytelling",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d25",
+      "technique": "text_box",
+      "preset": "text_box_dark",
+      "anchor": {
+        "clip": "c16",
+        "source_time": 0.6
+      },
+      "start_offset": 0,
+      "duration": 3.5,
+      "parameters": {
+        "text": "Phân tích Dữ liệu · Khóa 38",
+        "position": "top_center",
+        "hold": 3.0
+      },
+      "reason": "Thẻ kết: tên chương trình và khóa 38 (lời MC nói 'khóa 38 Phân tích Dữ liệu'). Đặt trên cao, đoàn người đứng phía dưới. [Bỏ: thẻ hộp nhỏ không đủ sức làm đoạn kết; thay bằng màn che d06.]",
+      "priority": "storytelling",
+      "confidence": "low",
+      "reference": null,
+      "status": "removed"
+    },
+    {
+      "id": "d26",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c01",
+        "source_time": 0.7
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "01_hook/boom_bass_sau.wav",
+        "volume": 0.4
+      },
+      "reason": "Tiếng trầm khi tiêu đề 'KHAI GIẢNG' hiện (d07), mở đầu có sức nặng.",
+      "priority": "style",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d27",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c04",
+        "source_time": 0.2
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/thump_chu_to.wav",
+        "volume": 0.3
+      },
+      "reason": "Nhịp nhẹ khi tiêu đề chương 02 hiện (d12).",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d28",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c11",
+        "source_time": 23.95
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/thump_chu_to.wav",
+        "volume": 0.3
+      },
+      "reason": "Nhịp nhẹ khi tiêu đề chương 03 hiện (d20).",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d29",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c02",
+        "source_time": 8.0
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/bubble_pop_nhe.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng pop nhỏ khi tiêu đề d09 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d30",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c06",
+        "source_time": 3.2
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/bubble_pop_nhe.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng pop nhỏ khi tiêu đề d15 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d31",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c07",
+        "source_time": 1.0
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/bubble_pop_nhe.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng pop nhỏ khi tiêu đề d16 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d32",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c08",
+        "source_time": 2.8
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/bubble_pop_nhe.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng pop nhỏ khi tiêu đề d17 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d33",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c09",
+        "source_time": 2.3
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/bubble_pop_nhe.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng pop nhỏ khi tiêu đề d18 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d34",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c04",
+        "source_time": 3.3
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "02_chuyen_canh/swipe_ui_luot.wav",
+        "volume": 0.22
+      },
+      "reason": "Tiếng vuốt khi dòng 1 của danh sách d13 chạy vào.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d35",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c04",
+        "source_time": 4.1
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "02_chuyen_canh/swipe_ui_luot.wav",
+        "volume": 0.22
+      },
+      "reason": "Tiếng vuốt khi dòng 2 của danh sách d13 chạy vào.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d36",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c04",
+        "source_time": 4.9
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "02_chuyen_canh/swipe_ui_luot.wav",
+        "volume": 0.22
+      },
+      "reason": "Tiếng vuốt khi dòng 3 của danh sách d13 chạy vào.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d37",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c11",
+        "source_time": 30.8
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "02_chuyen_canh/swipe_ui_luot.wav",
+        "volume": 0.22
+      },
+      "reason": "Tiếng vuốt khi dòng 1 của danh sách d21 chạy vào.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d38",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c11",
+        "source_time": 33.3
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "02_chuyen_canh/swipe_ui_luot.wav",
+        "volume": 0.22
+      },
+      "reason": "Tiếng vuốt khi dòng 2 của danh sách d21 chạy vào.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d39",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c14",
+        "source_time": 6.1
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/dung_tick_correct.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng tick khi dòng ✓ 1 của d23 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d40",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c14",
+        "source_time": 8.9
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/dung_tick_correct.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng tick khi dòng ✓ 2 của d23 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d41",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "clip": "c14",
+        "source_time": 11.7
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "03_nhan_manh/dung_tick_correct.wav",
+        "volume": 0.25
+      },
+      "reason": "Tiếng tick khi dòng ✓ 3 của d23 hiện.",
+      "priority": "decoration",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d42",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "between": [
+          "c10",
+          "c11"
+        ]
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "02_chuyen_canh/whoosh_ngan.wav",
+        "volume": 0.2
+      },
+      "reason": "Whoosh nhẹ cho mờ chồng đổi chương (d04).",
+      "priority": "rhythm",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    },
+    {
+      "id": "d43",
+      "technique": "sfx_cue",
+      "preset": "sfx_cue_standard",
+      "anchor": {
+        "between": [
+          "c15",
+          "c16"
+        ]
+      },
+      "start_offset": 0,
+      "duration": 0.5,
+      "parameters": {
+        "sfx": "02_chuyen_canh/whoosh_dai_dien_anh.wav",
+        "volume": 0.3
+      },
+      "reason": "Whoosh dài cho màn che 'Khóa 38' (d06); đỉnh tiếng rơi đúng giữa màn che.",
+      "priority": "style",
+      "confidence": "low",
+      "reference": null,
+      "status": "proposed"
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "base_db": -16,
+      "duck_amount_db": 12
+    }
+  }
+}

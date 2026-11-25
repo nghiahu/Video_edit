@@ -35,6 +35,13 @@ Ví dụ: nội dung quan trọng nhưng chữ nhấn mạnh che mặt người 
 - `R-EMP-3`: NẾU khung đã cận (mặt chiếm > 40% chiều cao) → **không** `punch_in`.
 - `R-EMP-4`: NẾU người nói đang cử động mạnh hoặc chuyển cảnh trong 1 giây → **không** `punch_in`.
 
+### Zoom
+- `R-ZOOM-0`: **không tự đề xuất zoom** (`punch_in`, `punch_out`, `slow_push`). Chỉ đưa vào EDL khi người dùng yêu cầu rõ; `reason` ghi "người dùng yêu cầu". Kỹ thuật và hướng dẫn (`techniques/camera-motion/zoom-guide.md`) vẫn giữ để dùng khi được yêu cầu.
+
+### Chữ và chủ thể
+- `R-SUBJ-1`: không đặt chữ, đường chỉ hay hiệu ứng lên mặt và thân chủ thể chính (khai báo `subject_box` của clip; chi tiết ở `core/composition.md`).
+- `R-SRC-1`: chữ trên hình, tên người, con số, trích dẫn phải có nguồn (lời nói, metadata, lời người dùng) hoặc được ghi rõ là minh họa; mốc theo từng từ cho chữ theo lời nói phải đến từ nhận dạng giọng nói, thủ công hoặc file phụ đề, không ước lượng cho bản giao.
+
 ### Tần suất
 - `R-FREQ-1`: không hai `punch_in` cách nhau < 6 giây nguồn, trừ biến thể `double_punch` có chủ đích hài hước.
 - `R-FREQ-2`: không vượt `strategy.budget` cho bất kỳ kỹ thuật nào.

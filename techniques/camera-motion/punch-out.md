@@ -30,8 +30,8 @@ Clip bắt đầu ở khung đã **zoom nhẹ** rồi **lùi ra** về khung g�
 | Tham số | Mặc định | Khoảng | Đơn vị | Confidence |
 |---|---|---|---|---|
 | `start_scale` | 1.08 | 1.05–1.15 (tối đa 1.3) | × | medium |
-| `duration` (thời gian lùi) | 0.8 | 0.5–1.2 (cho phép 0.3–1.5) | giây | medium |
-| `easing` | `ease_out_cubic` | `ease_out_cubic`, `ease_out_quad` | – | medium |
+| `duration` (thời gian lùi) | 1.0 (subtle) / 0.9 (standard) | 0.5–1.2 (cho phép 0.3–1.5) | giây | medium |
+| `easing` | `ease_in_out` | `ease_in_out`, `ease_out_cubic`, `ease_out_quad` | – | medium |
 | `anchor_point` | `upper_third` | `upper_third`, `center`, `face` | – | medium |
 | `start_offset` | 0 | 0–1.0 | giây | low |
 

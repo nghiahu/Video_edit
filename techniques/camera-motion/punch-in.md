@@ -9,6 +9,8 @@ source_of_values: convention
 
 # Punch-in Zoom
 
+> Độ mượt, độ lớn và cách đặt zoom: xem `zoom-guide.md`. Preset subtle và standard đã đổi sang `ease_in_out` và **giữ zoom đến điểm cắt** (không còn "zoom rồi thả"), sau khi thấy giật (khung đầu nhảy 1,9% scale; về 1.0 trong một khung) và trông như nháy.
+
 ## 1. Mục đích
 Phóng nhanh vào khung hình ở đúng điểm nhấn của một câu nói, biểu cảm hoặc thông tin để kéo sự chú ý của người xem, đồng thời tạo nhịp cho đoạn talking-head dài.
 
@@ -32,12 +34,12 @@ Phóng nhanh vào khung hình ở đúng điểm nhấn của một câu nói, b
 | Tham số | Mặc định | Khoảng cho phép | Đơn vị | Confidence |
 |---|---|---|---|---|
 | `start_scale` | 1.0 | 1.0 | × | high |
-| `end_scale` | theo preset | 1.05–1.30 | × | medium |
-| `duration` (thời gian vào) | 0.35 | 0.25–0.50 | giây (≈ 8–15 frame ở 30 fps) | medium |
-| `easing` | `ease_out_cubic` | `ease_out_cubic`, `ease_out_quad` | – | medium |
-| `hold` (giữ ở scale cuối) | 1.2 | 0.5–2.0 | giây | medium |
-| `return` | `cut` | `cut`, `zoom_out`, `keep` | – | medium |
-| `return_duration` (nếu `zoom_out`) | 0.5 | 0.3–0.8 | giây | low |
+| `end_scale` | 1.10 (subtle) / 1.18 (standard) / 1.25 (aggressive) | 1.05–1.30 | × | medium |
+| `duration` (thời gian vào) | 1.0 (subtle) / 0.7 (standard) / 0.25 (aggressive) | 0.25–1.0 | giây | medium |
+| `easing` | `ease_in_out` (subtle, standard) / `ease_out_quad` (aggressive) | `ease_in_out`, `ease_out_cubic`, `ease_out_quad`; `validate` cảnh báo nếu khung đầu nhảy > 0,8% scale | – | medium |
+| `hold` (giữ ở scale cuối) | 1.0; **chỉ dùng khi `return: zoom_out`** (cut/keep giữ đến hết clip) | 0.5–2.0 | giây | medium |
+| `return` | `keep` (subtle, standard) / `cut` (aggressive) | `cut`, `keep` (cả hai: **giữ zoom đến hết clip**, điểm cắt kế tiếp đặt lại khung), `zoom_out` (lùi ra, chỉ khi cố ý) | – | medium |
+| `return_duration` (nếu `zoom_out`) | 0.7 | 0.3–1.0 | giây | low |
 | `anchor_point` | `upper_third` | `upper_third`, `center`, `face` | – | medium |
 | `start_offset` (so với điểm nhấn) | −0.1 | −0.2–0.0 | giây | medium |
 
@@ -48,8 +50,8 @@ Phóng nhanh vào khung hình ở đúng điểm nhấn của một câu nói, b
 4. Đặt `start_offset` để zoom bắt đầu **ngay trước** hoặc **đúng** điểm nhấn, không sau.
 5. Chọn `anchor_point`: `upper_third` (mắt trong vùng 1/3 trên) cho talking-head; `center` cho chủ thể ở giữa.
 6. Chọn `hold` đủ để hết ý nhấn (thường đến hết cụm từ), rồi `return`:
-   - `cut`: hợp khi sau đó cắt sang b-roll hoặc clip khác (mặc định).
-   - `zoom_out`: khi vẫn ở cùng clip và cần quay về khung gốc êm.
+   - `keep` hoặc `cut` (mặc định): **giữ zoom đến hết clip**; điểm cắt kế tiếp đặt lại khung. Vì vậy phải **cắt clip ở cuối ý** (đặt `source_out` ngay sau câu), để zoom đi cùng cả ý rồi "hết" ở điểm cắt. Zoom rồi thả ngay trong cùng cảnh trông như nháy.
+   - `zoom_out`: chỉ khi cố ý (reveal) và cả vòng vào–giữ–ra ≥ 2 s; `validate` cảnh báo nếu ngắn hơn.
    - `keep`: giữ scale mới đến hết clip — chỉ khi từ điểm này nội dung chuyển sang cảm xúc sâu hơn.
 7. Kiểm tra sau zoom: mắt còn trong vùng 1/3 trên, đỉnh đầu không bị cắt.
 

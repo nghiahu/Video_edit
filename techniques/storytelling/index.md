@@ -6,6 +6,7 @@
 | Dồn nhiều ý hoặc quãng thời gian vào chuỗi cảnh ngắn | `montage` | mẫu | `montage.md` |
 | Cắt theo nhịp nhạc (cần danh sách mốc nhịp do người dùng cung cấp) | `beat_sync_cut` | mẫu | `beat-sync-cut.md` |
 | Tua nhanh một quá trình dài, lặp lại | `time_lapse` | renderer | `time-lapse.md` |
+| Đổi bố cục không cắt: thẻ màn hình + thẻ mặt (9:16) | `layout_cards` | renderer | `layout-cards.md` |
 | Giữ lại một khoảnh khắc bằng khung đóng băng | `freeze_frame` | renderer | `freeze-frame.md` |
 | Tăng tốc rồi giảm tốc qua điểm nối | `speed_ramp_transition` | renderer | `speed-ramp-transition.md` |
 

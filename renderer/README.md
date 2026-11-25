@@ -38,6 +38,7 @@ Nguồn video lấy từ `../Video-analysis/videos/` theo `video_id` (đọc `re
 | `subtitles` | `parameters.cues` (mảng `{source_time, duration, text}`), mỗi cue một khối chữ ở đáy, nền mờ; `validate` kiểm tra ≤ 2 dòng, ≤ 42 ký tự/dòng, duration ≥ 1 s, cảnh báo > 17 ký tự/giây |
 | `color_grade_basic` | CSS `brightness/contrast/saturate` trên hình + lớp ấm/lạnh `soft-light`; áp theo cửa sổ trong clip (`duration: 0` = cả clip). Cảnh báo nếu chỉ chỉnh một số clip |
 | `vignette` | Lớp gradient radial tối dần ra mép, vào/ra mượt theo `ramp` |
+| `sfx_cue` | Tra mã trong `assets/sfx/sfxlib.json`, đặt file sao cho tiếng "đập" (`a` giây) rơi đúng mốc anchor, âm lượng theo `v` hoặc `volume`; file được liên kết vào thư mục public của lần render |
 | `b_roll_insert` | Không có quyết định riêng: là mẫu dựng timeline (clip + điểm nối) |
 | `audio_ducking` | Đường cong dB cho nhạc: hạ trước vùng nói `lead`, hạ trong `attack`, nâng lại trong `release`; gộp vùng nói gần nhau. Cần `audio.music.file`; nếu `null` thì bỏ qua và cảnh báo |
 
@@ -69,6 +70,18 @@ Bảng kiểu: `renderer/lib/transitions.mjs` (overlap hay tuần tự, có lớ
 
 ## Khối chữ dùng chung (đợt 0 và 1)
 `renderer/src/TextBlock.jsx` dựng sáu kỹ thuật chữ: `text_pill`, `text_box`, `stacked_text`, `title_card`, `big_text`, `marker_highlight`. Ba lớp: kiểu chữ (màu, gradient, viền, chữ rỗng, bóng, glow, hộp, vệt bút dạ), bố cục (dòng, so le, căn đều ước lượng theo số ký tự, khớp bề ngang khung bằng đo canvas) và hoạt ảnh vào/ra (16 + 8 kiểu). Preset kế thừa khối nền `_text_style_base`. Chữ `fit_width` đo phông sau khi nạp. Đã xem ảnh render thử của cả 22 preset (khung tĩnh); **chưa xem** hoạt ảnh từng kiểu và hiển thị ở 1080p/4K.
+
+### Đợt 2
+Thêm vào `TextBlock.jsx`: biểu tượng nhỏ (`icon`), dấu ngoặc kép lớn (`quote_mark`), số đếm chạy định dạng Việt (`value`, `decimals`, `prefix`, `suffix`), ký hiệu đầu dòng và hiện từng mục (`bullet`, `item_delay`), bong bóng thoại có đuôi (`box_style: bubble`, `tail`), callout có đường chỉ vẽ dần tới điểm cố định (`target_x`, `target_y`; **không** bám vật chuyển động). Chín kỹ thuật đợt 2 dùng chung các khả năng này. Đã xem ảnh render thử của cả 25 preset (khung tĩnh).
+
+### Đợt 4
+Thêm vào `TextBlock.jsx`: đánh máy (`typewriter`, `type_speed`, `caret`; ký tự chưa hiện vẫn chiếm chỗ nên bố cục không nhảy), giải mã (`scramble`, ký tự ngẫu nhiên chốt từ trái sang phải), glitch (`glitch`; nhiễu theo frame, xác định, có `glitch_rate` ≤ 0.6), chữ cắt xén (`cutout`: SVG mask, bỏ qua hộp/sub_text) và chữ theo đường cong (`path_shape`: arc_up, arc_down, wave, circle; một dòng). Năm kỹ thuật đợt 4 dùng chung. Đã xem khung tĩnh của 13 preset ở nhiều thời điểm; hoạt ảnh vào/ra chưa xem.
+
+### Đợt 5
+Thêm vào `TextBlock.jsx`: thanh tiến độ (`progress_to`, nhãn + phần trăm làm tròn), đếm ngược (`countdown_from`, `countdown_step`, `countdown_format` number|clock, nhịp đập mỗi lần đổi số, chữ kết thúc `countdown_end_text`), cuộn tên (`credits`, `roll_speed`; dòng `## ` là đề mục, dòng `a | b` chia hai cột; mờ dần mép trên/dưới) và bảng so sánh (`table`; ô cách nhau bằng `|`, hàng hiện nối tiếp). `validate` ước lượng thời gian cuộn so với chiều cao danh sách và chặn khi thiếu. Đã xem khung tĩnh của 8 preset ở nhiều thời điểm; hoạt ảnh vào/ra chưa xem. `tracked_text` chưa làm.
+
+### Đợt 3
+Chữ theo lời nói: `parameters.words = [{text, start, end}]` (giây theo thời gian video nguồn) và `words_source` (asr|manual|subtitle_file|estimated). Renderer **không tự nhận dạng giọng nói**, chỉ đọc mốc có sẵn; thời gian khối tự tính từ từ cuối + `words_tail`. Bốn chế độ `words_mode`: `karaoke`, `highlight`, `by_word`, `chunks`. `estimated` chỉ cho bản thử: `validate` cảnh báo, `final` từ chối chạy. Đã xem hiển thị 8 preset với mốc ước lượng; độ khớp với lời nói thật chưa kiểm.
 
 ## Chưa làm
 - Fade cuối nhạc, ambience nối, SFX, các kỹ thuật `planned` trong `techniques/index.md`.

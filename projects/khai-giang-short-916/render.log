@@ -1,0 +1,38 @@
+EDL: Kỹ năng dữ liệu là lợi thế cạnh tranh (9:16) · style social · 19 quyết định
+  ⚠ d10: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.00s (in + hold + out); renderer dùng 3.00s
+  ⚠ d11: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.20s (in + hold + out); renderer dùng 3.20s
+  ⚠ d12: chữ (vị trí top_center) có thể che chủ thể của c01: ~54% vùng chữ nằm trong subject_box (ước lượng thô); đổi position hoặc cỡ chữ để né mặt và thân chủ thể
+  ⚠ d12: duration của quyết định (0s) khác tổng thời gian hiện thực tế 2.70s (in + hold + out); renderer dùng 2.70s
+  ⚠ d13: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.65s (in + hold + out); renderer dùng 3.65s
+  ⚠ d14: chữ (vị trí center) có thể che chủ thể của c02: ~100% vùng chữ nằm trong subject_box (ước lượng thô); đổi position hoặc cỡ chữ để né mặt và thân chủ thể
+  ⚠ d14: duration của quyết định (0s) khác tổng thời gian hiện thực tế 4.20s (in + hold + out); renderer dùng 4.20s
+  ⚠ d15: duration của quyết định (0s) khác tổng thời gian hiện thực tế 15.85s (in + hold + out); renderer dùng 15.85s
+  ⚠ d16: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.10s (in + hold + out); renderer dùng 3.10s
+  ⚠ d17: duration của quyết định (0s) khác tổng thời gian hiện thực tế 5.85s (in + hold + out); renderer dùng 5.85s
+  ⚠ d19: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.10s (in + hold + out); renderer dùng 3.10s
+  ⚠ d20: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.30s (in + hold + out); renderer dùng 3.30s
+  ⚠ d21: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.90s (in + hold + out); renderer dùng 3.90s
+  ⚠ d22: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.30s (in + hold + out); renderer dùng 3.30s
+Proxy DJI_20261117185317_0019_D_AZ1 ... dùng lại
+Proxy DJI_20261117184933_0009_D_AZ1 ... dùng lại
+Proxy DJI_20261117185141_0014_D_AZ1 ... dùng lại
+Proxy DJI_20261117185159_0015_D_AZ1 ... dùng lại
+Proxy DJI_20261117185250_0017_D_AZ1 ... dùng lại
+Proxy DJI_20261117185917_0033_D_AZ1 ... dùng lại
+Proxy DJI_20261117191922_0049_D_AZ1 ... dùng lại
+Đóng gói composition ...
+Render preview 304x540 · 1535 frame @ 30fps ...
+  0%
+  10%
+  20%
+  30%
+  40%
+  50%
+  60%
+  70%
+  80%
+  90%
+[31mProtocolError: Protocol error (Page.bringToFront): Target closed. https://www.remotion.dev/docs/target-closed[39m
+  100%
+Xong: E:\Bộ tài liệu edit\Video-edit\projects\khai-giang-short-916\out\preview.mp4
+Độ dài 51.22s (dự kiến 51.17s), có tiếng: true

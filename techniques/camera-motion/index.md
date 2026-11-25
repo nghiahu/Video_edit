@@ -15,4 +15,6 @@
 - Khung đã `close` hoặc clip đã có camera chuyển động → **không** thêm chuyển động; để nguyên.
 - Style `documentary` → chỉ `punch_in_subtle`, rất ít.
 
+Cách quyết định zoom (khi nào, bao nhiêu, nhanh chậm, vì sao giật): `zoom-guide.md`.
+
 Đọc `core/decision-engine.md` trước khi đưa bất kỳ chuyển động camera nào vào EDL.

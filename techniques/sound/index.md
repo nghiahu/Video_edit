@@ -4,6 +4,7 @@
 |---|---|---|
 | Có nhạc nền và có tiếng nói | `audio_ducking` (bắt buộc) | `audio-ducking.md` |
 | Gắn SFX (whoosh, impact) vào điểm cắt; file do người dùng cung cấp | `whoosh_synced_cut` | `whoosh-synced-cut.md` |
+| Gắn SFX từ **thư viện có sẵn** (`assets/sfx`, 106 file, 7 nhóm) vào bất kỳ mốc nào: chữ hiện, dòng danh sách, chuyển cảnh | `sfx_cue` | `sfx-cue.md` |
 | Nhấn khoảnh khắc bằng âm thanh khác (chưa có) | `impact`, `riser` | planned |
 | Nối cảnh bằng tiếng nền (chưa có) | `ambience` | planned |
 

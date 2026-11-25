@@ -35,13 +35,13 @@ Khối nền `_text_style_base`; giá trị của `marker_yellow` trừ khi ghi 
 | `marker_color` | `#FFE14D` (pink `#FF9EC4`, keywords `#FFD60A`) | CSS color; **bắt buộc** (validate) | – | low |
 | `text_color` | `#111111` (pink `#5B1A3A`, keywords `#FFFFFF`) | CSS color | – | low |
 | `highlight_color` | `null` (keywords `#111111`) | màu chữ của từ được tô | – | low |
-| `marker_top` | 48 | 0–100, < `marker_bottom` | % chiều cao dòng | low |
-| `marker_bottom` | 94 | 0–100, > `marker_top` | % chiều cao dòng | low |
+| `marker_top` | 6 (`marker_underline_yellow`: 52) | 0–100, < `marker_bottom` | % chiều cao dòng | low |
+| `marker_bottom` | 96 | 0–100, > `marker_top` | % chiều cao dòng | low |
 | `marker_skew` | −4 (pink −3, keywords −3) | quy ước −8–0 | độ | low |
 | `marker_pad_x` | 10 | ≥ 0 | px @1080p | low |
 | `marker_delay` | 0.2 (keywords 0.3) | ≥ 0 | giây | low |
 | `marker_duration` | 0.45 (keywords 0.4) | > 0 | giây | low |
-| `font_size` / `font_weight` | 64 / 700 (keywords 62) | 12–400 (validate) | px @1080p | medium |
+| `font_size` / `font_weight` | 64 / 700 (keywords 62) | 12–600 (validate) | px @1080p | medium |
 | `font_family` | Inter (pink: Nunito) | phông trong registry | – | medium |
 | `position` | `lower_middle` | `BLOCK_ENUMS.position` | – | medium |
 | `in_animation` | `fade` | `BLOCK_ENUMS.in_animation` | – | low |
@@ -62,11 +62,12 @@ Giới hạn `marker_top`, `marker_bottom`, `marker_skew`, `marker_pad_x`, `mark
 Đã xem trên preview 960×540 của clip thử (khung giữa lúc chữ hiện đủ).
 | Preset | Mô tả đã xem | Documentary |
 |---|---|---|
-| `marker_yellow` | Vệt vàng liền dải sau cả dòng, chữ đen, nghiêng nhẹ | **Cấm** |
+| `marker_yellow` | Vệt vàng liền dải phủ kín chiều cao chữ, chữ đen, nghiêng nhẹ | **Cấm** |
 | `marker_pink` | Vệt hồng liền dải sau cả dòng, chữ Nunito tím đậm | **Cấm** |
+| `marker_underline_yellow` | Vệt vàng thấp chỉ phủ nửa dưới dòng (kiểu gạch dưới), chữ trắng có bóng; **chưa xem trên preview** | **Cấm** |
 | `marker_keywords` | Chỉ các từ trong `highlight_words` có vệt vàng, chữ đổi đen; cụm nhiều từ gộp một vệt | **Cấm** |
 
-Cả ba nằm trong `forbidden_styles: [documentary]`; không có preset marker nào dùng được ở documentary.
+Cả bốn nằm trong `forbidden_styles: [documentary]`; không có preset marker nào dùng được ở documentary.
 
 ## 7. Quy tắc quyết định
 - `R-MARK-1` (validate): ≤ 14 từ, ≤ 2 dòng, `marker_color` có giá trị, `hold` ≥ `max(1.0, 0.8 + 0.3 × số_từ)`, enum hợp lệ, phông trong registry.
@@ -115,3 +116,5 @@ Video hướng dẫn kiểu social/giáo dục (style không phải documentary)
 - Vệt phủ liền qua dấu cách giữa các từ khóa; không hở, không lệch trên/dưới chữ.
 - Dấu tiếng Việt hiển thị đủ, không bị vệt che.
 - Cần xem preview: vệt quét đúng thời điểm (`marker_delay`), 1080p/4K, nghiêng (`marker_skew`) không làm chữ vỡ, cảnh có người.
+
+**Bài học từ render thử:** bản đầu của `marker_yellow` đặt vệt chỉ phủ nửa dưới dòng (`marker_top` 48) nhưng dùng chữ đen. Nửa trên của chữ nằm trên nền video nên trông như bị bôi dở và khó đọc. Vệt mặc định giờ phủ gần cả chiều cao dòng (`marker_top` 6, `marker_bottom` 96). Vệt thấp kiểu gạch dưới chỉ dùng với chữ trắng có bóng (`marker_underline_yellow`).

@@ -2,3 +2,7 @@ node_modules/
 projects/*/proxy/
 projects/*/out/
 projects/*/.bundle/
+# Ignore video storage
+/videos/
+projects/*/.public-final/
+projects/*/frames/

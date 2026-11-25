@@ -1,0 +1,36 @@
+EDL: Thử tính năng mới style social · style social · 11 quyết định
+  ⚠ d10: duration của quyết định (0s) khác tổng thời gian hiện thực tế 4.70s (in + hold + out); renderer dùng 4.70s
+  ⚠ d11: chữ có thể lọt ra ngoài vùng an toàn 9:16 (mép phải; ước lượng thô, giao diện TikTok/Reels có thể che)
+  ⚠ d11: duration của quyết định (0s) khác tổng thời gian hiện thực tế 4.65s (in + hold + out); renderer dùng 4.65s
+  ⚠ d13: chữ có thể lọt ra ngoài vùng an toàn 9:16 (mép trên; ước lượng thô, giao diện TikTok/Reels có thể che)
+  ⚠ d13: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.05s (in + hold + out); renderer dùng 3.05s
+  ⚠ d14: duration của quyết định (0s) khác tổng thời gian hiện thực tế 2.15s (in + hold + out); renderer dùng 2.15s
+  ⚠ d15: cỡ chữ 36px nhỏ hơn mức khuyến nghị 40px cho Inter
+  ⚠ d15: chữ có thể lọt ra ngoài vùng an toàn 9:16 (mép trái, phải; ước lượng thô, giao diện TikTok/Reels có thể che)
+  ⚠ d15: duration của quyết định (0s) khác tổng thời gian hiện thực tế 4.85s (in + hold + out); renderer dùng 4.85s
+  ⚠ d16: chữ (vị trí lower_middle) có thể che chủ thể của c02: ~100% vùng chữ nằm trong subject_box (ước lượng thô); đổi position hoặc cỡ chữ để né mặt và thân chủ thể
+  ⚠ d16: duration của quyết định (0s) khác tổng thời gian hiện thực tế 2.55s (in + hold + out); renderer dùng 2.55s
+  ⚠ d17: cỡ chữ 38px nhỏ hơn mức khuyến nghị 40px cho Inter
+  ⚠ d17: chữ có thể lọt ra ngoài vùng an toàn 9:16 (mép phải; ước lượng thô, giao diện TikTok/Reels có thể che)
+  ⚠ d17: duration của quyết định (0s) khác tổng thời gian hiện thực tế 2.55s (in + hold + out); renderer dùng 2.55s
+  ⚠ d18: cỡ chữ 34px nhỏ hơn mức khuyến nghị 40px cho Inter
+  ⚠ d18: chữ có thể lọt ra ngoài vùng an toàn 9:16 (mép phải; ước lượng thô, giao diện TikTok/Reels có thể che)
+  ⚠ d18: duration của quyết định (0s) khác tổng thời gian hiện thực tế 3.75s (in + hold + out); renderer dùng 3.75s
+Proxy DJI_20261117185917_0033_D_AZ1 ... đã tạo
+Proxy DJI_20261117185141_0014_D_AZ1 ... đã tạo
+Proxy DJI_20261117191922_0049_D_AZ1 ... đã tạo
+Đóng gói composition ...
+Render preview 304x540 · 912 frame @ 30fps ...
+  0%
+  10%
+  20%
+  30%
+  40%
+  50%
+  60%
+  70%
+  80%
+  90%
+  100%
+Xong: E:\Bộ tài liệu edit\Video-edit\projects\test-social-new\out\preview.mp4
+Độ dài 30.46s (dự kiến 30.40s), có tiếng: true

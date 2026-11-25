@@ -227,7 +227,7 @@
     "confidence": "medium"
   },
   "_text_style_base": {
-    "description": "Khối nền kiểu chữ dùng chung cho text_pill, text_box, stacked_text, title_card, big_text, marker_highlight. Cỡ chữ tính cho 1080p.",
+    "description": "Khối nền kiểu chữ dùng chung cho các kỹ thuật chữ đợt 1, 2 và 4 (text_pill … social_tag, typewriter_text … text_on_path). Cỡ chữ tính cho 1080p.",
     "parameters": {
       "font_family": "Inter",
       "font_weight": 700,
@@ -277,8 +277,8 @@
       "fit_width": 0,
       "max_font_size": 600,
       "marker_color": null,
-      "marker_top": 48,
-      "marker_bottom": 94,
+      "marker_top": 6,
+      "marker_bottom": 96,
       "marker_skew": 0,
       "marker_pad_x": 10,
       "marker_delay": 0.15,
@@ -293,7 +293,180 @@
       "sub_font_weight": 500,
       "sub_color": null,
       "sub_font_family": null,
-      "sub_gap": 12
+      "sub_gap": 12,
+      "icon": "none",
+      "icon_color": null,
+      "quote_mark": false,
+      "quote_mark_color": "#F2C14E",
+      "quote_mark_size": 160,
+      "quote_font_family": "Playfair Display",
+      "bullet": "none",
+      "bullet_color": null,
+      "item_delay": null,
+      "tail": "none",
+      "tail_size": 26,
+      "target_x": null,
+      "target_y": null,
+      "label_x": 0.3,
+      "label_y": 0.25,
+      "line_color": "#F2C14E",
+      "line_width": 4,
+      "line_style": "arrow",
+      "ring_radius": 36,
+      "line_delay": 0.15,
+      "line_duration": 0.45,
+      "prefix": "",
+      "suffix": "",
+      "decimals": 0,
+      "count_from": 0,
+      "count_duration": 1.2,
+      "count_delay": 0.1,
+      "thousands_sep": ".",
+      "line_gap": 0,
+      "typewriter": false,
+      "type_speed": 16,
+      "type_duration": 0,
+      "type_delay": 0.1,
+      "caret": false,
+      "caret_char": "|",
+      "caret_blink": 2,
+      "caret_color": null,
+      "scramble": false,
+      "scramble_chars": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&@",
+      "scramble_duration": 0.9,
+      "scramble_delay": 0.1,
+      "scramble_rate": 24,
+      "glitch": false,
+      "glitch_rate": 0.3,
+      "glitch_split": 8,
+      "glitch_jitter": 10,
+      "glitch_slices": 2,
+      "cutout": false,
+      "cutout_color": "#0F172A",
+      "cutout_opacity": 0.92,
+      "cutout_outline_width": 0,
+      "cutout_outline_color": "#FFFFFF",
+      "path_shape": "none",
+      "path_curve": 0.3,
+      "path_width": 0.8,
+      "path_y": 0.5,
+      "glitch_pattern": null,
+      "glitch_vanish": false,
+      "cutout_scale_from": 1,
+      "cutout_scale_to": 1,
+      "cutout_scale_ease": "out",
+      "cutout_focus_x": 0.5,
+      "cutout_focus_y": 0.5,
+      "path_reveal": "none",
+      "path_reveal_duration": 0.9,
+      "path_reveal_delay": 0.1,
+      "path_reveal_slide": 0.06,
+      "countdown_from": null,
+      "countdown_step": 1,
+      "countdown_delay": 0.2,
+      "countdown_format": "number",
+      "countdown_end_text": "",
+      "countdown_pop": 0.2,
+      "progress_to": null,
+      "progress_delay": 0.2,
+      "progress_duration": 1.5,
+      "show_percent": true,
+      "bar_width": 0.5,
+      "bar_height": 18,
+      "bar_color": "#F2C14E",
+      "bar_color_to": null,
+      "bar_track_color": "rgba(255,255,255,0.25)",
+      "bar_radius": 999,
+      "label_gap": 12,
+      "credits": false,
+      "roll_speed": 90,
+      "credits_width": 0.6,
+      "credits_group_gap": 1.2,
+      "credits_heading_color": "#F2C14E",
+      "credits_heading_weight": 600,
+      "table": false,
+      "table_header": true,
+      "table_bg": "rgba(15,23,42,0.92)",
+      "table_header_bg": "#F2C14E",
+      "table_header_color": "#0F172A",
+      "table_line_color": "rgba(255,255,255,0.18)",
+      "table_highlight_col": -1,
+      "table_highlight_bg": "rgba(242,193,78,0.18)",
+      "table_row_padding": 16,
+      "table_first_col": 1.3,
+      "table_width": 0.7,
+      "words_mode": null,
+      "words_tail": 0.5,
+      "word_pop": true,
+      "word_pop_amount": 0.14,
+      "word_replace": false,
+      "karaoke_active_color": "#FFD84D",
+      "karaoke_done_color": null,
+      "karaoke_upcoming_opacity": 0.45,
+      "chunk_size": 2,
+      "chunk_linger": 0.5,
+      "badge_text": "",
+      "badge_color": "#E5B506",
+      "badge_text_color": "#FFFFFF",
+      "badge_size": 64,
+      "badge_corner": "top_left",
+      "badge_delay": 0.15,
+      "sweep_line": false,
+      "sweep_duration": 0.4,
+      "sweep_color": "#FFFFFF",
+      "sweep_width": 5,
+      "ghost_x": 0,
+      "ghost_color": "rgba(255,255,255,0.5)",
+      "ghost_time": 1,
+      "scatter_spread": 140,
+      "scatter_delay": 0.05,
+      "scatter_duration": 0.5,
+      "strike": false,
+      "strike_delay": 0.6,
+      "strike_item_delay": 0.6,
+      "strike_duration": 0.35,
+      "strike_color": "#E3232F",
+      "strike_width": 6,
+      "strike_dim": 0.55,
+      "compare": false,
+      "winner_at": 1.4,
+      "card_width": 0.4,
+      "card_gap": 20,
+      "card_color": "#FFFFFF",
+      "accent_color": "#E3232F",
+      "win_text_color": "#FFFFFF",
+      "vs_text": "vs",
+      "vs_color": "#FFFFFF",
+      "draw": false,
+      "draw_shape": "arrow",
+      "draw_delay": 0.1,
+      "draw_duration": 0.8,
+      "draw_wobble": 3,
+      "arrow_size": 34,
+      "draw_shadow": true,
+      "cta": null,
+      "click_at": 1.4,
+      "button_text": "Follow",
+      "button_done": "Đã follow",
+      "done_color": "#E5E7EB",
+      "button_font_size": 28,
+      "avatar_text": null,
+      "placeholder": "Thêm bình luận...",
+      "type_at": 0.4,
+      "image_layout": "fan",
+      "image_width": 0.24,
+      "image_aspect": 1.5,
+      "image_center": [
+        0.5,
+        0.2
+      ],
+      "image_radius": 0.42,
+      "image_spread": 70,
+      "orbit_speed": 0.25,
+      "strip_speed": 120,
+      "image_border": 4,
+      "change_rgb": "227,35,47",
+      "table_row_bg": null
     }
   },
   "text_pill_clean": {
@@ -484,7 +657,8 @@
       "margin_bottom": 14,
       "in_animation": "slide_left",
       "out_animation": "slide_left",
-      "align": "left"
+      "align": "left",
+      "line_gap": 8
     },
     "allowed_styles": [
       "all"
@@ -512,7 +686,8 @@
       "margin": 7,
       "shadow_type": "soft",
       "in_animation": "fade_up",
-      "in_duration": 0.5
+      "in_duration": 0.5,
+      "line_gap": 16
     },
     "allowed_styles": [
       "all"
@@ -538,7 +713,8 @@
       "margin": 7,
       "shadow_type": "soft",
       "in_animation": "fade_up",
-      "in_duration": 0.5
+      "in_duration": 0.5,
+      "line_gap": 16
     },
     "allowed_styles": [
       "all"
@@ -566,7 +742,8 @@
       "shadow_x": 5,
       "shadow_y": 5,
       "in_animation": "line_stagger",
-      "in_duration": 0.55
+      "in_duration": 0.55,
+      "line_gap": 14
     },
     "allowed_styles": [
       "all"
@@ -595,7 +772,8 @@
       "shadow_x": 6,
       "shadow_y": 6,
       "in_animation": "line_stagger",
-      "in_duration": 0.6
+      "in_duration": 0.6,
+      "line_gap": 22
     },
     "allowed_styles": [
       "all"
@@ -800,7 +978,7 @@
   "marker_yellow": {
     "technique": "marker_highlight",
     "extends": "_text_style_base",
-    "description": "Cả dòng có vệt bút dạ vàng phía sau, chữ đen, nghiêng nhẹ. Nếu có highlight_words thì chỉ tô các từ đó.",
+    "description": "Cả dòng có vệt bút dạ vàng phủ kín chiều cao chữ, chữ đen, nghiêng nhẹ. Nếu có highlight_words thì chỉ tô các từ đó.",
     "parameters": {
       "font_weight": 700,
       "font_size": 64,
@@ -824,7 +1002,7 @@
   "marker_pink": {
     "technique": "marker_highlight",
     "extends": "_text_style_base",
-    "description": "Vệt bút dạ hồng, chữ tím đậm, dễ thương.",
+    "description": "Vệt bút dạ hồng phủ kín chiều cao chữ, chữ tím đậm, dễ thương.",
     "parameters": {
       "font_family": "Nunito",
       "font_weight": 800,
@@ -874,5 +1052,3099 @@
     "requires": [
       "highlight_words"
     ]
+  },
+  "marker_underline_yellow": {
+    "technique": "marker_highlight",
+    "extends": "_text_style_base",
+    "description": "Vệt vàng THẤP chỉ phủ nửa dưới dòng (kiểu bút dạ gạch dưới). Chữ phải tương phản tốt với cả nền video lẫn nền vệt, nên dùng chữ trắng có bóng.",
+    "parameters": {
+      "font_weight": 700,
+      "font_size": 64,
+      "text_color": "#FFFFFF",
+      "marker_color": "rgba(255,214,10,0.85)",
+      "marker_skew": -4,
+      "position": "lower_middle",
+      "in_animation": "fade",
+      "marker_delay": 0.2,
+      "marker_duration": 0.45,
+      "shadow_type": "soft",
+      "shadow_blur": 14,
+      "marker_top": 52,
+      "marker_bottom": 96
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "chapter_title_editorial": {
+    "technique": "chapter_title",
+    "extends": "_text_style_base",
+    "description": "Số chương nhỏ phía trên, tên chương lớn serif Playfair, vạch vàng bên trái, nền tối nhẹ. Truyền lines: [\"CHƯƠNG 01\", \"Tên chương\"].",
+    "parameters": {
+      "font_family": "Playfair Display",
+      "font_weight": 700,
+      "font_size": 110,
+      "line_scales": [
+        0.52,
+        1
+      ],
+      "line_height": 1.2,
+      "position": "center",
+      "align": "left",
+      "box_style": "bar_left",
+      "box_color": "rgba(0,0,0,0)",
+      "box_border_color": "#F2C14E",
+      "box_border_width": 8,
+      "box_padding_x": 40,
+      "box_padding_y": 10,
+      "bg_mode": "dim",
+      "bg_opacity": 0.5,
+      "in_animation": "fade_up",
+      "in_duration": 0.6,
+      "out_duration": 0.4,
+      "letter_spacing": 0,
+      "line_gap": 14
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "chapter_title_bar": {
+    "technique": "chapter_title",
+    "extends": "_text_style_base",
+    "description": "Số chương nhỏ, tên chương Inter đậm, vạch đỏ thương hiệu, góc dưới trái. Truyền lines: [\"CHƯƠNG 01\", \"Tên chương\"].",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 96,
+      "line_scales": [
+        0.42,
+        1
+      ],
+      "line_height": 1.2,
+      "position": "lower_left",
+      "margin": 6,
+      "align": "left",
+      "box_style": "bar_left",
+      "box_color": "rgba(0,0,0,0.45)",
+      "box_border_color": "#B91C2C",
+      "box_border_width": 10,
+      "box_padding_x": 36,
+      "box_padding_y": 16,
+      "in_animation": "fade_up",
+      "in_duration": 0.5,
+      "line_gap": 12
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "chapter_title_bold": {
+    "technique": "chapter_title",
+    "extends": "_text_style_base",
+    "description": "Chữ hoa Anton cực đậm, số chương nhỏ, nền tối đậm. Truyền lines: [\"CHƯƠNG 01\", \"Tên chương\"].",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "text_transform": "uppercase",
+      "font_size": 160,
+      "line_scales": [
+        0.4,
+        1
+      ],
+      "line_height": 1.25,
+      "position": "center",
+      "align": "center",
+      "bg_mode": "dim",
+      "bg_opacity": 0.65,
+      "shadow_type": "hard",
+      "shadow_x": 6,
+      "shadow_y": 6,
+      "in_animation": "slide_up",
+      "in_duration": 0.5,
+      "out_duration": 0.35,
+      "line_gap": 32
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "pull_quote_editorial": {
+    "technique": "pull_quote",
+    "extends": "_text_style_base",
+    "description": "Dấu ngoặc kép vàng lớn, câu trích serif Playfair, tên người nói ở dòng phụ (sub_text), nền tối nhẹ.",
+    "parameters": {
+      "font_family": "Playfair Display",
+      "font_weight": 600,
+      "font_size": 64,
+      "line_height": 1.25,
+      "position": "center",
+      "align": "left",
+      "max_width_percent": 66,
+      "quote_mark": true,
+      "quote_mark_color": "#F2C14E",
+      "quote_mark_size": 300,
+      "sub_font_family": "Inter",
+      "sub_font_size": 34,
+      "sub_font_weight": 500,
+      "sub_gap": 26,
+      "bg_mode": "dim",
+      "bg_opacity": 0.5,
+      "in_animation": "fade",
+      "in_duration": 0.7,
+      "out_duration": 0.5
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "pull_quote_clean": {
+    "technique": "pull_quote",
+    "extends": "_text_style_base",
+    "description": "Trích dẫn Inter gọn, dấu ngoặc kép vàng, bóng mềm, góc dưới trái.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 54,
+      "line_height": 1.25,
+      "position": "lower_left",
+      "margin": 7,
+      "align": "left",
+      "max_width_percent": 62,
+      "quote_mark": true,
+      "quote_mark_color": "#F2C14E",
+      "quote_mark_size": 240,
+      "shadow_type": "soft",
+      "shadow_blur": 18,
+      "sub_font_size": 32,
+      "sub_gap": 18,
+      "in_animation": "fade_up",
+      "in_duration": 0.5
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "pull_quote_bold": {
+    "technique": "pull_quote",
+    "extends": "_text_style_base",
+    "description": "Trích dẫn chữ lớn đậm giữa màn hình, dấu ngoặc kép đỏ cam lớn, nền tối.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 72,
+      "line_height": 1.15,
+      "position": "center",
+      "align": "center",
+      "max_width_percent": 72,
+      "quote_mark": true,
+      "quote_mark_color": "#FF6B6B",
+      "quote_mark_size": 340,
+      "sub_font_size": 36,
+      "sub_gap": 24,
+      "bg_mode": "dim",
+      "bg_opacity": 0.6,
+      "in_animation": "scale_fade",
+      "in_duration": 0.5
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "big_number_clean": {
+    "technique": "big_number",
+    "extends": "_text_style_base",
+    "description": "Số liệu lớn Inter đậm, đếm chạy từ 0, nhãn nhỏ ở dòng phụ (sub_text), nền tối nhẹ. Truyền parameters.value.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 230,
+      "letter_spacing": -0.03,
+      "line_height": 1,
+      "position": "center",
+      "align": "center",
+      "count_duration": 1.2,
+      "bg_mode": "dim",
+      "bg_opacity": 0.4,
+      "shadow_type": "soft",
+      "sub_font_size": 46,
+      "sub_gap": 10,
+      "in_animation": "fade",
+      "in_duration": 0.4,
+      "out_duration": 0.35
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "big_number_card": {
+    "technique": "big_number",
+    "extends": "_text_style_base",
+    "description": "Số liệu trong thẻ tối bo góc kèm nhãn nhỏ, góc dưới trái; đếm chạy.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 150,
+      "letter_spacing": -0.02,
+      "line_height": 1,
+      "position": "lower_left",
+      "margin": 6,
+      "align": "left",
+      "box_style": "rounded",
+      "box_color": "rgba(10,14,28,0.78)",
+      "box_radius": 22,
+      "box_padding_x": 56,
+      "box_padding_y": 34,
+      "count_duration": 1,
+      "sub_font_size": 40,
+      "sub_gap": 8,
+      "in_animation": "fade_up",
+      "in_duration": 0.45
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "big_number_bold": {
+    "technique": "big_number",
+    "extends": "_text_style_base",
+    "description": "Số liệu cực lớn Anton tô gradient vàng-cam, bóng cứng, nhãn chữ hoa; bật nảy vào.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 320,
+      "letter_spacing": 0,
+      "line_height": 1,
+      "position": "center",
+      "align": "center",
+      "gradient_from": "#FFE14D",
+      "gradient_to": "#FF7A1A",
+      "gradient_angle": 90,
+      "shadow_type": "hard",
+      "shadow_x": 8,
+      "shadow_y": 8,
+      "text_transform": "uppercase",
+      "count_duration": 1,
+      "sub_font_size": 56,
+      "sub_color": "#FFFFFF",
+      "sub_gap": 6,
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "bullet_list_clean": {
+    "technique": "bullet_list_reveal",
+    "extends": "_text_style_base",
+    "description": "Danh sách trong hộp tối bo góc, chấm đầu dòng vàng, từng mục hiện nối tiếp. Truyền lines (2–6 mục, mỗi mục ≤ 8 từ).",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 52,
+      "line_height": 1.35,
+      "position": "lower_left",
+      "margin": 6,
+      "align": "left",
+      "box_style": "rounded",
+      "box_color": "rgba(0,0,0,0.62)",
+      "box_radius": 18,
+      "box_padding_x": 44,
+      "box_padding_y": 28,
+      "bullet": "•",
+      "bullet_color": "#F2C14E",
+      "in_animation": "line_stagger",
+      "item_delay": 0.55,
+      "in_duration": 0.5,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "bullet_list_numbered": {
+    "technique": "bullet_list_reveal",
+    "extends": "_text_style_base",
+    "description": "Danh sách đánh số, vạch bên trái màu vàng, từng mục hiện nối tiếp.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 52,
+      "line_height": 1.35,
+      "position": "middle_left",
+      "margin": 6,
+      "align": "left",
+      "box_style": "bar_left",
+      "box_color": "rgba(0,0,0,0.55)",
+      "box_border_color": "#F2C14E",
+      "box_border_width": 8,
+      "box_padding_x": 40,
+      "box_padding_y": 24,
+      "bullet": "number",
+      "bullet_color": "#F2C14E",
+      "in_animation": "line_stagger",
+      "item_delay": 0.6,
+      "in_duration": 0.5
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "bullet_list_check": {
+    "technique": "bullet_list_reveal",
+    "extends": "_text_style_base",
+    "description": "Danh sách có dấu tích xanh, nền tối, từng mục hiện nối tiếp (dấu ✓ lấy từ phông dự phòng nếu phông chính thiếu).",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 52,
+      "line_height": 1.35,
+      "position": "center",
+      "align": "left",
+      "box_style": "rounded",
+      "box_color": "rgba(0,0,0,0.62)",
+      "box_radius": 20,
+      "box_padding_x": 48,
+      "box_padding_y": 30,
+      "bullet": "✓",
+      "bullet_color": "#4ADE80",
+      "in_animation": "line_stagger",
+      "item_delay": 0.55,
+      "in_duration": 0.5
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "location_tag_pin": {
+    "technique": "location_tag",
+    "extends": "_text_style_base",
+    "description": "Nhãn địa điểm: con nhộng tối có biểu tượng ghim.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 40,
+      "icon": "pin",
+      "icon_color": "#F2C14E",
+      "box_style": "pill",
+      "box_color": "rgba(15,18,30,0.78)",
+      "box_padding_x": 30,
+      "box_padding_y": 14,
+      "position": "top_left",
+      "margin": 5,
+      "in_animation": "fade_up"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "location_tag_date": {
+    "technique": "location_tag",
+    "extends": "_text_style_base",
+    "description": "Nhãn ngày giờ: con nhộng tối có biểu tượng lịch.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 40,
+      "icon": "calendar",
+      "icon_color": "#F2C14E",
+      "box_style": "pill",
+      "box_color": "rgba(15,18,30,0.78)",
+      "box_padding_x": 30,
+      "box_padding_y": 14,
+      "position": "top_left",
+      "margin": 5,
+      "in_animation": "fade_up"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "location_tag_clock": {
+    "technique": "location_tag",
+    "extends": "_text_style_base",
+    "description": "Nhãn thời gian: con nhộng tối có biểu tượng đồng hồ.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 40,
+      "icon": "clock",
+      "icon_color": "#F2C14E",
+      "box_style": "pill",
+      "box_color": "rgba(15,18,30,0.78)",
+      "box_padding_x": 30,
+      "box_padding_y": 14,
+      "position": "top_right",
+      "margin": 5,
+      "in_animation": "fade_up"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "medium"
+  },
+  "text_sticker_white": {
+    "technique": "text_sticker",
+    "extends": "_text_style_base",
+    "description": "Nhãn dán: chữ hồng Baloo 2, viền trắng dày, bóng cứng, nghiêng nhẹ.",
+    "parameters": {
+      "font_family": "Baloo 2",
+      "font_weight": 800,
+      "font_size": 96,
+      "text_color": "#FF4F8B",
+      "stroke_width": 16,
+      "stroke_color": "#FFFFFF",
+      "shadow_type": "hard",
+      "shadow_x": 6,
+      "shadow_y": 7,
+      "shadow_color": "rgba(0,0,0,0.35)",
+      "rotate": -5,
+      "position": "center",
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "text_sticker_pop": {
+    "technique": "text_sticker",
+    "extends": "_text_style_base",
+    "description": "Nhãn dán: chữ vàng Grandstander, viền tím đậm dày, bóng cứng, nghiêng.",
+    "parameters": {
+      "font_family": "Grandstander",
+      "font_weight": 900,
+      "font_size": 96,
+      "text_color": "#FFE14D",
+      "stroke_width": 14,
+      "stroke_color": "#2A1B4A",
+      "shadow_type": "hard",
+      "shadow_x": 6,
+      "shadow_y": 7,
+      "shadow_color": "rgba(0,0,0,0.4)",
+      "rotate": 4,
+      "position": "center",
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "speech_bubble_white": {
+    "technique": "speech_bubble",
+    "extends": "_text_style_base",
+    "description": "Bong bóng thoại trắng, chữ Nunito đậm, đuôi dưới trái.",
+    "parameters": {
+      "font_family": "Nunito",
+      "font_weight": 700,
+      "font_size": 48,
+      "text_color": "#1F2937",
+      "box_style": "bubble",
+      "box_color": "#FFFFFF",
+      "box_radius": 32,
+      "box_padding_x": 48,
+      "box_padding_y": 28,
+      "tail": "bottom_left",
+      "tail_size": 42,
+      "position": "lower_left",
+      "margin": 8,
+      "margin_bottom": 18,
+      "align": "left",
+      "max_width_percent": 55,
+      "in_animation": "pop",
+      "in_duration": 0.4,
+      "shadow_type": "none",
+      "box_shadow": "0 6px 24px rgba(0,0,0,0.3)"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "speech_bubble_dark": {
+    "technique": "speech_bubble",
+    "extends": "_text_style_base",
+    "description": "Bong bóng thoại tối có viền trắng, chữ trắng, đuôi dưới phải.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 46,
+      "box_style": "bubble",
+      "box_color": "#1E1B2E",
+      "box_border_color": "#FFFFFF",
+      "box_border_width": 3,
+      "box_radius": 30,
+      "box_padding_x": 46,
+      "box_padding_y": 26,
+      "tail": "bottom_right",
+      "tail_size": 42,
+      "position": "lower_right",
+      "margin": 8,
+      "margin_bottom": 18,
+      "align": "left",
+      "max_width_percent": 55,
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "speech_bubble_cute": {
+    "technique": "speech_bubble",
+    "extends": "_text_style_base",
+    "description": "Bong bóng thoại hồng nhạt, viền hồng, chữ Baloo 2 tím hồng, nghiêng nhẹ.",
+    "parameters": {
+      "font_family": "Baloo 2",
+      "font_weight": 700,
+      "font_size": 52,
+      "text_color": "#B0305F",
+      "box_style": "bubble",
+      "box_color": "#FFE1EC",
+      "box_border_color": "#FFB3CE",
+      "box_border_width": 5,
+      "box_radius": 40,
+      "box_padding_x": 50,
+      "box_padding_y": 24,
+      "tail": "bottom_left",
+      "tail_size": 42,
+      "rotate": -2,
+      "position": "lower_left",
+      "margin": 8,
+      "margin_bottom": 18,
+      "align": "left",
+      "max_width_percent": 55,
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "callout_label_dot": {
+    "technique": "callout_label",
+    "extends": "_text_style_base",
+    "description": "Nhãn tối, đường chỉ trắng mảnh kết thúc bằng chấm. Tiết chế, dùng được ở documentary. Phải đặt target_x/target_y.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 44,
+      "box_style": "rounded",
+      "box_color": "#111827",
+      "box_radius": 14,
+      "box_padding_x": 30,
+      "box_padding_y": 16,
+      "label_x": 0.27,
+      "label_y": 0.2,
+      "target_x": 0.5,
+      "target_y": 0.5,
+      "max_width_percent": 36,
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "line_width": 3,
+      "line_color": "#FFFFFF",
+      "line_style": "dot"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low",
+    "requires": [
+      "target_x",
+      "target_y"
+    ]
+  },
+  "callout_label_arrow": {
+    "technique": "callout_label",
+    "extends": "_text_style_base",
+    "description": "Nhãn tối, đường chỉ vàng có mũi tên. Phải đặt target_x/target_y.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 44,
+      "box_style": "rounded",
+      "box_color": "#111827",
+      "box_radius": 14,
+      "box_padding_x": 30,
+      "box_padding_y": 16,
+      "label_x": 0.27,
+      "label_y": 0.2,
+      "target_x": 0.5,
+      "target_y": 0.5,
+      "max_width_percent": 36,
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "line_width": 4,
+      "line_color": "#F2C14E",
+      "line_style": "arrow"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low",
+    "requires": [
+      "target_x",
+      "target_y"
+    ]
+  },
+  "callout_label_ring": {
+    "technique": "callout_label",
+    "extends": "_text_style_base",
+    "description": "Nhãn tối, đường chỉ vàng kết thúc bằng vòng tròn quanh điểm cần chỉ. Phải đặt target_x/target_y.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 44,
+      "box_style": "rounded",
+      "box_color": "#111827",
+      "box_radius": 14,
+      "box_padding_x": 30,
+      "box_padding_y": 16,
+      "label_x": 0.27,
+      "label_y": 0.2,
+      "target_x": 0.5,
+      "target_y": 0.5,
+      "max_width_percent": 36,
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "line_width": 4,
+      "line_color": "#F2C14E",
+      "line_style": "ring",
+      "ring_radius": 40
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low",
+    "requires": [
+      "target_x",
+      "target_y"
+    ]
+  },
+  "social_tag_at": {
+    "technique": "social_tag",
+    "extends": "_text_style_base",
+    "description": "Tag tài khoản (@tên): con nhộng đen, chữ trắng đậm.",
+    "parameters": {
+      "font_weight": 700,
+      "font_size": 44,
+      "box_style": "pill",
+      "box_color": "#111827",
+      "box_padding_x": 34,
+      "box_padding_y": 14,
+      "position": "lower_left",
+      "margin": 6,
+      "in_animation": "slide_right",
+      "in_duration": 0.4,
+      "out_animation": "slide_right"
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "social_tag_hash": {
+    "technique": "social_tag",
+    "extends": "_text_style_base",
+    "description": "Hashtag (#chủ_đề): con nhộng gradient hồng-vàng, chữ đen đậm.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#1A1020",
+      "box_style": "pill",
+      "box_color": "linear-gradient(90deg,#FF8FB7,#FFD93D)",
+      "box_padding_x": 36,
+      "box_padding_y": 14,
+      "position": "lower_left",
+      "margin": 6,
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "typewriter_clean": {
+    "technique": "typewriter_text",
+    "extends": "_text_style_base",
+    "description": "Đánh máy sạch: chữ trắng Inter, không hộp, không con trỏ; hợp phụ đề giải thích tiết chế.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 500,
+      "font_size": 56,
+      "line_height": 1.3,
+      "position": "lower_middle",
+      "align": "left",
+      "typewriter": true,
+      "type_speed": 18,
+      "caret": false,
+      "shadow_type": "soft",
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.3,
+      "max_width_percent": 70
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "typewriter_title": {
+    "technique": "typewriter_text",
+    "extends": "_text_style_base",
+    "description": "Đánh máy tiêu đề: chữ lớn giữa khung, con trỏ nhấp nháy, nền tối nhẹ.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 700,
+      "font_size": 84,
+      "line_height": 1.25,
+      "position": "center",
+      "align": "center",
+      "typewriter": true,
+      "type_speed": 14,
+      "caret": true,
+      "caret_blink": 2,
+      "shadow_type": "soft",
+      "bg_mode": "dim",
+      "bg_opacity": 0.35,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "typewriter_terminal": {
+    "technique": "typewriter_text",
+    "extends": "_text_style_base",
+    "description": "Đánh máy kiểu terminal: Chakra Petch xanh lá trên hộp tối, con trỏ khối.",
+    "parameters": {
+      "font_family": "Chakra Petch",
+      "font_weight": 500,
+      "font_size": 52,
+      "line_height": 1.35,
+      "position": "lower_left",
+      "align": "left",
+      "text_color": "#7CFFB2",
+      "typewriter": true,
+      "type_speed": 20,
+      "caret": true,
+      "caret_char": "▌",
+      "caret_blink": 2,
+      "box_style": "rect",
+      "box_color": "rgba(8,12,20,0.88)",
+      "box_padding_x": 36,
+      "box_padding_y": 26,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.2
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "typewriter_note": {
+    "technique": "typewriter_text",
+    "extends": "_text_style_base",
+    "description": "Đánh máy nét viết tay Patrick Hand, màu vàng nhạt, hợp ghi chú đời thường.",
+    "parameters": {
+      "font_family": "Patrick Hand",
+      "font_weight": 400,
+      "font_size": 70,
+      "line_height": 1.3,
+      "position": "lower_middle",
+      "align": "center",
+      "text_color": "#FFF3B0",
+      "typewriter": true,
+      "type_speed": 12,
+      "caret": true,
+      "caret_blink": 2,
+      "shadow_type": "hard",
+      "shadow_x": 3,
+      "shadow_y": 3,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.25
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "scramble_decode": {
+    "technique": "scramble_text",
+    "extends": "_text_style_base",
+    "description": "Giải mã kiểu công nghệ: Chakra Petch hoa, ký tự nhảy rồi chốt lần lượt.",
+    "parameters": {
+      "font_family": "Chakra Petch",
+      "font_weight": 700,
+      "font_size": 96,
+      "line_height": 1.25,
+      "line_gap": 14,
+      "text_transform": "uppercase",
+      "position": "center",
+      "text_color": "#E6FBFF",
+      "scramble": true,
+      "scramble_duration": 0.9,
+      "glow_color": "rgba(0,229,255,0.7)",
+      "glow_size": 14,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.25
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "scramble_bold": {
+    "technique": "scramble_text",
+    "extends": "_text_style_base",
+    "description": "Giải mã chữ Anton hoa to, bóng cứng; dùng cho tiêu đề mạnh.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 150,
+      "line_height": 1.25,
+      "line_gap": 18,
+      "text_transform": "uppercase",
+      "position": "center",
+      "scramble": true,
+      "scramble_duration": 1,
+      "scramble_chars": "#%&@*+=0123456789",
+      "shadow_type": "hard",
+      "shadow_x": 6,
+      "shadow_y": 6,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.25
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "glitch_cyber": {
+    "technique": "glitch_text",
+    "extends": "_text_style_base",
+    "description": "Glitch kiểu cyber: lệch kênh đỏ/lục lam, rung ngang, vài dải cắt lệch. Nhịp mặc định: nháy hai lần, dừng (chữ sạch để đọc), nháy lần cuối rồi biến mất.",
+    "parameters": {
+      "font_family": "Chakra Petch",
+      "font_weight": 700,
+      "font_size": 120,
+      "line_height": 1.25,
+      "line_gap": 16,
+      "text_transform": "uppercase",
+      "position": "center",
+      "glitch": true,
+      "glitch_rate": 0.3,
+      "glitch_split": 8,
+      "glitch_jitter": 10,
+      "glitch_slices": 2,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "none",
+      "out_duration": 0.1,
+      "glitch_pattern": [
+        [
+          0.1,
+          0.35
+        ],
+        [
+          0.5,
+          0.75
+        ],
+        [
+          1.7,
+          2
+        ]
+      ],
+      "glitch_vanish": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "glitch_bold": {
+    "technique": "glitch_text",
+    "extends": "_text_style_base",
+    "description": "Glitch chữ Anton to, nhiễu mạnh hơn, hợp tiêu đề mở đầu dồn dập. Nhịp mặc định: nháy hai lần, dừng (chữ sạch để đọc), nháy lần cuối rồi biến mất.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 200,
+      "line_height": 1.25,
+      "line_gap": 24,
+      "text_transform": "uppercase",
+      "position": "center",
+      "glitch": true,
+      "glitch_rate": 0.4,
+      "glitch_split": 12,
+      "glitch_jitter": 16,
+      "glitch_slices": 3,
+      "shadow_type": "hard",
+      "shadow_x": 6,
+      "shadow_y": 6,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "none",
+      "out_duration": 0.1,
+      "glitch_pattern": [
+        [
+          0.1,
+          0.35
+        ],
+        [
+          0.5,
+          0.75
+        ],
+        [
+          1.7,
+          2
+        ]
+      ],
+      "glitch_vanish": true
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "cutout_bold": {
+    "technique": "text_cutout",
+    "extends": "_text_style_base",
+    "description": "Chữ cắt xén Anton cỡ lớn: nền xanh đen phủ khung, thấy video qua nét chữ.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 420,
+      "line_height": 1,
+      "line_gap": 0,
+      "text_transform": "uppercase",
+      "position": "center",
+      "cutout": true,
+      "cutout_color": "#0F172A",
+      "cutout_opacity": 0.92,
+      "in_animation": "none",
+      "in_duration": 0.5,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "cutout_outline": {
+    "technique": "text_cutout",
+    "extends": "_text_style_base",
+    "description": "Chữ cắt xén Inter 900 có viền trắng mảnh quanh nét chữ.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "font_size": 360,
+      "line_height": 1,
+      "text_transform": "uppercase",
+      "position": "center",
+      "cutout": true,
+      "cutout_color": "#111827",
+      "cutout_opacity": 0.9,
+      "cutout_outline_width": 4,
+      "cutout_outline_color": "#FFFFFF",
+      "in_animation": "none",
+      "in_duration": 0.5,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "path_arc_up": {
+    "technique": "text_on_path",
+    "extends": "_text_style_base",
+    "description": "Chữ uốn vòng cung lên (kiểu logo, huy hiệu), Playfair Display. Chữ chạy dần ra từ đầu cung.",
+    "parameters": {
+      "font_family": "Playfair Display",
+      "font_weight": 700,
+      "font_size": 84,
+      "text_transform": "uppercase",
+      "letter_spacing": 0.08,
+      "path_shape": "arc_up",
+      "path_curve": 0.25,
+      "path_width": 0.8,
+      "path_y": 0.55,
+      "shadow_type": "soft",
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.3,
+      "path_reveal": "start",
+      "path_reveal_duration": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "path_wave": {
+    "technique": "text_on_path",
+    "extends": "_text_style_base",
+    "description": "Chữ lượn sóng, Baloo 2, màu vàng, vui tươi. Chữ chạy dần ra từ đầu sóng.",
+    "parameters": {
+      "font_family": "Baloo 2",
+      "font_weight": 800,
+      "font_size": 96,
+      "text_color": "#FFD84D",
+      "path_shape": "wave",
+      "path_curve": 0.1,
+      "path_width": 0.85,
+      "path_y": 0.5,
+      "shadow_type": "hard",
+      "shadow_x": 4,
+      "shadow_y": 4,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.3,
+      "path_reveal": "start",
+      "path_reveal_duration": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "path_circle": {
+    "technique": "text_on_path",
+    "extends": "_text_style_base",
+    "description": "Chữ chạy vòng tròn (dấu triện), Anton hoa, đặt giữa khung. Chữ chạy dần ra theo chiều kim đồng hồ.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 64,
+      "text_transform": "uppercase",
+      "letter_spacing": 0.12,
+      "path_shape": "circle",
+      "path_width": 0.32,
+      "path_y": 0.5,
+      "shadow_type": "soft",
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.3,
+      "path_reveal": "start",
+      "path_reveal_duration": 1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "cutout_dive": {
+    "technique": "text_cutout",
+    "extends": "_text_style_base",
+    "description": "Chữ cắt xén lao vào: chữ phóng dần rất lớn (×7) quanh tâm, tăng tốc, cuối cùng nền màu mờ đi và hình hiện trọn. Hợp cảnh mở đầu có chuyển động tiến vào (drone bay tới, dolly in).",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 420,
+      "line_height": 1,
+      "text_transform": "uppercase",
+      "position": "center",
+      "cutout": true,
+      "cutout_color": "#0F172A",
+      "cutout_opacity": 0.92,
+      "cutout_scale_from": 1,
+      "cutout_scale_to": 7,
+      "cutout_scale_ease": "in",
+      "cutout_focus_x": 0.5,
+      "cutout_focus_y": 0.5,
+      "in_animation": "none",
+      "in_duration": 0.4,
+      "out_animation": "fade",
+      "out_duration": 0.6
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "progress_bar_thin": {
+    "technique": "progress_bar",
+    "extends": "_text_style_base",
+    "description": "Thanh tiến độ mảnh phía dưới, nhãn nhỏ trái, phần trăm phải; tiết chế.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 600,
+      "font_size": 40,
+      "position": "lower_middle",
+      "margin_bottom": 10,
+      "bar_width": 0.55,
+      "bar_height": 10,
+      "bar_color": "#F2C14E",
+      "shadow_type": "soft",
+      "progress_duration": 1.6,
+      "in_animation": "fade",
+      "in_duration": 0.3,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low",
+    "requires": [
+      "progress_to"
+    ]
+  },
+  "progress_bar_pill": {
+    "technique": "progress_bar",
+    "extends": "_text_style_base",
+    "description": "Thanh tiến độ dày dạng viên thuốc giữa khung, gradient vàng-cam, chữ to.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 800,
+      "font_size": 56,
+      "position": "center",
+      "bar_width": 0.6,
+      "bar_height": 36,
+      "bar_color": "#FFD84D",
+      "bar_color_to": "#FF7A3D",
+      "bar_track_color": "rgba(255,255,255,0.28)",
+      "label_gap": 18,
+      "progress_duration": 1.8,
+      "shadow_type": "soft",
+      "in_animation": "fade_up",
+      "in_duration": 0.35,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low",
+    "requires": [
+      "progress_to"
+    ]
+  },
+  "countdown_big": {
+    "technique": "countdown_timer",
+    "extends": "_text_style_base",
+    "description": "Đếm ngược số khổng lồ Anton gradient, mỗi giây một nhịp đập; về 0 hiện chữ kết thúc nếu có.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 420,
+      "line_height": 1,
+      "position": "center",
+      "gradient_from": "#FFE27A",
+      "gradient_to": "#FF7A3D",
+      "shadow_type": "soft",
+      "shadow_blur": 24,
+      "countdown_from": 5,
+      "countdown_step": 1,
+      "countdown_pop": 0.22,
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "countdown_clock": {
+    "technique": "countdown_timer",
+    "extends": "_text_style_base",
+    "description": "Đồng hồ đếm ngược mm:ss kiểu số điện tử, chữ Chakra Petch trong hộp tối.",
+    "parameters": {
+      "font_family": "Chakra Petch",
+      "font_weight": 700,
+      "font_size": 200,
+      "line_height": 1.1,
+      "position": "top_right",
+      "margin": 5,
+      "text_color": "#E6FBFF",
+      "countdown_format": "clock",
+      "countdown_from": 10,
+      "countdown_step": 1,
+      "countdown_pop": 0.06,
+      "box_style": "rounded",
+      "box_color": "rgba(8,12,20,0.82)",
+      "box_radius": 22,
+      "box_padding_x": 40,
+      "box_padding_y": 14,
+      "glow_color": "rgba(0,229,255,0.55)",
+      "glow_size": 10,
+      "in_animation": "fade",
+      "in_duration": 0.2,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "credits_clean": {
+    "technique": "credits_roll",
+    "extends": "_text_style_base",
+    "description": "Cuộn tên cuối phim: chữ trắng Inter giữa khung, đề mục vàng nhỏ hoa; dòng \"Vai trò | Tên\" chia hai cột.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 500,
+      "font_size": 48,
+      "line_height": 1.5,
+      "credits": true,
+      "roll_speed": 90,
+      "credits_width": 0.6,
+      "bg_mode": "dim",
+      "bg_opacity": 0.55,
+      "in_animation": "none",
+      "in_duration": 0.2,
+      "out_animation": "none",
+      "out_duration": 0.2
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "credits_cinema": {
+    "technique": "credits_roll",
+    "extends": "_text_style_base",
+    "description": "Cuộn tên kiểu điện ảnh: Playfair Display, đề mục tách xa, tốc độ chậm.",
+    "parameters": {
+      "font_family": "Playfair Display",
+      "font_weight": 500,
+      "font_size": 56,
+      "line_height": 1.55,
+      "credits": true,
+      "roll_speed": 70,
+      "credits_width": 0.62,
+      "credits_group_gap": 1.6,
+      "credits_heading_color": "#E9D8A6",
+      "bg_mode": "solid",
+      "bg_color": "#05070C",
+      "in_animation": "none",
+      "in_duration": 0.2,
+      "out_animation": "none",
+      "out_duration": 0.2
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "table_clean": {
+    "technique": "comparison_table",
+    "extends": "_text_style_base",
+    "description": "Bảng so sánh sáng: nền trắng, tiêu đề cột xanh đậm, chữ tối; tiết chế.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 500,
+      "font_size": 40,
+      "position": "center",
+      "table": true,
+      "table_bg": "rgba(255,255,255,0.96)",
+      "text_color": "#0F172A",
+      "table_header_bg": "#0F172A",
+      "table_header_color": "#FFFFFF",
+      "table_line_color": "rgba(15,23,42,0.14)",
+      "table_highlight_bg": "rgba(242,193,78,0.35)",
+      "highlight_color": "#0F172A",
+      "box_radius": 16,
+      "box_shadow": "0 12px 40px rgba(0,0,0,0.3)",
+      "table_width": 0.62,
+      "item_delay": 0.3,
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "table_dark": {
+    "technique": "comparison_table",
+    "extends": "_text_style_base",
+    "description": "Bảng so sánh tối, tiêu đề vàng, cột nhấn tô nền vàng nhạt.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 500,
+      "font_size": 40,
+      "position": "center",
+      "table": true,
+      "table_highlight_col": 2,
+      "table_width": 0.66,
+      "item_delay": 0.3,
+      "box_radius": 20,
+      "box_shadow": "0 12px 40px rgba(0,0,0,0.45)",
+      "highlight_color": "#FFD84D",
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "word_highlight_clean": {
+    "technique": "word_highlight",
+    "extends": "_text_style_base",
+    "description": "Cả câu hiện sẵn bằng chữ trắng; từ khóa chuyển vàng đúng lúc được nói, không nảy; tiết chế.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 600,
+      "font_size": 56,
+      "line_height": 1.3,
+      "position": "lower_middle",
+      "align": "center",
+      "words_mode": "highlight",
+      "word_pop": false,
+      "highlight_color": "#FFD84D",
+      "shadow_type": "soft",
+      "max_width_percent": 78,
+      "in_animation": "fade",
+      "in_duration": 0.25,
+      "out_animation": "fade",
+      "out_duration": 0.25
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "word_highlight_pop": {
+    "technique": "word_highlight",
+    "extends": "_text_style_base",
+    "description": "Từ khóa chuyển màu và nảy nhẹ đúng lúc được nói, chữ to đậm có hộp tối.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 800,
+      "font_size": 64,
+      "line_height": 1.25,
+      "position": "lower_middle",
+      "align": "center",
+      "words_mode": "highlight",
+      "word_pop": true,
+      "word_pop_amount": 0.16,
+      "highlight_color": "#FFD84D",
+      "box_style": "rounded",
+      "box_color": "rgba(10,14,24,0.72)",
+      "box_padding_x": 36,
+      "box_padding_y": 22,
+      "box_radius": 22,
+      "max_width_percent": 80,
+      "in_animation": "fade",
+      "in_duration": 0.25,
+      "out_animation": "fade",
+      "out_duration": 0.25
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "word_by_word_stack": {
+    "technique": "word_by_word_text",
+    "extends": "_text_style_base",
+    "description": "Từ hiện lần lượt theo lời và ở lại, thành câu hoàn chỉnh dần; nảy nhẹ.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 800,
+      "font_size": 72,
+      "line_height": 1.25,
+      "position": "center",
+      "align": "center",
+      "words_mode": "by_word",
+      "word_replace": false,
+      "shadow_type": "soft",
+      "max_width_percent": 76,
+      "in_animation": "none",
+      "in_duration": 0.05,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "word_by_word_single": {
+    "technique": "word_by_word_text",
+    "extends": "_text_style_base",
+    "description": "Mỗi lúc chỉ một từ giữa khung, thay nhau theo lời; to, đậm.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 200,
+      "line_height": 1.1,
+      "text_transform": "uppercase",
+      "position": "center",
+      "align": "center",
+      "words_mode": "by_word",
+      "word_replace": true,
+      "word_pop_amount": 0.2,
+      "shadow_type": "hard",
+      "shadow_x": 6,
+      "shadow_y": 6,
+      "in_animation": "none",
+      "in_duration": 0.05,
+      "out_animation": "fade",
+      "out_duration": 0.2
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "karaoke_clean": {
+    "technique": "karaoke_subtitles",
+    "extends": "_text_style_base",
+    "description": "Phụ đề karaoke: từ đang nói sáng vàng và nảy nhẹ, từ đã nói trắng, từ chưa nói mờ; đáy khung, hộp tối.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 700,
+      "font_size": 56,
+      "line_height": 1.3,
+      "position": "lower_middle",
+      "align": "center",
+      "words_mode": "karaoke",
+      "karaoke_active_color": "#FFD84D",
+      "karaoke_upcoming_opacity": 0.5,
+      "box_style": "rounded",
+      "box_color": "rgba(10,14,24,0.7)",
+      "box_padding_x": 34,
+      "box_padding_y": 20,
+      "box_radius": 20,
+      "max_width_percent": 78,
+      "in_animation": "fade",
+      "in_duration": 0.25,
+      "out_animation": "fade",
+      "out_duration": 0.25
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "karaoke_bold": {
+    "technique": "karaoke_subtitles",
+    "extends": "_text_style_base",
+    "description": "Karaoke chữ to đậm có viền, từ đang nói chuyển hồng; không hộp.",
+    "parameters": {
+      "font_family": "Be Vietnam Pro",
+      "font_weight": 800,
+      "font_size": 68,
+      "line_height": 1.25,
+      "position": "lower_middle",
+      "align": "center",
+      "words_mode": "karaoke",
+      "karaoke_active_color": "#FF6FB5",
+      "karaoke_upcoming_opacity": 0.55,
+      "stroke_width": 6,
+      "stroke_color": "#10131A",
+      "max_width_percent": 80,
+      "in_animation": "fade",
+      "in_duration": 0.2,
+      "out_animation": "fade",
+      "out_duration": 0.2
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "shortform_captions_bold": {
+    "technique": "shortform_captions",
+    "extends": "_text_style_base",
+    "description": "Phụ đề ngắn: 1–2 từ cực lớn giữa khung, Anton hoa viền đen; từ khóa vàng.",
+    "parameters": {
+      "font_family": "Anton",
+      "font_weight": 400,
+      "font_size": 190,
+      "line_height": 1.15,
+      "line_gap": 0,
+      "text_transform": "uppercase",
+      "position": "center",
+      "align": "center",
+      "words_mode": "chunks",
+      "chunk_size": 2,
+      "chunk_linger": 0.4,
+      "word_pop_amount": 0.2,
+      "stroke_width": 8,
+      "stroke_color": "#10131A",
+      "highlight_color": "#FFD84D",
+      "shadow_type": "hard",
+      "shadow_x": 6,
+      "shadow_y": 6,
+      "max_width_percent": 90,
+      "in_animation": "none",
+      "in_duration": 0.05,
+      "out_animation": "none",
+      "out_duration": 0.1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "shortform_captions_soft": {
+    "technique": "shortform_captions",
+    "extends": "_text_style_base",
+    "description": "Phụ đề ngắn mềm: 1–3 từ cỡ lớn Be Vietnam Pro, bóng mềm, từ khóa hồng.",
+    "parameters": {
+      "font_family": "Be Vietnam Pro",
+      "font_weight": 900,
+      "font_size": 120,
+      "line_height": 1.2,
+      "position": "center",
+      "align": "center",
+      "words_mode": "chunks",
+      "chunk_size": 3,
+      "chunk_linger": 0.4,
+      "word_pop_amount": 0.12,
+      "highlight_color": "#FF6FB5",
+      "shadow_type": "soft",
+      "shadow_blur": 20,
+      "max_width_percent": 86,
+      "in_animation": "none",
+      "in_duration": 0.05,
+      "out_animation": "none",
+      "out_duration": 0.1
+    },
+    "allowed_styles": [
+      "all"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "convention",
+    "confidence": "low"
+  },
+  "social_caption_chunk": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Phụ đề cụm kiểu REF_002: chữ trắng đậm, viền navy dày, không hộp nền, tâm ~65% chiều cao. Mỗi cụm 2–5 từ.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 54,
+      "stroke_width": 10,
+      "stroke_color": "#0A1181",
+      "text_color": "#FFFFFF",
+      "box_style": "none",
+      "position": "lower_middle",
+      "margin_bottom": 28,
+      "align": "center",
+      "max_width_percent": 80,
+      "in_animation": "none",
+      "in_duration": 0.05,
+      "out_animation": "none",
+      "out_duration": 0.05,
+      "min_hold_base": 0.4,
+      "min_hold_per_word": 0.2
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_emphasis_red": {
+    "technique": "big_text",
+    "extends": "_text_style_base",
+    "description": "Chữ nhấn đỏ in hoa kiểu REF_001, 1–3 từ, nảy vào, bóng cứng nhẹ.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "text_transform": "uppercase",
+      "text_color": "#E3232F",
+      "fit_width": 0.7,
+      "max_font_size": 200,
+      "line_height": 1.1,
+      "position": "top_center",
+      "margin": 8,
+      "shadow_type": "hard",
+      "shadow_x": 4,
+      "shadow_y": 4,
+      "shadow_color": "rgba(255,255,255,0.85)",
+      "in_animation": "pop",
+      "in_duration": 0.3,
+      "out_animation": "fade",
+      "out_duration": 0.2
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_note_navy": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Dòng giải thích navy nhỏ, đi cặp chữ nhấn đỏ (đặt trên đầu khung).",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#0A1181",
+      "box_style": "none",
+      "stroke_width": 0,
+      "shadow_type": "soft",
+      "shadow_color": "rgba(255,255,255,0.8)",
+      "shadow_blur": 10,
+      "position": "top_center",
+      "margin": 5,
+      "align": "center",
+      "max_width_percent": 84,
+      "in_animation": "fade_up",
+      "in_duration": 0.3
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_question_card": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Thẻ câu hỏi: hộp trắng bo góc, viền xanh, chữ xanh đậm; vào bằng mờ + phóng nhẹ. Chưa có huy hiệu \"?\". Mặc định top_center (mẫu đặt giữa-dưới, đè thân người nói; skill giữ R-SUBJ-1).",
+    "parameters": {
+      "font_weight": 700,
+      "font_size": 38,
+      "text_color": "#0A1181",
+      "box_style": "rounded",
+      "box_color": "#FFFFFF",
+      "box_border_color": "#2F51E1",
+      "box_border_width": 4,
+      "box_radius": 22,
+      "box_padding_x": 34,
+      "box_padding_y": 22,
+      "position": "top_center",
+      "align": "center",
+      "max_width_percent": 82,
+      "in_animation": "scale_fade",
+      "in_duration": 0.4,
+      "out_animation": "fade",
+      "out_duration": 0.25,
+      "shadow_type": "soft",
+      "shadow_blur": 14,
+      "margin": 6
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_name_chip": {
+    "technique": "text_pill",
+    "extends": "_text_style_base",
+    "description": "Chip xanh chữ trắng cho tên người nói; đi cặp social_title_bar.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#FFFFFF",
+      "box_style": "pill",
+      "box_color": "#2F51E1",
+      "box_padding_x": 30,
+      "box_padding_y": 12,
+      "position": "lower_left",
+      "margin": 6,
+      "margin_bottom": 24,
+      "in_animation": "slide_right",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_title_bar": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Thanh trắng chữ đen cho chức danh, đặt sát dưới social_name_chip.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 30,
+      "text_color": "#111111",
+      "box_style": "rect",
+      "box_color": "#FFFFFF",
+      "box_radius": 4,
+      "box_padding_x": 26,
+      "box_padding_y": 10,
+      "position": "lower_left",
+      "margin": 6,
+      "margin_bottom": 16,
+      "in_animation": "slide_right",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_list_card": {
+    "technique": "bullet_list_reveal",
+    "extends": "_text_style_base",
+    "description": "Thẻ danh sách trắng viền xanh, tích xanh, mỗi mục một nhịp 3,0 s (lưới REF_001). Đặt trên b-roll làm mờ. Mặc định middle_left để không che người nói đứng giữa khung.",
+    "parameters": {
+      "font_weight": 700,
+      "font_size": 40,
+      "text_color": "#0A1181",
+      "line_height": 1.4,
+      "position": "middle_left",
+      "align": "left",
+      "box_style": "rounded",
+      "box_color": "#FFFFFF",
+      "box_border_color": "#2F51E1",
+      "box_border_width": 4,
+      "box_radius": 24,
+      "box_padding_x": 34,
+      "box_padding_y": 30,
+      "bullet": "✓",
+      "bullet_color": "#16A34A",
+      "in_animation": "line_stagger",
+      "item_delay": 3,
+      "in_duration": 0.5,
+      "shadow_type": "soft",
+      "shadow_blur": 16,
+      "margin": 5
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_title_card": {
+    "technique": "title_card",
+    "extends": "_text_style_base",
+    "description": "Thẻ tiêu đề trên nền làm mờ: tiêu đề navy đậm, dòng phụ đỏ.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 96,
+      "text_color": "#0A1181",
+      "position": "center",
+      "align": "center",
+      "bg_mode": "blur",
+      "blur_px": 24,
+      "bg_opacity": 0.35,
+      "bg_color": "#FFFFFF",
+      "bg_rgb": "255,255,255",
+      "in_animation": "fade_up",
+      "in_duration": 0.5,
+      "out_duration": 0.4,
+      "sub_font_size": 44,
+      "sub_font_weight": 800,
+      "sub_color": "#E3232F",
+      "sub_gap": 20
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_info_box": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Hộp thông tin viền xanh (ví dụ \"ĐẶC BIỆT: …\"), nền trắng.",
+    "parameters": {
+      "font_weight": 700,
+      "font_size": 44,
+      "text_color": "#0A1181",
+      "box_style": "rounded",
+      "box_color": "#FFFFFF",
+      "box_border_color": "#2F51E1",
+      "box_border_width": 4,
+      "box_radius": 18,
+      "box_padding_x": 34,
+      "box_padding_y": 20,
+      "position": "lower_middle",
+      "margin_bottom": 18,
+      "align": "center",
+      "max_width_percent": 84,
+      "in_animation": "fade_up",
+      "in_duration": 0.35
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_date_tag": {
+    "technique": "location_tag",
+    "extends": "_text_style_base",
+    "description": "Nhãn ngày giờ chữ đỏ có biểu tượng, nền trắng (CTA).",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#E3232F",
+      "icon": "clock",
+      "icon_color": "#E3232F",
+      "box_style": "pill",
+      "box_color": "#FFFFFF",
+      "box_padding_x": 32,
+      "box_padding_y": 14,
+      "position": "lower_middle",
+      "margin_bottom": 10,
+      "in_animation": "pop",
+      "in_duration": 0.35,
+      "shadow_type": "soft",
+      "shadow_blur": 12
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_big_number": {
+    "technique": "big_number",
+    "extends": "_text_style_base",
+    "description": "Số lớn đỏ, nhãn navy; đặt lệch trái để chừa người nói giữa khung.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "font_size": 200,
+      "text_color": "#E3232F",
+      "text_transform": "none",
+      "position": "middle_left",
+      "margin": 6,
+      "align": "left",
+      "count_duration": 1,
+      "sub_font_size": 48,
+      "sub_font_weight": 800,
+      "sub_color": "#0A1181",
+      "sub_gap": 6,
+      "in_animation": "pop",
+      "in_duration": 0.4,
+      "shadow_type": "hard",
+      "shadow_x": 4,
+      "shadow_y": 4,
+      "shadow_color": "rgba(255,255,255,0.85)"
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_pull_quote": {
+    "technique": "pull_quote",
+    "extends": "_text_style_base",
+    "description": "Trích dẫn trong thẻ trắng viền xanh, dấu ngoặc đỏ; lệch phải.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 46,
+      "text_color": "#0A1181",
+      "line_height": 1.2,
+      "position": "middle_right",
+      "margin": 5,
+      "align": "left",
+      "max_width_percent": 32,
+      "box_style": "rounded",
+      "box_color": "#FFFFFF",
+      "box_border_color": "#2F51E1",
+      "box_border_width": 4,
+      "box_radius": 22,
+      "box_padding_x": 34,
+      "box_padding_y": 26,
+      "quote_mark": true,
+      "quote_mark_color": "#E3232F",
+      "quote_mark_size": 140,
+      "sub_font_size": 30,
+      "sub_color": "#2F51E1",
+      "sub_gap": 12,
+      "in_animation": "scale_fade",
+      "in_duration": 0.45
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_callout": {
+    "technique": "callout_label",
+    "extends": "_text_style_base",
+    "description": "Nhãn trắng chữ navy, đường chỉ và vòng đỏ vào vật thể.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#0A1181",
+      "box_style": "rounded",
+      "box_color": "#FFFFFF",
+      "box_border_color": "#2F51E1",
+      "box_border_width": 3,
+      "box_radius": 14,
+      "box_padding_x": 26,
+      "box_padding_y": 14,
+      "label_x": 0.2,
+      "label_y": 0.25,
+      "target_x": 0.5,
+      "target_y": 0.35,
+      "max_width_percent": 30,
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "line_width": 4,
+      "line_color": "#E3232F",
+      "line_style": "ring",
+      "ring_radius": 36
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md",
+    "requires": [
+      "target_x",
+      "target_y"
+    ]
+  },
+  "social_speech_bubble": {
+    "technique": "speech_bubble",
+    "extends": "_text_style_base",
+    "description": "Bong bóng thoại trắng chữ navy, đuôi trái.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#0A1181",
+      "box_style": "bubble",
+      "box_color": "#FFFFFF",
+      "box_border_color": "#2F51E1",
+      "box_border_width": 3,
+      "box_radius": 30,
+      "box_padding_x": 36,
+      "box_padding_y": 22,
+      "tail": "bottom_left",
+      "tail_size": 36,
+      "position": "lower_left",
+      "margin": 6,
+      "margin_bottom": 14,
+      "align": "left",
+      "max_width_percent": 30,
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_sticker": {
+    "technique": "text_sticker",
+    "extends": "_text_style_base",
+    "description": "Nhãn dán chữ đỏ viền trắng dày, nghiêng nhẹ; lệch phải.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "font_size": 84,
+      "text_color": "#E3232F",
+      "stroke_width": 14,
+      "stroke_color": "#FFFFFF",
+      "shadow_type": "hard",
+      "shadow_x": 5,
+      "shadow_y": 6,
+      "shadow_color": "rgba(0,0,0,0.35)",
+      "rotate": -5,
+      "position": "middle_right",
+      "margin": 6,
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_tag_blue": {
+    "technique": "social_tag",
+    "extends": "_text_style_base",
+    "description": "Thẻ # / @ con nhộng xanh chữ trắng.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#FFFFFF",
+      "box_style": "pill",
+      "box_color": "#2F51E1",
+      "box_padding_x": 32,
+      "box_padding_y": 12,
+      "position": "lower_right",
+      "margin": 6,
+      "margin_bottom": 12,
+      "in_animation": "pop",
+      "in_duration": 0.4
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_countdown": {
+    "technique": "countdown_timer",
+    "extends": "_text_style_base",
+    "description": "Đếm ngược số đỏ lớn, lệch trái.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "font_size": 260,
+      "line_height": 1,
+      "text_color": "#E3232F",
+      "position": "middle_left",
+      "margin": 8,
+      "align": "center",
+      "countdown_from": 3,
+      "countdown_step": 1,
+      "countdown_pop": 0.22,
+      "shadow_type": "hard",
+      "shadow_x": 5,
+      "shadow_y": 5,
+      "shadow_color": "rgba(255,255,255,0.85)",
+      "in_animation": "none",
+      "in_duration": 0.1,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_progress": {
+    "technique": "progress_bar",
+    "extends": "_text_style_base",
+    "description": "Thanh tiến độ đỏ sang xanh trên nền trắng, nhãn navy.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#0A1181",
+      "position": "middle_left",
+      "margin": 5,
+      "bar_width": 0.32,
+      "bar_height": 30,
+      "bar_color": "#E3232F",
+      "bar_color_to": "#2F51E1",
+      "bar_track_color": "rgba(255,255,255,0.8)",
+      "label_gap": 14,
+      "progress_duration": 1.8,
+      "shadow_type": "soft",
+      "in_animation": "fade_up",
+      "in_duration": 0.35,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md",
+    "requires": [
+      "progress_to"
+    ]
+  },
+  "social_chapter": {
+    "technique": "chapter_title",
+    "extends": "_text_style_base",
+    "description": "Tiêu đề chương: dòng số nhỏ đỏ, tên chương navy đậm; không làm tối nền.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "text_transform": "uppercase",
+      "font_size": 110,
+      "line_scales": [
+        0.4,
+        1
+      ],
+      "line_height": 1.25,
+      "line_gap": 20,
+      "position": "top_center",
+      "margin": 5,
+      "align": "center",
+      "text_color": "#0A1181",
+      "bg_mode": "none",
+      "shadow_type": "soft",
+      "shadow_color": "rgba(255,255,255,0.9)",
+      "in_animation": "slide_up",
+      "in_duration": 0.5,
+      "out_duration": 0.35
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_table": {
+    "technique": "comparison_table",
+    "extends": "_text_style_base",
+    "description": "Bảng so sánh tiêu đề navy, nền trắng, hàng nhấn xanh nhạt; lệch trái.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 600,
+      "font_size": 34,
+      "position": "middle_left",
+      "margin": 5,
+      "table": true,
+      "table_bg": "rgba(255,255,255,0.97)",
+      "text_color": "#0A1181",
+      "table_header_bg": "#0A1181",
+      "table_header_color": "#FFFFFF",
+      "table_line_color": "rgba(10,17,129,0.18)",
+      "table_highlight_bg": "rgba(47,81,225,0.18)",
+      "highlight_color": "#0A1181",
+      "box_radius": 16,
+      "box_shadow": "0 10px 30px rgba(0,0,0,0.3)",
+      "table_width": 0.36,
+      "item_delay": 0.3,
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "out_animation": "fade",
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_question_badge": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Thẻ câu hỏi có huy hiệu \"?\" vàng gối lên góc trên trái (kiểu REF_002).",
+    "parameters": {
+      "font_weight": 700,
+      "font_size": 38,
+      "text_color": "#0A1181",
+      "box_style": "rounded",
+      "box_color": "#FFFFFF",
+      "box_border_color": "#2F51E1",
+      "box_border_width": 4,
+      "box_radius": 22,
+      "box_padding_x": 34,
+      "box_padding_y": 22,
+      "position": "top_center",
+      "align": "center",
+      "max_width_percent": 82,
+      "in_animation": "scale_fade",
+      "in_duration": 0.4,
+      "out_animation": "fade",
+      "out_duration": 0.25,
+      "shadow_type": "soft",
+      "shadow_blur": 14,
+      "margin": 6,
+      "badge_text": "?",
+      "badge_color": "#E5B506",
+      "badge_size": 64,
+      "badge_corner": "top_left"
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_name_sweep": {
+    "technique": "text_pill",
+    "extends": "_text_style_base",
+    "description": "Chip tên: đường trắng quét ngang rồi mở chip (kiểu REF_002). Dùng cùng social_title_bar_sweep.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#FFFFFF",
+      "box_style": "pill",
+      "box_color": "#2F51E1",
+      "box_padding_x": 30,
+      "box_padding_y": 12,
+      "position": "lower_left",
+      "margin": 6,
+      "margin_bottom": 24,
+      "in_animation": "none",
+      "in_duration": 0.4,
+      "sweep_line": true,
+      "sweep_duration": 0.4
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_title_bar_sweep": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Thanh chức danh: quét đường trắng rồi mở, đi cặp social_name_sweep.",
+    "parameters": {
+      "font_weight": 600,
+      "font_size": 30,
+      "text_color": "#111111",
+      "box_style": "rect",
+      "box_color": "#FFFFFF",
+      "box_radius": 4,
+      "box_padding_x": 26,
+      "box_padding_y": 10,
+      "position": "lower_left",
+      "margin": 6,
+      "margin_bottom": 16,
+      "in_animation": "none",
+      "in_duration": 0.4,
+      "sweep_line": true,
+      "sweep_duration": 0.4
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_emphasis_ghost": {
+    "technique": "big_text",
+    "extends": "_text_style_base",
+    "description": "Chữ nhấn đỏ: bóng mờ kéo ngang rồi tan khi chữ nảy vào (kiểu REF_001).",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "text_transform": "uppercase",
+      "text_color": "#E3232F",
+      "fit_width": 0.7,
+      "max_font_size": 200,
+      "line_height": 1.1,
+      "position": "top_center",
+      "margin": 8,
+      "shadow_type": "hard",
+      "shadow_x": 4,
+      "shadow_y": 4,
+      "shadow_color": "rgba(255,255,255,0.85)",
+      "in_animation": "pop",
+      "in_duration": 0.3,
+      "out_animation": "fade",
+      "out_duration": 0.2,
+      "ghost_x": 34,
+      "ghost_color": "rgba(227,35,47,0.35)",
+      "ghost_time": 1
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_note_scatter": {
+    "technique": "text_box",
+    "extends": "_text_style_base",
+    "description": "Dòng navy: từng ký tự rải rồi dồn về hàng (kiểu REF_001).",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#0A1181",
+      "box_style": "none",
+      "stroke_width": 0,
+      "shadow_type": "soft",
+      "shadow_color": "rgba(255,255,255,0.8)",
+      "shadow_blur": 10,
+      "position": "top_center",
+      "margin": 5,
+      "align": "center",
+      "max_width_percent": 84,
+      "in_animation": "letter_scatter",
+      "in_duration": 0.7,
+      "scatter_duration": 0.55,
+      "scatter_spread": 150
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_sticker_cv": {
+    "technique": "text_sticker",
+    "extends": "_text_style_base",
+    "description": "Sticker chữ + biểu tượng tài liệu có dấu chấm than.",
+    "parameters": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "font_size": 70,
+      "text_color": "#E3232F",
+      "stroke_width": 14,
+      "stroke_color": "#FFFFFF",
+      "shadow_type": "hard",
+      "shadow_x": 5,
+      "shadow_y": 6,
+      "shadow_color": "rgba(0,0,0,0.35)",
+      "rotate": -5,
+      "position": "middle_right",
+      "margin": 6,
+      "in_animation": "pop",
+      "in_duration": 0.4,
+      "icon": "doc_alert",
+      "icon_color": "#E3232F"
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "social_end_logo": {
+    "technique": "title_card",
+    "extends": "_text_style_base",
+    "description": "Thẻ kết nền trắng: logo/chữ thương hiệu xoay 3D trượt vào rồi đứng yên. Thay chữ bằng logo thật khi có.",
+    "parameters": {
+      "font_weight": 800,
+      "font_size": 130,
+      "text_color": "#0A1181",
+      "position": "center",
+      "align": "center",
+      "bg_mode": "solid",
+      "blur_px": 24,
+      "bg_opacity": 1,
+      "bg_color": "#FFFFFF",
+      "bg_rgb": "255,255,255",
+      "in_animation": "rotate_y",
+      "in_duration": 0.9,
+      "out_duration": 0.4,
+      "sub_font_size": 36,
+      "sub_font_weight": 800,
+      "sub_color": "#E3232F",
+      "sub_gap": 20
+    },
+    "allowed_styles": [
+      "social_edu",
+      "social"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social-edu.md"
+  },
+  "strike_list_myth": {
+    "technique": "strike_list",
+    "extends": "_text_style_base",
+    "description": "Danh sách niềm tin sai bị gạch ngang từng dòng (REF_012): thẻ trắng, chữ navy, vạch đỏ chạy từ trái; dòng đã gạch mờ đi.",
+    "parameters": {
+      "strike": true,
+      "font_weight": 700,
+      "font_size": 42,
+      "text_color": "#0A1181",
+      "line_height": 1.5,
+      "position": "top_center",
+      "margin": 6,
+      "align": "left",
+      "box_style": "rounded",
+      "box_color": "rgba(255,255,255,0.95)",
+      "box_radius": 20,
+      "box_padding_x": 34,
+      "box_padding_y": 22,
+      "shadow_type": "none",
+      "in_animation": "line_stagger",
+      "item_delay": 0.5,
+      "in_duration": 0.4,
+      "strike_delay": 0.7,
+      "strike_item_delay": 0.6,
+      "strike_duration": 0.35
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "compare_cards_vs": {
+    "technique": "compare_cards",
+    "extends": "_text_style_base",
+    "description": "Hai (hoặc ba) thẻ \"A vs B\" cạnh nhau; thẻ thắng bật nền màu nhấn ở winner_at (REF_012).",
+    "parameters": {
+      "compare": true,
+      "font_weight": 800,
+      "font_size": 50,
+      "text_color": "#0A1181",
+      "sub_font_size": 28,
+      "sub_color": "#374151",
+      "position": "top_center",
+      "margin": 7,
+      "card_width": 0.38,
+      "card_gap": 18,
+      "card_color": "#FFFFFF",
+      "accent_color": "#E3232F",
+      "box_radius": 22,
+      "box_padding_x": 20,
+      "box_padding_y": 26,
+      "box_border_width": 3,
+      "in_animation": "pop",
+      "in_duration": 0.35,
+      "item_delay": 0.45,
+      "winner_at": 1.4
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "draw_arrow_red": {
+    "technique": "draw_annotation",
+    "extends": "_text_style_base",
+    "description": "Mũi tên vẽ tay màu đỏ tự vẽ tới vật đang được nói (REF_005); nhãn tùy chọn ở điểm đầu.",
+    "parameters": {
+      "draw": true,
+      "draw_shape": "arrow",
+      "line_color": "#E3232F",
+      "line_width": 7,
+      "draw_duration": 0.8,
+      "draw_wobble": 3,
+      "arrow_size": 36,
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#FFFFFF",
+      "stroke_width": 6,
+      "stroke_color": "#111111",
+      "in_animation": "fade",
+      "in_duration": 0.25,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "draw_circle_red": {
+    "technique": "draw_annotation",
+    "extends": "_text_style_base",
+    "description": "Vòng khoanh vẽ tay quanh vật (draw_points: tâm, rồi điểm xác định bán kính).",
+    "parameters": {
+      "draw": true,
+      "draw_shape": "circle",
+      "line_color": "#E3232F",
+      "line_width": 6,
+      "draw_duration": 0.7,
+      "draw_wobble": 4,
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#FFFFFF",
+      "stroke_width": 6,
+      "stroke_color": "#111111",
+      "in_animation": "fade",
+      "in_duration": 0.25,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "draw_underline_yellow": {
+    "technique": "draw_annotation",
+    "extends": "_text_style_base",
+    "description": "Gạch chân vẽ tay màu vàng dưới chữ/vật.",
+    "parameters": {
+      "draw": true,
+      "draw_shape": "underline",
+      "line_color": "#FFD84D",
+      "line_width": 9,
+      "draw_duration": 0.5,
+      "draw_wobble": 2,
+      "font_weight": 800,
+      "font_size": 40,
+      "text_color": "#FFFFFF",
+      "in_animation": "fade",
+      "in_duration": 0.2,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "social_cta_follow": {
+    "technique": "social_cta",
+    "extends": "_text_style_base",
+    "description": "Thẻ kênh: avatar, tên, handle (sub_text), con trỏ bấm Follow → \"Đã follow\" (REF_012).",
+    "parameters": {
+      "cta": "follow",
+      "font_weight": 800,
+      "font_size": 38,
+      "text_color": "#111111",
+      "sub_font_size": 26,
+      "sub_color": "#6B7280",
+      "card_color": "#FFFFFF",
+      "accent_color": "#E3232F",
+      "card_width": 0.84,
+      "box_radius": 22,
+      "position": "top_center",
+      "margin": 8,
+      "in_animation": "fade_up",
+      "in_duration": 0.35,
+      "click_at": 1.5
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "social_cta_comment": {
+    "technique": "social_cta",
+    "extends": "_text_style_base",
+    "description": "Ô bình luận: nhãn trên (sub_text), gõ dần chữ (text), bấm gửi → bình luận hiện ra (REF_012).",
+    "parameters": {
+      "cta": "comment",
+      "font_weight": 600,
+      "font_size": 34,
+      "text_color": "#111111",
+      "sub_font_size": 32,
+      "sub_color": "#FFFFFF",
+      "card_color": "#FFFFFF",
+      "accent_color": "#E3232F",
+      "card_width": 0.84,
+      "box_radius": 22,
+      "position": "top_center",
+      "margin": 8,
+      "in_animation": "fade_up",
+      "in_duration": 0.35,
+      "type_at": 0.4,
+      "type_speed": 16,
+      "click_at": 2.2
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "image_fan_head": {
+    "technique": "image_float",
+    "extends": "_text_style_base",
+    "description": "Ảnh kết quả xếp hình quạt phía trên đầu người nói, bật vào lần lượt (REF_012).",
+    "parameters": {
+      "image_layout": "fan",
+      "image_width": 0.22,
+      "image_aspect": 1.5,
+      "image_center": [
+        0.5,
+        0.1
+      ],
+      "image_radius": 0.42,
+      "image_spread": 72,
+      "item_delay": 0.1,
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#FFFFFF",
+      "stroke_width": 7,
+      "stroke_color": "#111111",
+      "position": "lower_middle",
+      "margin_bottom": 22,
+      "in_animation": "pop",
+      "in_duration": 0.35,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "image_orbit_head": {
+    "technique": "image_float",
+    "extends": "_text_style_base",
+    "description": "Ảnh bay vòng quanh đầu người nói (quỹ đạo elip chậm).",
+    "parameters": {
+      "image_layout": "orbit",
+      "image_width": 0.2,
+      "image_aspect": 1.4,
+      "image_center": [
+        0.5,
+        0.3
+      ],
+      "image_radius": 0.36,
+      "orbit_speed": 0.3,
+      "item_delay": 0.1,
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#FFFFFF",
+      "stroke_width": 7,
+      "stroke_color": "#111111",
+      "position": "lower_middle",
+      "margin_bottom": 22,
+      "in_animation": "pop",
+      "in_duration": 0.35,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "image_strip_top": {
+    "technique": "image_float",
+    "extends": "_text_style_base",
+    "description": "Dải ảnh chạy ngang trên đầu khung (\"làm chục video\").",
+    "parameters": {
+      "image_layout": "strip",
+      "image_width": 0.2,
+      "image_aspect": 1.6,
+      "image_center": [
+        0.5,
+        0.12
+      ],
+      "strip_speed": 110,
+      "item_delay": 0.06,
+      "font_weight": 800,
+      "font_size": 44,
+      "text_color": "#FFFFFF",
+      "stroke_width": 7,
+      "stroke_color": "#111111",
+      "position": "lower_middle",
+      "margin_bottom": 22,
+      "in_animation": "fade",
+      "in_duration": 0.3,
+      "out_duration": 0.3
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
+  },
+  "table_build_social": {
+    "technique": "comparison_table",
+    "extends": "_text_style_base",
+    "description": "Bảng dựng dần: hàng hiện theo row_times, ô có thể đổi nội dung theo cell_changes (REF_010). Nền theo từng hàng (table_row_bg) nên hàng chưa hiện không để lại khoảng trắng.",
+    "parameters": {
+      "table": true,
+      "font_family": "Inter",
+      "font_weight": 600,
+      "font_size": 44,
+      "position": "top_center",
+      "margin": 7,
+      "table_width": 0.78,
+      "table_bg": "transparent",
+      "text_color": "#0A1181",
+      "table_header_bg": "#0A1181",
+      "table_header_color": "#FFFFFF",
+      "table_line_color": "rgba(10,17,129,0.18)",
+      "table_highlight_bg": "rgba(47,81,225,0.18)",
+      "highlight_color": "#0A1181",
+      "box_radius": 16,
+      "box_shadow": "0 10px 30px rgba(0,0,0,0.3)",
+      "item_delay": 3.5,
+      "in_animation": "fade",
+      "in_duration": 0.35,
+      "out_animation": "fade",
+      "out_duration": 0.3,
+      "table_row_bg": "rgba(255,255,255,0.97)",
+      "table_first_col": 0.9
+    },
+    "allowed_styles": [
+      "social",
+      "social_edu"
+    ],
+    "forbidden_styles": [
+      "documentary"
+    ],
+    "source_of_values": "observed",
+    "confidence": "low",
+    "reference": "styles/social.md"
   }
 }
